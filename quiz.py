@@ -25,8 +25,8 @@ hasTopics = tdata['hasTopics']
 chosenSubject = 'none'
 chosenTopic = 'none'
 
-# small 'loading screen'
 def dotdotdot():
+    """small loading screen"""
     for dot in range(2): # repeats twice
         print('.', end='') # no new line after each dot
         time.sleep(0.5) # small delay between each dot
@@ -36,7 +36,8 @@ def dotdotdot():
 
 
 # sets questions and answers based on subject and topic
-def setSubject(subject='example', topic='none'):
+def set_subject(subject='example', topic='none'):
+    """sets questions and answers based on subject and topic"""
     global chosenTopic
 
     # loads JSON file data containing all questions
@@ -219,7 +220,8 @@ def setSubject(subject='example', topic='none'):
         for i in range(10):
             multiplechoice[i] = qdata['error'][i]
     
-def mcq(): # multiple choice questions
+def mcq():
+    """multiple choice questions"""
     for i in range(10):
         question = multiplechoice[i][0]
         answerA = multiplechoice[i][1]
@@ -259,8 +261,9 @@ def mcq(): # multiple choice questions
         
         dotdotdot()
 
-def structured(): # structured questions
-    pass 
+def structured():
+    """structured questions"""
+    pass
     # read essay text file and send to teacher for marking? (longer essay-style questions)
     # type into quiz program and get marks based on keywords? (shorter  questions only)
 
@@ -272,6 +275,7 @@ while True:
         print('~ ' + i)
     print('')
     userSubject = input('~~> ').lower() # sets answer as lowercase to avoid miscasing
+    userTopic = 'none'
 
     userHasTopic = False
 
@@ -295,9 +299,9 @@ while True:
     chosenSubject = userSubject
 
     if userHasTopic:
-        setSubject(userSubject, userTopic)
+        set_subject(userSubject, userTopic)
     else:
-        setSubject(userSubject)
+        set_subject(userSubject)
         chosenTopic = 'N/A'
     mcq()
     structured()
