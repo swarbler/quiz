@@ -55,26 +55,22 @@
             "experimental design"
         ],
         "computer science": [
-            "population and settlements",
-            "volcanoes",
-            "earthquakes",
-            "rivers",
-            "coasts",
-            "weather and climate",
-            "rainforests",
-            "deserts",
-            "map skills"
+            "data representation",
+            "data transmission",
+            "hardware",
+            "software",
+            "internet",
+            "automation",
+            "algorithm design",
+            "programming",
+            "databases",
+            "boolean logic"
         ],
         "history": [
-            "population and settlements",
-            "volcanoes",
-            "earthquakes",
-            "rivers",
-            "coasts",
-            "weather and climate",
-            "rainforests",
-            "deserts",
-            "map skills"
+            "Weimer Germany (1918-23)",
+            "Weimer Germany (1924-29)",
+            "Nazi Germany (1933-1945)",
+            "coasts"
         ]
     },
     "hasTopics": {
