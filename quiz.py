@@ -187,7 +187,7 @@ def setSubject(subject='example', topic='none'):
         elif topic == 'databases' or topic == 'database' or topic == 'sql':
             subtopic = 'databases'
         elif topic == 'boolean logic' or topic == 'logic':
-            subtopic = 'redox reactions'
+            subtopic = 'boolean logic'
         else:
             subtopic = 'general' # quiz with all topics
 
@@ -197,14 +197,14 @@ def setSubject(subject='example', topic='none'):
             multiplechoice[i] = qdata['computer science'][subtopic][i]
     elif subject == 'history':
         # different topics in computer science
-        if topic == 'early weimer germany' or 'early' or '1918-23':
-            subtopic = 'Early Weimer Germany (1918-23)'
-        elif topic == 'golden age weimer germany' or 'golden age' or '1924-1929':
-            subtopic = 'Golden Age Weimer Germany (1924-29)'
+        if topic == 'early weimar germany' or topic == 'early weimar' or topic == '1918-23':
+            subtopic = 'Early Weimar Germany (1918-23)'
+        elif topic == 'golden age weimar germany' or topic == 'golden age weimar' or topic == '1924-29':
+            subtopic = 'Golden Age Weimar Germany (1924-29)'
         elif topic == 'rise of the nazis' or topic == 'early nazis':
             subtopic = 'Rise of the Nazis'
-        elif topic == 'nazi germany' or topic == 'nazi rule' or topic == '1933-1945':
-            subtopic = 'Nazi Germany (1933-1945)'
+        elif topic == 'nazi germany' or topic == 'nazi rule' or topic == '1933-45':
+            subtopic = 'Nazi Germany (1933-45)'
         else:
             subtopic = 'general' # quiz with all topics
 
