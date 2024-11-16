@@ -15,6 +15,9 @@ with open('topics.json', 'r') as f:
 topics = tdata['topics']
 hasTopics = tdata['hasTopics']
 
+chosenSubject = 'none'
+chosenTopic = 'none'
+
 # small 'loading screen'
 def dotdotdot():
     for dot in range(2): # repeats twice
@@ -54,10 +57,12 @@ def setSubject(subject='example', topic='none'):
         else:
             subtopic = 'general' # quiz with all topics
 
+        chosenTopic = subtopic
+
         for i in range(10):
             multiplechoice[i] = qdata['geography'][subtopic][i]
     elif subject == 'physics':
-        # different topics in geography
+        # different topics in physics
         if topic == 'describing motion' or topic == 'motion':
             subtopic = 'describing motion'
         elif topic == 'forces and motion' or topic == 'forces' or topic == 'force':
@@ -100,16 +105,111 @@ def setSubject(subject='example', topic='none'):
             subtopic = 'electromagnetic induction'
         else:
             subtopic = 'general' # quiz with all topics
+
+        chosenTopic = subtopic
         
         for i in range(10):
             multiplechoice[i] = qdata['physics'][subtopic][i]
+    elif subject == 'chemistry':
+        # different topics in chemistry
+        if topic == 'states of matter' or topic == 'state of matter':
+            subtopic = 'states of matter'
+        elif topic == 'atomic structure' or topic == 'atoms' or topic == 'atom':
+            subtopic = 'atomic structure'
+        elif topic == 'chemical bonding' or topic == 'chemical bonds' or topic == 'bonding' or topic == 'bonds':
+            subtopic = 'chemical bonding'
+        elif topic == 'chemical formulae and equations' or topic == 'chemical formulae' or topic == 'chemical equations' or topic == 'chemical equation' or topic == 'chemical formula' or topic == 'formula' or topic == 'equation':
+            subtopic = 'chemical formulae and equations'
+        elif topic == 'chemical calculations' or topic == 'calculations':
+            subtopic = 'chemical calculations'
+        elif topic == 'electrochemistry':
+            subtopic = 'electrochemistry'
+        elif topic == 'chemical energetics' or topic == 'energetics':
+            subtopic = 'chemical energetics'
+        elif topic == 'rates of reaction' or topic == 'rate of reaction':
+            subtopic = 'rates of reaction'
+        elif topic == 'reversible reactions' or topic == 'reverse reactions' or topic == 'reversible' or topic == 'reverse':
+            subtopic = 'thermal properties'
+        elif topic == 'redox reactions' or topic == 'reduction' or topic == 'oxidation' or topic == 'redox':
+            subtopic = 'redox reactions'
+        elif topic == 'acids and bases' or topic == 'acids' or topic == 'bases' or topic == 'alkalis':
+            subtopic = 'acids and bases'
+        elif topic == 'preperation of salts' or topic == 'salts':
+            subtopic = 'preperation of salts'
+        elif topic == 'periodic table' or topic == 'elements':
+            subtopic = 'periodic table'
+        elif topic == 'metallic elements' or topic == 'metals':
+            subtopic = 'metallic elements'
+        elif topic == 'reactivity series' or topic == 'reactivity':
+            subtopic = 'reactivity series'
+        elif topic == 'extraction and corrosion' or topic == 'extraction':
+            subtopic = 'extraction and corrosion'
+        elif topic == 'environment':
+            subtopic = 'environment'
+        elif topic == 'organic chemistry' or topic == 'organic compounds':
+            subtopic = 'organic chemistry'
+        elif topic == 'experimental design' or topic == 'experiment design' or topic == 'paper 6':
+            subtopic = 'experimental design'
+        else:
+            subtopic = 'general' # quiz with all topics
+
+        chosenTopic = subtopic
+        
+        for i in range(10):
+            multiplechoice[i] = qdata['chemistry'][subtopic][i]
+    elif subject == 'computer science':
+        # different topics in computer science
+        if topic == 'data representation' or topic == 'data':
+            subtopic = 'data representation'
+        elif topic == 'data transmission' or topic == 'error checking' or topic == 'transmission':
+            subtopic = 'data transmission'
+        elif topic == 'hardware':
+            subtopic = 'hardware'
+        elif topic == 'software':
+            subtopic = 'software'
+        elif topic == 'internet':
+            subtopic = 'internet'
+        elif topic == 'automation' or topic == 'automated technologies' or topic == 'ai':
+            subtopic = 'automation'
+        elif topic == 'algorithm design' or topic == 'algorithm':
+            subtopic = 'algorithm design'
+        elif topic == 'programming' or topic == 'coding':
+            subtopic = 'programming'
+        elif topic == 'databases' or topic == 'database' or topic == 'sql':
+            subtopic = 'databases'
+        elif topic == 'boolean logic' or topic == 'logic':
+            subtopic = 'redox reactions'
+        else:
+            subtopic = 'general' # quiz with all topics
+
+        chosenTopic = subtopic
+        
+        for i in range(10):
+            multiplechoice[i] = qdata['computer science'][subtopic][i]
+    elif subject == 'history':
+        # different topics in computer science
+        if topic == 'early weimer germany' or 'early' or '1918-23':
+            subtopic = 'Early Weimer Germany (1918-23)'
+        elif topic == 'golden age weimer germany' or 'golden age' or '1924-1929':
+            subtopic = 'Golden Age Weimer Germany (1924-29)'
+        elif topic == 'rise of the nazis' or topic == 'early nazis':
+            subtopic = 'Rise of the Nazis'
+        elif topic == 'nazi germany' or topic == 'nazi rule' or topic == '1933-1945':
+            subtopic = 'Nazi Germany (1933-1945)'
+        else:
+            subtopic = 'general' # quiz with all topics
+
+        chosenTopic = subtopic
+        
+        for i in range(10):
+            multiplechoice[i] = qdata['history'][subtopic][i]
     elif subject == 'example': # example for testing
         for i in range(10):
             multiplechoice[i] = qdata['example'][i]
     else: # error message if incorrect value is entered
         for i in range(10):
             multiplechoice[i] = qdata['error'][i]
-
+    
 def mcq(): # multiple choice questions
     for i in range(10):
         question = multiplechoice[i][0]
@@ -118,6 +218,11 @@ def mcq(): # multiple choice questions
         answerC = multiplechoice[i][3]
         answerD = multiplechoice[i][4]
         correctAnswer = multiplechoice[i][5]
+
+        # displays chosen subject and topic
+        print('Subject:\t' + chosenSubject)
+        print('Topic:  \t' + chosenTopic)
+        print('')
 
         # asks with question # and some formatting
         print('Question ' + str(i + 1) + ': ' + question + '?')
@@ -140,6 +245,7 @@ def mcq(): # multiple choice questions
         if userAnswerNum == correctAnswer:
             print('You got it right!')
         else:
+            # tells user correct answer
             print('You got it wrong! The actual answer was: ' + str(correctAnswer))
         
         dotdotdot()
@@ -178,10 +284,13 @@ while True:
 
     dotdotdot()
 
+    chosenSubject = userSubject
+
     if userHasTopic:
         setSubject(userSubject, userTopic)
     else:
         setSubject(userSubject)
+        chosenTopic = 'N/A'
     mcq()
     structured()
 

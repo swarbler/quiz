@@ -2546,6 +2546,88 @@
         ]
     },
     "chemistry": {
+        "general": [
+            [
+                "all things chemistry",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ]
+        ],
         "states of matter": [
             [
                 "states of matter",
@@ -4106,6 +4188,88 @@
         ]
     },
     "computer science": {
+        "general": [
+            [
+                "a lot of CS",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ]
+        ],
         "data representation": [
             [
                 "binary 00110110",
@@ -4928,7 +5092,89 @@
         ]
     },
     "history": {
-        "Weimer Germany (1918-23)": [
+        "general": [
+            [
+                "germany",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ],
+            [
+                "SOMETHING WENT WRONG",
+                "PLEASE",
+                "TRY",
+                "AGAIN",
+                "LATER",
+                1
+            ]
+        ],
+        "Early Weimer Germany (1918-23)": [
             [
                 "weimer not good",
                 "PLEASE",
@@ -5010,7 +5256,7 @@
                 1
             ]
         ],
-        "Weimer Germany (1924-29)": [
+        "Golden Age Weimer Germany (1924-29)": [
             [
                 "weimer golden age",
                 "PLEASE",
