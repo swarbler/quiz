@@ -10,82 +10,10 @@ multiplechoice = [[0 for x in range(w)] for y in range(h)]
 # [i][5] = correct answer (1-4)
 
 subjects = ['geography', 'physics', 'chemistry', 'computer science', 'history', 'example']
-topics = {
-    'geography': [
-        'population and settlements',
-        'volcanoes',
-        'earthquakes',
-        'rivers',
-        'coasts',
-        'weather and climate',
-        'rainforests',
-        'deserts',
-        'map skills'
-    ],
-    'physics': [
-        'describing motion',
-        'forces and motion',
-        'turning effects',
-        'forces and matter',
-        'energy transfer',
-        'energy resources',
-        'work and power', 
-        'kinetic particle model of matter', 
-        'thermal properties', 
-        'thermal energy transfer', 
-        'sound',
-        'light', 
-        'general properties of waves', 
-        'electromagnetic spectrum', 
-        'magnetism', 
-        'static electricity', 
-        'electrical quantities', 
-        'electrical circuit',
-        'electromotive force',
-        'electromagnetic induction'
-    ],
-    'chemistry': [
-        'population and settlements',
-        'volcanoes',
-        'earthquakes',
-        'rivers',
-        'coasts',
-        'weather and climate',
-        'rainforests',
-        'deserts',
-        'map skills'
-    ],
-    'computer science': [
-        'population and settlements',
-        'volcanoes',
-        'earthquakes',
-        'rivers',
-        'coasts',
-        'weather and climate',
-        'rainforests',
-        'deserts',
-        'map skills'
-    ],
-    'history': [
-        'population and settlements',
-        'volcanoes',
-        'earthquakes',
-        'rivers',
-        'coasts',
-        'weather and climate',
-        'rainforests',
-        'deserts',
-        'map skills'
-    ]
-}
-hasTopics = {
-    'geography': True, 
-    'physics': True, 
-    'chemistry': True, 
-    'computer science': True, 
-    'history': True, 
-    'example': False
-}
+with open('topics.json', 'r') as f:
+    tdata = json.load(f)
+topics = tdata['topics']
+hasTopics = tdata['hasTopics']
 
 # small 'loading screen'
 def dotdotdot():

@@ -2381,6 +2381,27 @@
             ]
         ]
     },
+    "chemistry": [
+        "states of matter",
+        "atomic structure",
+        "chemical bonding",
+        "chemical formulae and equations",
+        "chemical calculations",
+        "electrochemistry",
+        "chemical energetics",
+        "rates of reaction",
+        "reversible reactions",
+        "redox reactions",
+        "acids and bases",
+        "preperation of salts",
+        "periodic table",
+        "metallic elements",
+        "reactivity series",
+        "extraction and corrosion",
+        "environment",
+        "organic chemistry",
+        "experimental design"
+    ],
     "example": [ 
         [
             "What is the biggest planet in the solar system",

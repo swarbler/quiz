@@ -1,0 +1,88 @@
+{
+    "topics": {
+        "geography": [
+            "population and settlements",
+            "volcanoes",
+            "earthquakes",
+            "rivers",
+            "coasts",
+            "weather and climate",
+            "rainforests",
+            "deserts",
+            "map skills"
+        ],
+        "physics": [
+            "describing motion",
+            "forces and motion",
+            "turning effects",
+            "forces and matter",
+            "energy transfer",
+            "energy resources",
+            "work and power", 
+            "kinetic particle model of matter", 
+            "thermal properties", 
+            "thermal energy transfer", 
+            "sound",
+            "light", 
+            "general properties of waves", 
+            "electromagnetic spectrum", 
+            "magnetism", 
+            "static electricity", 
+            "electrical quantities", 
+            "electrical circuit",
+            "electromotive force",
+            "electromagnetic induction"
+        ],
+        "chemistry": [
+            "states of matter",
+            "atomic structure",
+            "chemical bonding",
+            "chemical formulae and equations",
+            "chemical calculations",
+            "electrochemistry",
+            "chemical energetics",
+            "rates of reaction",
+            "reversible reactions",
+            "redox reactions",
+            "acids and bases",
+            "preperation of salts",
+            "periodic table",
+            "metallic elements",
+            "reactivity series",
+            "extraction and corrosion",
+            "environment",
+            "organic chemistry",
+            "experimental design"
+        ],
+        "computer science": [
+            "population and settlements",
+            "volcanoes",
+            "earthquakes",
+            "rivers",
+            "coasts",
+            "weather and climate",
+            "rainforests",
+            "deserts",
+            "map skills"
+        ],
+        "history": [
+            "population and settlements",
+            "volcanoes",
+            "earthquakes",
+            "rivers",
+            "coasts",
+            "weather and climate",
+            "rainforests",
+            "deserts",
+            "map skills"
+        ]
+    },
+    "hasTopics": {
+        "geography": true, 
+        "physics": true, 
+        "chemistry": true, 
+        "computer science": true, 
+        "history": true, 
+        "example": false
+    }
+}
