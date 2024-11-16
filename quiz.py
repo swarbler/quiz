@@ -242,7 +242,7 @@ def mcq(): # multiple choice questions
         print('3 : ' + answerC)
         print('4 : ' + answerD)
         print('')
-        userAnswer = input('Your answer: ')
+        userAnswer = input('~~> ')
         userAnswerNum = 0
 
         # if users type a word instead of a number, userAnswerNum set to 0
@@ -266,13 +266,12 @@ def structured(): # structured questions
 
 while True:
     # choose subject to study
-    print('Which subject would you like to test yourself with?')
+    print('Select a subject to study:')
     print('')
-    print('Choose one option:')
     for i in subjects: # dynamic amount of subjects
-        print('- ' + i)
+        print('~ ' + i)
     print('')
-    userSubject = input('Your answer: ').lower() # sets answer as lowercase to avoid miscasing
+    userSubject = input('~~> ').lower() # sets answer as lowercase to avoid miscasing
 
     userHasTopic = False
 
@@ -280,13 +279,13 @@ while True:
     try:
         if hasTopics[userSubject]: # ask for topic if subject has them
             # choose topic to study
-            print('Which topic would you like to test yourself with?')
             print('')
-            print('Choose one option:')
+            print('Select a topic to study:')
+            print('')
             for i in topics[userSubject]: # dynamic amount of subjects
-                print('- ' + i) # prints subjects as a list
+                print('~ ' + i) # prints subjects as a list
             print('')
-            userTopic = input('Your answer: ').lower()  # sets answer as lowercase to avoid miscasing
+            userTopic = input('~~> ').lower()  # sets answer as lowercase to avoid miscasing
             userHasTopic = True
     except:
         userSubject = 'error'
