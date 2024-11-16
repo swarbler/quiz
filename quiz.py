@@ -9,7 +9,14 @@ multiplechoice = [[0 for x in range(w)] for y in range(h)]
 # [i][1-4] = answers a to d
 # [i][5] = correct answer (1-4)
 
-subjects = ['geography', 'physics', 'chemistry', 'computer science', 'history', 'example']
+subjects = [
+    'geography', 
+    'physics', 
+    'chemistry', 
+    'computer science', 
+    'history', 
+    'example'
+]
 with open('topics.json', 'r') as f:
     tdata = json.load(f)
 topics = tdata['topics']
@@ -30,6 +37,8 @@ def dotdotdot():
 
 # sets questions and answers based on subject and topic
 def setSubject(subject='example', topic='none'):
+    global chosenTopic
+
     # loads JSON file data containing all questions
     with open('mcq.json', 'r') as f:
         qdata = json.load(f)
