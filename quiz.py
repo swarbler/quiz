@@ -29,47 +29,62 @@ def dotdotdot():
 def setSubject(subject='example', topic='none'):
     # loads JSON file data containing all questions
     with open('mcq.json', 'r') as f:
-        data = json.load(f)
+        qdata = json.load(f)
 
     if subject == 'geography':
-        geography = data['geography']
         # different topics in geography
-        if topic == 'population and settlements' or topic == 'population' or topic == 'settlements' or topic == 'settlement': # different words for same topic
-            for i in range(10):
-                multiplechoice[i] = geography['population'][i]
+        if topic == 'population and settlements' or topic == 'population' or topic == 'populations' or topic == 'settlements' or topic == 'settlement': # different words for same topic
+            subtopic = 'population'
         elif topic == 'volcanoes' or topic == 'volcano': # plural or singular
-            for i in range(10):
-                multiplechoice[i] = geography['volcanoes'][i]
+            subtopic = 'volcanoes'
         elif topic == 'earthquakes' or topic == 'earthquake':
-            for i in range(10):
-                multiplechoice[i] = geography['earthquakes'][i]
+            subtopic = 'earthquakes'
         elif topic == 'rivers' or topic == 'river':
-            for i in range(10):
-                multiplechoice[i] = geography['rivers'][i]
+            subtopic = 'rivers'
         elif topic == 'coasts' or topic == 'coast':
-            for i in range(10):
-                multiplechoice[i] = geography['coasts'][i]
+            subtopic = 'coasts'
         elif topic == 'weather and climate' or topic == 'weather' or topic == 'climate':
-            for i in range(10):
-                multiplechoice[i] = geography['weather'][i]
+            subtopic = 'weather'
         elif topic == 'rainforests' or topic == 'rainforest':
-            for i in range(10):
-                multiplechoice[i] = geography['rainforests'][i]
+            subtopic = 'rainforests'
         elif topic == 'deserts' or topic == 'desert':
-            for i in range(10):
-                multiplechoice[i] = geography['deserts'][i]
+            subtopic = 'deserts'
         elif topic == 'map skills' or topic == 'map':
-            for i in range(10):
-                multiplechoice[i] = geography['map skills'][i]
+            subtopic = 'map skills'
         else:
-            # quiz with all topics
-            pass
+            subtopic = 'general' # quiz with all topics
+
+        for i in range(10):
+            multiplechoice[i] = qdata['geography'][subtopic][i]
+    elif subject == 'physics':
+        # different topics in geography
+        if topic == 'describing motion' or topic == 'motion':
+            subtopic = 'describing motion'
+        elif topic == 'forces and motion' or topic == 'forces' or topic == 'force':
+            subtopic = 'forces and motion'
+        elif topic == 'turning effects' or topic == 'turning effect' or topic == 'turning':
+            subtopic = 'turning effects'
+        elif topic == 'forces and matter' or topic == 'forces and matter':
+            subtopic = 'forces and matter'
+        elif topic == 'energy transfer':
+            subtopic = 'energy transfer'
+        elif topic == 'energy resources':
+            subtopic = 'energy resources'
+        elif topic == 'work and power' or topic == 'work':
+            subtopic = 'work and power'
+        elif topic == 'kinetic particle model of matter' or topic == 'particle model':
+            subtopic = 'kinetic particle model of matter'
+        else:
+            subtopic = 'general' # quiz with all topics
+        
+        for i in range(10):
+            multiplechoice[i] = qdata['physics'][subtopic][i]
     elif subject == 'example': # example for testing
         for i in range(10):
-            multiplechoice[i] = data['example'][i]
+            multiplechoice[i] = qdata['example'][i]
     else: # error message if incorrect value is entered
         for i in range(10):
-            multiplechoice[i] = data['error'][i]
+            multiplechoice[i] = qdata['error'][i]
 
 def mcq(): # multiple choice questions
     for i in range(10):
