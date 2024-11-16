@@ -74,6 +74,30 @@ def setSubject(subject='example', topic='none'):
             subtopic = 'work and power'
         elif topic == 'kinetic particle model of matter' or topic == 'particle model':
             subtopic = 'kinetic particle model of matter'
+        elif topic == 'thermal properties' or topic == 'thermal property':
+            subtopic = 'thermal properties'
+        elif topic == 'thermal energy transfer' or topic == 'thermal energy':
+            subtopic = 'thermal energy transfer'
+        elif topic == 'sound':
+            subtopic = 'sound'
+        elif topic == 'light':
+            subtopic = 'kinetic particle model of matter'
+        elif topic == 'general properties of waves' or topic == 'properties of waves' or topic == 'waves':
+            subtopic = 'general properties of waves'
+        elif topic == 'electromagnetic spectrum' or topic == 'electromagnetic waves':
+            subtopic = 'electromagnetic spectrum'
+        elif topic == 'magnetism' or topic == 'magnet':
+            subtopic = 'magnetism'
+        elif topic == 'static electricity' or topic == 'static':
+            subtopic = 'static electricity'
+        elif topic == 'electrical quantities':
+            subtopic = 'electrical quantities'
+        elif topic == 'electrical circuit' or topic == 'circuit':
+            subtopic = 'electrical circuit'
+        elif topic == 'electromotive force' or topic == 'emf':
+            subtopic = 'electromotive force'
+        elif topic == 'electromagnetic induction' or topic == 'induction':
+            subtopic = 'electromagnetic induction'
         else:
             subtopic = 'general' # quiz with all topics
         
