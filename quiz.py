@@ -1,6 +1,7 @@
 import time
 import os
 import json
+import random
 
 # sets q/a list
 w, h = 6, 10
@@ -22,8 +23,16 @@ with open('topics.json', 'r') as f:
 topics = tdata['topics']
 hasTopics = tdata['hasTopics']
 
+error = False
+
 chosenSubject = 'none'
 chosenTopic = 'none'
+
+mcqTotal = 0
+
+with open('messages.json', 'r') as f:
+    sdata = json.load(f)
+mcqMessages = sdata['mcq']
 
 def dotdotdot():
     """small loading screen"""
@@ -216,12 +225,11 @@ def set_subject(subject='example', topic='none'):
     elif subject == 'example': # example for testing
         for i in range(10):
             multiplechoice[i] = qdata['example'][i]
-    else: # error message if incorrect value is entered
-        for i in range(10):
-            multiplechoice[i] = qdata['error'][i]
     
 def mcq():
     """multiple choice questions"""
+    mcqTotal = 0 # resets total
+
     for i in range(10):
         question = multiplechoice[i][0]
         answerA = multiplechoice[i][1]
@@ -255,17 +263,43 @@ def mcq():
 
         if userAnswerNum == correctAnswer:
             print('You got it right!')
+            mcqTotal += 1
         else:
             # tells user correct answer
             print('You got it wrong! The actual answer was: ' + str(correctAnswer))
         
         dotdotdot()
 
+    # displays chosen subject and topic
+    print('Subject:\t' + chosenSubject)
+    print('Topic:  \t' + chosenTopic)
+    print('')
+
+    barFill = '-' * mcqTotal
+    barSpaces = ' ' * (10 - mcqTotal)
+    
+    # prints total score for user
+    print('TOTAL SCORE FOR MCQ >>> ' + str(mcqTotal) + '/10')
+    print('[' + barFill + barSpaces + ']')
+    print('')
+    print(' > ' + mcqMessages[mcqTotal][random.randrange(0, 5)])
+    print('')
+    input('~~> ')
+
+    dotdotdot()
+
 def structured():
     """structured questions"""
     pass
     # read essay text file and send to teacher for marking? (longer essay-style questions)
     # type into quiz program and get marks based on keywords? (shorter  questions only)
+
+def call_error(param):
+    print('"' + param + '" is not a valid subject. Please try again.')
+    print('')
+    input('~~> ')
+
+    dotdotdot()
 
 while True:
     # choose subject to study
@@ -291,8 +325,9 @@ while True:
             print('')
             userTopic = input('~~> ').lower()  # sets answer as lowercase to avoid miscasing
             userHasTopic = True
+            error = False
     except:
-        userSubject = 'error'
+        error = True
 
     dotdotdot()
 
@@ -303,6 +338,10 @@ while True:
     else:
         set_subject(userSubject)
         chosenTopic = 'N/A'
-    mcq()
-    structured()
+
+    if error:
+        call_error(userSubject)
+    else:
+        mcq()
+        structured()
 
