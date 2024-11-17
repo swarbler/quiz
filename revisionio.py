@@ -38,9 +38,9 @@ mcqMessages = sdata['mcq']
 def dotdotdot():
     """small loading screen"""
     for dot in range(2): # repeats twice
-        print('.', end='') # no new line after each dot
-        time.sleep(0.5) # small delay between each dot
-    print('.') # new line after last dot
+        print('.', end='', flush=True) # no new line after each dot
+        time.sleep(.5) # small delay between each dot
+    print('.')
     time.sleep(1) # longer delay after last dot
     print('\033c', end='') # clear terminal
 
