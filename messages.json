@@ -1,0 +1,81 @@
+{
+    "mcq": [
+        [
+            "Well this sucks.",
+            "You need to study!",
+            "score 0",
+            "score 0",
+            "score 0"
+        ],
+        [
+            "",
+            "One step at a time.",
+            "score 1",
+            "score 1",
+            "score 1"
+        ],
+        [
+            "Try harder next time!",
+            "You need to study!",
+            "score 2",
+            "score 2",
+            "score 2"
+        ],
+        [
+            "Well this sucks.",
+            "You need to study!",
+            "score 3",
+            "score 3",
+            "score 3"
+        ],
+        [
+            "Well this sucks.",
+            "You need to study!",
+            "score 4",
+            "score 4",
+            "score 4"
+        ],
+        [
+            "Well this sucks.",
+            "You need to study!",
+            "score 5",
+            "score 5",
+            "score 5"
+        ],
+        [
+            "Well this sucks.",
+            "You need to study!",
+            "score 6",
+            "score 6",
+            "score 6"
+        ],
+        [
+            "Well this sucks.",
+            "You need to study!",
+            "score 7",
+            "score 7",
+            "score 7"
+        ],
+        [
+            "Well this sucks.",
+            "You need to study!",
+            "score 8",
+            "score 8",
+            "score 8"
+        ],
+        [
+            "Well this sucks.",
+            "You need to study!",
+            "score 9",
+            "score 9",
+            "score 9"
+        ],
+        [
+            "Wow, you got a perfect score!",
+            "You need to study!",
+            "score 10",
+            "score 10",
+            "score 10"
+        ]
+    ]
+}
