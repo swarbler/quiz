@@ -2,66 +2,66 @@
     "mcq": [
         [
             "Well this sucks",
-            "score 0",
+            "I think your pet rock scored higher than you on this test",
             "You have a LOT of study to do",
-            "score 0",
-            "score 0",
-            "...it's a zero"
+            "Put in some more effort",
+            "Not looking great, but there's still time to improve",
+            "...it's a zero (Fail)"
         ],
         [
             "Focus on studying this subject",
             "One step at a time",
-            "You need to study",
-            "score 1",
-            "score 1",
-            "E"
+            "You need to study, even your pet rock didn't fail",
+            "Smarter than a snail, but that's not saying much",
+            "At least you got one question right",
+            "E (Fail)"
         ],
         [
             "Try harder next time",
-            "score 2",
-            "score 2",
-            "score 2",
-            "score 2",
-            "E"
+            "Practise more to improve, you'll need it",
+            "Don't give up, try your best next time",
+            "I'm pretty sure your pet rock has a better score than you",
+            "It's two times better than 1/10",
+            "E (Fail)"
         ],
         [
             "score 3",
             "Not particularly great",
-            "score 3",
-            "score 3",
-            "score 3",
-            "E"
+            "With more study, your score will double and then some",
+            "'D' stands for determined, or maybe delusional, since you think you're doing well",
+            "You got a worse score than your pet rock",
+            "D"
         ],
         [
-            "score 4",
-            "score 4",
-            "score 4",
-            "score 4",
-            "score 4",
+            "More work needs to be done",
+            "Improvement is needed",
+            "With more work, that D will become an A",
+            "Fun fact: 'D' stands for dolphin",
+            "Your pet rock somehow has a better score than you, how does it even type on a keyboard?",
             "D"
         ],
         [
             "Okay, but needs improving",
-            "score 5",
-            "score 5",
-            "score 5",
-            "score 5",
+            "Study more to go from a C to an A",
+            "Fun fact: 'C' stands for crab",
+            "Halfway there, try harder next time",
+            "Your pet rock got a better grade than you, ask it for study tips",
             "C"
         ],
         [
             "Quite good, but could be better",
-            "score 6",
-            "score 6",
-            "score 6",
-            "score 6",
+            "Better, but your pet rock still scored higher than you",
+            "Study more for a better grade",
+            "Good, but not great",
+            "Even our pet rock got an A, how'd you get a C?",
             "C"
         ],
         [
             "Solid grade, but nearing an A",
-            "So close yet so far to an A",
-            "score 7",
-            "score 7",
-            "score 7",
+            "Your pesky pet rock still has a better grade than you, study harder",
+            "Fun fact: 'B' stands for bumblebee",
+            "That's really close to an A",
+            "So close to greatness, try to get an A next time",
             "B"
         ],
         [
@@ -69,23 +69,23 @@
             "Near the edge of the grade boundary",
             "The grade boundary may not be so forgiving next time",
             "I'm nicer than exam grade boundaries",
-            "score 8",
+            "Just so you know, your pet rock got an A*",
             "A"
         ],
         [
             "Amazing grade, but 100% is within reach",
             "Almost there",
-            "So close",
-            "Just a bit more",
-            "Mildly infuriating",
+            "Fun fact: 'A' stands for anteater",
+            "Very good, but your pet rock got a perfect score",
+            "Nearly 100% but not quite there",
             "A"
         ],
         [
             "Wow, you got a perfect score",
-            "Excellent",
-            "score 10",
-            "score 10",
-            "score 10",
+            "Excellent, keep it up",
+            "An A* in this program doesn't mean you'll get an A* in the exams",
+            "Amazing, here's a house point! (only kidding, I don't have the authority to do that)",
+            "Awesome score, but your pet rock still got more than you somehow",
             "A*"
         ]
     ]

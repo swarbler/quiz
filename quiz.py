@@ -278,6 +278,8 @@ def mcq():
     # fills 
     barFill = '-' * mcqTotal
     barSpaces = ' ' * (10 - mcqTotal)
+    # sets score message
+    scoremsg = mcqMessages[mcqTotal][random.randrange(0, 5)]
     # sets mark based on score
     mark = mcqMessages[mcqTotal][5]
     
@@ -285,7 +287,7 @@ def mcq():
     print('SCORE ~ ' + str(mcqTotal) + '/10\tMARK ~ ' + mark)
     print('[' + barFill + barSpaces + ']')
     print('')
-    print(' > ' + mcqMessages[mcqTotal][random.randrange(0, 5)])
+    print(' > ' + scoremsg)
     print('')
     input('~~> ')
 
