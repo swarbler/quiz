@@ -1,81 +1,92 @@
 {
     "mcq": [
         [
-            "Well this sucks.",
-            "You need to study!",
+            "Well this sucks",
+            "score 0",
+            "You have a LOT of study to do",
             "score 0",
             "score 0",
-            "score 0"
+            "...it's a zero"
         ],
         [
-            "",
-            "One step at a time.",
+            "Focus on studying this subject",
+            "One step at a time",
+            "You need to study",
             "score 1",
             "score 1",
-            "score 1"
+            "E"
         ],
         [
-            "Try harder next time!",
-            "You need to study!",
+            "Try harder next time",
             "score 2",
             "score 2",
-            "score 2"
+            "score 2",
+            "score 2",
+            "E"
         ],
         [
-            "Well this sucks.",
-            "You need to study!",
+            "score 3",
+            "Not particularly great",
             "score 3",
             "score 3",
-            "score 3"
+            "score 3",
+            "E"
         ],
         [
-            "Well this sucks.",
-            "You need to study!",
             "score 4",
             "score 4",
-            "score 4"
+            "score 4",
+            "score 4",
+            "score 4",
+            "D"
         ],
         [
-            "Well this sucks.",
-            "You need to study!",
+            "Okay, but needs improving",
             "score 5",
             "score 5",
-            "score 5"
+            "score 5",
+            "score 5",
+            "C"
         ],
         [
-            "Well this sucks.",
-            "You need to study!",
+            "Quite good, but could be better",
             "score 6",
             "score 6",
-            "score 6"
+            "score 6",
+            "score 6",
+            "C"
         ],
         [
-            "Well this sucks.",
-            "You need to study!",
+            "Solid grade, but nearing an A",
+            "So close yet so far to an A",
             "score 7",
             "score 7",
-            "score 7"
+            "score 7",
+            "B"
         ],
         [
-            "Well this sucks.",
-            "You need to study!",
+            "Just enough for an A",
+            "Near the edge of the grade boundary",
+            "The grade boundary may not be so forgiving next time",
+            "I'm nicer than exam grade boundaries",
             "score 8",
-            "score 8",
-            "score 8"
+            "A"
         ],
         [
-            "Well this sucks.",
-            "You need to study!",
-            "score 9",
-            "score 9",
-            "score 9"
+            "Amazing grade, but 100% is within reach",
+            "Almost there",
+            "So close",
+            "Just a bit more",
+            "Mildly infuriating",
+            "A"
         ],
         [
-            "Wow, you got a perfect score!",
-            "You need to study!",
+            "Wow, you got a perfect score",
+            "Excellent",
             "score 10",
             "score 10",
-            "score 10"
+            "score 10",
+            "A*"
         ]
     ]
 }

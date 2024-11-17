@@ -275,11 +275,14 @@ def mcq():
     print('Topic:  \t' + chosenTopic)
     print('')
 
+    # fills 
     barFill = '-' * mcqTotal
     barSpaces = ' ' * (10 - mcqTotal)
+    # sets mark based on score
+    mark = mcqMessages[mcqTotal][5]
     
     # prints total score for user
-    print('TOTAL SCORE FOR MCQ >>> ' + str(mcqTotal) + '/10')
+    print('SCORE ~ ' + str(mcqTotal) + '/10\tMARK ~ ' + mark)
     print('[' + barFill + barSpaces + ']')
     print('')
     print(' > ' + mcqMessages[mcqTotal][random.randrange(0, 5)])
