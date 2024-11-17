@@ -357,6 +357,15 @@ def test():
         structured()
 
 while True:
+    # ASCII art title
+    print('  _____            _     _             _       ')
+    print(' |  __ \          (_)   (_)           (_)      ')
+    print(' | |__) |_____   ___ ___ _  ___  _ __  _  ___  ')
+    print(' |  _  // _ \ \ / / / __| |/ _ \| \'_ \| |/ _ \ ')
+    print(' | | \ \  __/\ V /| \__ \ | (_) | | | | | (_) |')
+    print(' |_|  \_\___| \_/ |_|___/_|\___/|_| |_|_|\___/ ')
+    print('')
+                                                                                                                                                                                                                                                                                         
     # choose subject to study
     print('What would you like to do?')
     print('')
