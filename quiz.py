@@ -2,6 +2,7 @@ import time
 import os
 import json
 import random
+import sys
 
 # sets q/a list
 w, h = 6, 10
@@ -299,14 +300,19 @@ def structured():
     # read essay text file and send to teacher for marking? (longer essay-style questions)
     # type into quiz program and get marks based on keywords? (shorter  questions only)
 
-def call_error(param):
-    print('"' + param + '" is not a valid subject. Please try again.')
+def call_error(param, errorType='none'):
+    if errorType == 'subject':
+        print('"' + param + '" is not a valid subject. Please try again.')
+    elif errorType == 'does_not_exist':
+        print('"' + param + '" does not exist yet. Please try again later.')
+    else:
+        print('"' + param + '" is not a valid input. Please try again.')
     print('')
     input('~~> ')
 
     dotdotdot()
 
-while True:
+def test():
     # choose subject to study
     print('Select a subject to study:')
     print('')
@@ -317,6 +323,7 @@ while True:
     userTopic = 'none'
 
     userHasTopic = False
+    error = False    
 
     # if user mistypes subject, set userAnswer as 'error'
     try:
@@ -330,7 +337,6 @@ while True:
             print('')
             userTopic = input('~~> ').lower()  # sets answer as lowercase to avoid miscasing
             userHasTopic = True
-            error = False
     except:
         error = True
 
@@ -345,8 +351,29 @@ while True:
         chosenTopic = 'N/A'
 
     if error:
-        call_error(userSubject)
+        call_error(userSubject, 'subject')
     else:
         mcq()
         structured()
+
+while True:
+    # choose subject to study
+    print('What would you like to do?')
+    print('')
+    print('~ test')
+    print('~ settings')
+    print('~ quit')
+    print('')
+    userAction = input('~~> ').lower() # sets answer as lowercase to avoid miscasing
+
+    dotdotdot()
+
+    if userAction == 'test' or userAction == 'tests':
+        test()
+    elif userAction == 'settings' or userAction == 'setting':
+        call_error(userAction, 'does_not_exist')
+    elif userAction == 'quit':
+        sys.exit(0)
+    else:
+        call_error(userAction)
 
