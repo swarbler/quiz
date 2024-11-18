@@ -277,7 +277,7 @@ def mcq():
     print('')
 
     # fills 
-    barFill = '-' * mcqTotal
+    barFill = '⣿' * mcqTotal
     barSpaces = ' ' * (10 - mcqTotal)
     # sets score message
     scoremsg = mcqMessages[mcqTotal][random.randrange(0, 5)]
@@ -325,6 +325,9 @@ def call_error(param, errorType='none'):
     dotdotdot()
 
 def test():
+    global chosenSubject
+    global chosenTopic
+
     # choose subject to study
     print('Select a subject to study:')
     print('')
@@ -361,7 +364,7 @@ def test():
     else:
         set_subject(userSubject)
         chosenTopic = 'N/A'
-
+    
     if error:
         call_error(userSubject, 'subject')
     else:
