@@ -906,84 +906,92 @@
         ],
         "describing motion": [
             [
-                "describing motion",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A train begins a journey from a station and travels 60km in a time of 20 minutes. What is the average speed of the train",
+                "3.0 m/s",
+                "5.0 m/s",
+                "50 m/s",
+                "60 m/s",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Two runners take part in a race.\nThe graph shows how the speed of each runner changes with time. What does the graph show about the runners at time t",
+                "Both runners are moving at the same speed",
+                "Runner 1 has zero acceleration",
+                "Runner 1 is overtaking runner 2",
+                "Runner 2 is slowing down",
+                1,
+                "./images/physics/describing motion/q2.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The graph shows how the speed of a van changes with time for part of its journey. In which labelled section is the van decelerating",
+                "A",
+                "B",
+                "C",
+                "D",
+                2,
+                "./images/physics/describing motion/q3.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A car travels at an average speed of 60km/h for 15 minutes. How far does the car travel in this time",
+                "4.0 km",
+                "15 km",
+                "240 km",
+                "900 km",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows the speed-time graph for a car. Which area represents the distance travelled while the car is accelerating",
+                "X",
+                "X + Y",
+                "Y",
+                "Y - X",
+                1,
+                "./images/physics/describing motion/q5.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Two distance-time graphs and two speed-time graphs are shown. Which graph shows an object at rest",
+                "A",
+                "B",
+                "C",
+                "D",
+                2,
+                "./images/physics/describing motion/q6.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A car moves with constant speed and then constant acceleration. Which graph is the speed-time graph for the car",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
+                "./images/physics/describing motion/q7.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A tennis player hits a ball hard and 0.40s later hears the echo from a wall. The speed of sound in air is 330 m/s. How far away is the player from the wall",
+                "66 m",
+                "132 m",
+                "264 m",
+                "825 m",
+                3,
+                "./images/physics/describing motion/q8.png"
+            ],            
+            [
+                "The table shows the reading of a car speedometer at 5 second intervals. Which of the following describes the speed and acceleration of the car",
+                "speed descreasing\t|\tacceleration zero",
+                "speed descreasing\t|\tacceleration not zero",
+                "speed increasing\t|\tacceleration zero",
+                "speed increasing\t|\tacceleration not zero",
+                4,
+                "./images/physics/describing motion/q9.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A man stands by a railway track. A train travelling at 40m/s takes 2.0 s to pass the man. What is the length of the train",
+                "20 m",
+                "38 m",
+                "40 m",
+                "80 m",
+                4,
+                "./images/physics/describing motion/q10.png"
             ]
         ],
         "forces and motion": [
