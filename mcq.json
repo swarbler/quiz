@@ -977,10 +977,10 @@
             ],            
             [
                 "The table shows the reading of a car speedometer at 5 second intervals. Which of the following describes the speed and acceleration of the car",
-                "speed descreasing\t|\tacceleration zero",
-                "speed descreasing\t|\tacceleration not zero",
-                "speed increasing\t|\tacceleration zero",
-                "speed increasing\t|\tacceleration not zero",
+                "speed descreasing  |  acceleration zero",
+                "speed descreasing  |  acceleration not zero",
+                "speed increasing   |  acceleration zero",
+                "speed increasing   |  acceleration not zero",
                 4,
                 "./images/physics/describing motion/q9.png"
             ],
