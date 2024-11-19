@@ -4,12 +4,15 @@ import json
 import random
 import sys
 
+from PIL import Image
+
 # sets q/a list
-w, h = 6, 10
+w, h = 7, 10
 multiplechoice = [[0 for x in range(w)] for y in range(h)] 
 # [i][0] = question
 # [i][1-4] = answers a to d
 # [i][5] = correct answer (1-4)
+# [i][6] = image path (may be empty)
 
 subjects = [
     'geography', 
@@ -247,6 +250,17 @@ def mcq():
         # asks with question # and some formatting
         print('Question ' + str(i + 1) + ': ' + question + '?')
         print('')
+
+        # try to display image 
+        try:
+            imagePath = multiplechoice[i][6]
+            img = Image.open(imagePath)
+            img.show()
+        except:
+            pass
+            
+
+        # asks user to pick an option
         print('Choose one option:')
         print('1 : ' + answerA)
         print('2 : ' + answerB)
@@ -261,13 +275,15 @@ def mcq():
             userAnswerNum = int(userAnswer)
         except:
             userAnswerNum = 0
+        
+        correctAnswerText = multiplechoice[i][correctAnswer]
 
-        if userAnswerNum == correctAnswer:
+        if userAnswerNum == correctAnswer or userAnswer.lower() == correctAnswerText.lower():
             print('You got it right!')
             mcqTotal += 1
         else:
             # tells user correct answer
-            print('You got it wrong! The actual answer was: ' + str(correctAnswer))
+            print('You got it wrong! The actual answer was: ' + str(correctAnswer) + ' (' + correctAnswerText + ')')
         
         dotdotdot()
 
