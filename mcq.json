@@ -906,7 +906,7 @@
         ],
         "describing motion": [
             [
-                "A train begins a journey from a station and travels 60km in a time of 20 minutes. What is the average speed of the train",
+                "A train begins a journey from a station and travels 60km in a time of 20 minutes.\nWhat is the average speed of the train",
                 "3.0 m/s",
                 "5.0 m/s",
                 "50 m/s",
@@ -914,7 +914,7 @@
                 3
             ],
             [
-                "Two runners take part in a race.\nThe graph shows how the speed of each runner changes with time. What does the graph show about the runners at time t",
+                "Two runners take part in a race.\nThe graph shows how the speed of each runner changes with time.\nWhat does the graph show about the runners at time t",
                 "Both runners are moving at the same speed",
                 "Runner 1 has zero acceleration",
                 "Runner 1 is overtaking runner 2",
@@ -923,7 +923,7 @@
                 "./images/physics/describing motion/q2.png"
             ],
             [
-                "The graph shows how the speed of a van changes with time for part of its journey. In which labelled section is the van decelerating",
+                "The graph shows how the speed of a van changes with time for part of its journey.\nIn which labelled section is the van decelerating",
                 "A",
                 "B",
                 "C",
@@ -932,7 +932,7 @@
                 "./images/physics/describing motion/q3.png"
             ],
             [
-                "A car travels at an average speed of 60km/h for 15 minutes. How far does the car travel in this time",
+                "A car travels at an average speed of 60km/h for 15 minutes.\nHow far does the car travel in this time",
                 "4.0 km",
                 "15 km",
                 "240 km",
@@ -940,7 +940,7 @@
                 2
             ],
             [
-                "The diagram shows the speed-time graph for a car. Which area represents the distance travelled while the car is accelerating",
+                "The diagram shows the speed-time graph for a car.\nWhich area represents the distance travelled while the car is accelerating",
                 "X",
                 "X + Y",
                 "Y",
@@ -949,7 +949,7 @@
                 "./images/physics/describing motion/q5.png"
             ],
             [
-                "Two distance-time graphs and two speed-time graphs are shown. Which graph shows an object at rest",
+                "Two distance-time graphs and two speed-time graphs are shown.\nWhich graph shows an object at rest",
                 "A",
                 "B",
                 "C",
@@ -958,7 +958,7 @@
                 "./images/physics/describing motion/q6.png"
             ],
             [
-                "A car moves with constant speed and then constant acceleration. Which graph is the speed-time graph for the car",
+                "A car moves with constant speed and then constant acceleration.\nWhich graph is the speed-time graph for the car",
                 "A",
                 "B",
                 "C",
@@ -967,7 +967,7 @@
                 "./images/physics/describing motion/q7.png"
             ],
             [
-                "A tennis player hits a ball hard and 0.40s later hears the echo from a wall. The speed of sound in air is 330 m/s. How far away is the player from the wall",
+                "A tennis player hits a ball hard and 0.40s later hears the echo from a wall. The speed of sound in air is 330 m/s.\nHow far away is the player from the wall",
                 "66 m",
                 "132 m",
                 "264 m",
@@ -976,16 +976,16 @@
                 "./images/physics/describing motion/q8.png"
             ],            
             [
-                "The table shows the reading of a car speedometer at 5 second intervals. Which of the following describes the speed and acceleration of the car",
-                "speed descreasing  |  acceleration zero",
-                "speed descreasing  |  acceleration not zero",
-                "speed increasing   |  acceleration zero",
-                "speed increasing   |  acceleration not zero",
+                "The table shows the reading of a car speedometer at 5 second intervals.\nWhich of the following describes the speed and acceleration of the car",
+                "speed is descreasing, acceleration zero",
+                "speed is descreasing, acceleration not zero",
+                "speed is increasing, acceleration zero",
+                "speed is increasing, acceleration not zero",
                 4,
                 "./images/physics/describing motion/q9.png"
             ],
             [
-                "A man stands by a railway track. A train travelling at 40m/s takes 2.0 s to pass the man. What is the length of the train",
+                "A man stands by a railway track. A train travelling at 40m/s takes 2.0 s to pass the man.\nWhat is the length of the train",
                 "20 m",
                 "38 m",
                 "40 m",
@@ -996,84 +996,87 @@
         ],
         "forces and motion": [
             [
-                "forces and motion",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "An object has a mass of 50 kg. The gravitational field strength on Earth is 10.0 N/kg. The gravitational field strength on a distant planet is 4.0 N/kg.\nWhat is the weight of the object on Earth, and what is its weight on the distant planet",
+                "5.0 kg on Earth, 12.5 kg on distant planet",
+                "5.0 N on Earth, 12.5 N on distant planet",
+                "500 kg on Earth, 200 kg on distant planet",
+                "500 N on Earth, 200 N on distant planet",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "An astronaut in an orbiting spacecraft experiences a force due to gravity. This force is less than when she is on the Earth's surface.\nCompared with being on the Earth's surface, how do her mass and her weight change when she goes into orbit",
+                "mass decreases in orbit, weight decreases in orbit",
+                "mass decreases in orbit, weight unchanged in orbit",
+                "mass unchanged in orbit, weight decreases in orbit",
+                "mass unchanged in orbit, weight unchanged in orbit",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Weight is an example of which quantity",
+                "acceleration",
+                "force",
+                "mass",
+                "pressure",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The mass of an object is measured on Earth. The mass is 5.0 kg.\nThe object is taken to the Moon. The mass of the object is measured on the Moon.\nWhat is the mass of the object on the Moon?",
+                "0 kg",
+                "more than 0 kg, but less than 5 kg",
+                "5 kg",
+                "more than 5 kg",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which statement about mass or weight is correct",
+                "Mass is a force",
+                "Mass is measured in newtons",
+                "Weight is a force",
+                "Weight is measure in kilograms",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The mass of an astronaut is 70 kg on the moon\nWhat is the mass of the astronaut on Earth",
+                "7 kg",
+                "70 kg",
+                "80 kg",
+                "700 kg",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is the unit for force and weight",
+                "force is kg, weight is kg",
+                "force is kg, weight is N",
+                "force is N, weight is kg",
+                "force is N, weight is N",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A geologist places a small rock on the left-hand pan of a balance.\nThe two pans are level as shown when masses with a total weight of 23N are placed on the right-hand pan. Take the weight of 1.0kg to be 10N.\nWhat is the weight of the small rock",
+                "0.023 kg",
+                "2.3 kg",
+                "23 kg",
+                "230 kg",
+                2,
+                "./images/physics/forces and motion/q8.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A box is is being lifted by a fork-lift truck. The weight of the box is 3000 N. The force by the fork-lift truck on the box is 3500 N upwards.\nWhat is the resultant vertical force on the box",
+                "500 N downwards",
+                "500 N upwards",
+                "6500 N downwards",
+                "6500 N upwards",
+                2,
+                "./images/physics/forces and motion/q9.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagrams show four identical objects. Each object is acted on by only the three forces shown.\nWhich object accelerates to the right, with the smallest acceleration",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
+                "./images/physics/forces and motion/q10.png"
             ]
         ],
         "turning effects": [
