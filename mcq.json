@@ -1399,84 +1399,86 @@
         ],
         "kinetic particle model of matter": [
             [
-                "particle model",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "A cup contains hot liquid. Some of the liquid evaporates.\nWhat happens to the mass and what happens to the weight of the liquid in the cup",
+                "Both mass and weight decrease",
+                "Mass decreases, weight stays the same",
+                "Mass stays the same, weight decreases",
+                "Both mass and weight stay the same",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which statement about evaporation is correct",
+                "Evaporation causes the temperature of the remaining liquid to decrease",
+                "Evaporation does not occur from a cold liquid near its freezing point",
+                "Evaporation does not occur from a dense liquid, such as mercury",
+                "Evaporation occurs from all parts of a liquid",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "A liquid is evaporating. The liquid is not boiling.\nWhich statement about the liquid is correct",
+                "Any molecule can escape, and from any part of the liquid",
+                "Any molecule can escape, but only from the liquid surface",
+                "Only molecules with enough energy can escape, and only from the liquid surface",
+                "Only molecules with enough energy can escape, but from any part of the liquid",
+                3
+            ],
+            [
+                "The diagram shows a quantity of gas enclosed in a cylinder by a piston. The piston is moved to the left or to the right. The temperature of the gas is kept constant.\nWhich row describes the effect of moving the piston slowly in the direction shown in the table",
+                "A",
+                "B",
+                "C",
+                "D",
+                2,
+                "./images/physics/kinetic model of matter/q4.png"
+            ],
+            [
+                "Air in a sealed syringe is slowly compressed by moving the piston. The temperature of the air stays the same.\nWhich statement about the air is correct",
+                "The pressure of the air decreases because its molecules now travel more slowly",
+                "The pressure of the air decreases because the area of the syringe walls is now smaller",
+                "The pressure of the air increases because its molecules now hit the syringe walls more frequently",
+                "The pressure of the air increases because its molecules now travel more quickly",
+                3,
+                "./images/physics/kinetic model of matter/q5.png"
+            ],
+            [
+                "A pool of water evaporates. As molecules escape, the temperature of the water left in the pool changes.\nFrom where do the molecules escape and what is the effect on the temperature of the water in the pool",
+                "molecules escape from all parts of the liquid, pool water temperature decreases",
+                "molecules escape from all parts of the liquid, pool water temperature increases",
+                "molecules escape from only the liquid surface, pool water temperature decreases",
+                "molecules escape from only the liquid surface, pool water temperature increases",
+                3
+            ],
+            [
+                "Two states of matter are described as follows.\nIn state 1, the molecules are very far apart. They move about very quickly at random in straight lines until they hit something.\nIn state 2, the molecules are quite closely packed together. They move about at random. They do not have fixed positions.\nWhat is state 1 and what is state 2",
+                "state 1 is a gas, state 2 is a liquid",
+                "state 1 is a gas, state 2 is a solid",
+                "state 1 is a liquid, state 2 is a gas",
+                "state 1 is a solid, state 2 is a liquid",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The diagram represents moving gas molecules in a sealed container of fixed volume. The temperature of the gas is now increased.\nWhat happens to the pressure of the gas, and what happens to the speed of the gas molecules",
+                "pressure of gas increases, speed of molecules increases",
+                "pressure of gas increases, speed of molecules is unchanged",
+                "pressure of gas is unchanged, speed of molecules increases",
+                "pressure of gas is unchanged, speed of molecules is unchanged",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A gas is compressed in a sealed cylinder by moving a piston.\nWhich row in the table states what happens to the density of the gas and to the pressure of the gas when it is compressed",
+                "density decreases, pressure decreases",
+                "density decreases, pressure increases",
+                "density increases, pressure decreases",
+                "density increases, pressure increases",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Some gas is trapped in a container of fixed volume. The temperature of the gas increases.\nWhich graph shows how the pressure of the gas changes with temperature",
+                "A",
+                "B",
+                "C",
+                "D",
+                4
             ]
         ],
         "thermal properties": [
