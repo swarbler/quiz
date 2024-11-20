@@ -4364,84 +4364,84 @@
         ],
         "hardware": [
             [
-                "input processor output",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following is an advantage of microprocessors",
+                "more processing power than desktop processors",
+                "small in size and can fit into devices easily",
+                "easy to repair and upgrade",
+                "easy to troubleshoot faults without need for a specialist",
+                2
+            ],
+            [
+                "Which of the following is an advantage of QR codes over barcodes",
+                "more built-in error checking",
+                "cannot be used to transmit malicious code",
+                "uses colour to include much more information",
+                "uses a mix of squares and circles to include much more information",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which is NOT an advantage of OLED screens over LCDs",
+                "thinner, important for devices such as smartphones",
+                "more flexible, allowing for foldable displays",
+                "allows for 4K resolution displays",
+                "does not require backlighting, saving a lot of power",
+                3
+            ],
+            [
+                "Which of the following is NOT an advantage of capacitive touch screens",
+                "better clarity in strong sunlight than resistive",
+                "much more durable with a protective glass layer",
+                "works with thick gloves",
+                "projective capacitive touch screens allow for multi-touch",
+                3
+            ],
+            [
+                "What are monitoring systems",
+                "user sends signals to actuators manually",
+                "user manually analyze data, but has no effect on what is monitored",
+                "sensors analyzes data and sends signals to actuators in a feedback loop",
+                "sensors analyzes data, but has no effect on what is monitored",
+                4
+            ],
+            [
+                "What are control systems",
+                "user sends signals to actuators manually",
+                "user manually analyze data, but has no effect on what is monitored",
+                "sensors analyzes data and sends signals to actuators in a feedback loop",
+                "sensors analyzes data, but has no effect on what is monitored",
+                3
+            ],
+            [
+                "What is Random Access Memory (RAM)",
+                "volatile memory that is faster than secondary storage",
+                "volatile memory that is slower than secondary storage",
+                "non-volatile memory that is faster than secondary storage",
+                "non-volatile memory that is slower than secondary storage",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Why would a company use Read Only Memory (ROM) to store games in a game console",
+                "it cannot be modified, preventing copyright infringement",
+                "it is volatile meaning your game progress is not deleted after you turn off the console",
+                "it means that you can install more games in the future",
+                "encrypts your gameplay data for security",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Why would you use a static IP address over a dynamic IP address",
+                "easier to remember",
+                "remote servers hosting a website",
+                "makes it harder for DDoS attacks to target you",
+                "hides you from hackers",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What are routers used for",
+                "Allows data packets to travel between networks",
+                "Protects against hackers using pre-configured rules",
+                "Encrypts your data before it is sent to the internet",
+                "Blocks advertisements",
+                4
             ]
         ],
         "software": [
