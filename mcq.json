@@ -1081,84 +1081,94 @@
         ],
         "turning effects": [
             [
-                "turning effects",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows an object of weight W and an object of weight Z balanced on a uniform metre rule.\nWhich equation relating to W, Z, a, and b is correct",
+                "W/a = Z/b",
+                "W * Z = a * b",
+                "W * a = Z * b",
+                "W * (a + b) = Z",
+                3,
+                "./images/physics/turning effects/q1.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagrams show four objects A, B, C and D. The centre of mass M of each object is marked on the diagrams.\nWhich object is not in equilibrium",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
+                "./images/physics/turning effects/q2.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows an L-shaped piece of card suspended freely from a pin at B.\nWhen the card is pushed, it swings and then comes to a stop in the position shown.\nAt which labelled point is the centre of mass of the card",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
+                "./images/physics/turning effects/q3.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows an unbalanced rod. Two loads X and Y can be moved along the rod.\nThe rod turns in a clockwise direction as shown.\nWhich action could make the rod balance",
+                "moving X to the left",
+                "moving X to the right",
+                "moving Y to the right",
+                "moving the pivot to the left",
+                1,
+                "./images/physics/turning effects/q4.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows a balance being used to find the weight of a baby. The weight of the basket can be ignored. At equilibrium, the pivot is nearer to the 40 N balancing weight than to the baby.\nWhat is the weight of the baby",
+                "less than 40N",
+                "40N",
+                "more than 40N",
+                "impossible to tell without a scale on the beam",
+                3,
+                "./images/physics/turning effects/q5.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows four objects on a flat surface. The centre of mass of each object is marked M.\nWhich object is about to fall over",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
+                "./images/physics/turning effects/q6.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A heavy truck on wheels has a platform attached to it. A man stands on the platform. The truck does not fall over.\nWhich position could be the centre of mass of the whole system (truck, platform and man)",
+                "A",
+                "B",
+                "C",
+                "D",
+                2,
+                "./images/physics/turning effects/q7.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A wooden bar is pivoted at its centre so that it can rotate freely. Two equal forces F are applied to the bar.\nIn which diagram is the turning effect greatest",
+                "A",
+                "B",
+                "C",
+                "D",
+                1,
+                "./images/physics/turning effects/q8.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows a force being applied to a lever to lift a heavy weight. Which change would enable the heavy weight to be lifted with a smaller force",
+                "Move the force to the right",
+                "Move the heavy weight to the right",
+                "Move the force to the left",
+                "Move the pivot to the left",
+                3,
+                "./images/physics/turning effects/q9.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Passengers are not allowed to stand on the upper deck of double-decker buses.\nWhy is this",
+                "They would cause the bus to become less stable",
+                "They would cause the bus to slow dow",
+                "They would increase the kinetic energy of the bus",
+                "They would lower the centre of mass of the bus",
+                1,
+                "./images/physics/turning effects/q10.png"
             ]
         ],
         "forces and matter": [
