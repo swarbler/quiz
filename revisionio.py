@@ -22,14 +22,13 @@ subjects = [
     'history', 
     'example'
 ]
+
 with open('topics.json', 'r') as f:
     tdata = json.load(f)
 topics = tdata['topics']
 hasTopics = tdata['hasTopics']
 
 endSignal = ["ENDHERE", "A", "B", "C", "D", -1]
-
-error = False
 
 chosenSubject = 'none'
 chosenTopic = 'none'
@@ -318,7 +317,7 @@ def mcq():
     if mcqLength == 5:
         # scales score by 2
         # e.g. 2/5 = 4/10, 5/5 = 10/10
-        
+
         barFill = '⣿' * (mcqTotal * 2) # amount of ⣿ is score * 2
         barSpaces = ' ' * (10 - (mcqTotal * 2)) # amount of spaces is 10 - score * 2
 
@@ -385,7 +384,7 @@ def test():
     userTopic = 'none'
 
     userHasTopic = False
-    error = False    
+    subjectError = False    
 
     # if user mistypes subject, set userAnswer as 'error'
     try:
@@ -400,7 +399,7 @@ def test():
             userTopic = input('~~> ').lower()  # sets answer as lowercase to avoid miscasing
             userHasTopic = True
     except:
-        error = True
+        subjectError = True
 
     dotdotdot()
 
@@ -412,7 +411,7 @@ def test():
         set_subject(userSubject)
         chosenTopic = 'N/A'
     
-    if error:
+    if subjectError:
         call_error(userSubject, 'subject')
     else:
         mcq()
@@ -452,9 +451,9 @@ while True:
     if userAction == 'test' or userAction == 'tests':
         test()
     elif userAction == 'settings' or userAction == 'setting':
-        call_error(userAction, 'does_not_exist')
+        call_error(userAction, 'does_not_exist') # settings page does not exist yet
     elif userAction == 'quit':
         sys.exit(0)
-    else:
+    else: # invalid input
         call_error(userAction)
 
