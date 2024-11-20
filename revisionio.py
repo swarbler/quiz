@@ -27,10 +27,13 @@ with open('topics.json', 'r') as f:
 topics = tdata['topics']
 hasTopics = tdata['hasTopics']
 
+endSignal = ["ENDHERE", "A", "B", "C", "D", -1]
+
 error = False
 
 chosenSubject = 'none'
 chosenTopic = 'none'
+mcqLength = 10
 
 mcqTotal = 0
 
@@ -52,10 +55,13 @@ def dotdotdot():
 def set_subject(subject='example', topic='none'):
     """sets questions and answers based on subject and topic"""
     global chosenTopic
+    global mcqLength
 
     # loads JSON file data containing all questions
     with open('mcq.json', 'r') as f:
         qdata = json.load(f)
+    
+    mcqLength = 10
 
     if subject == 'geography':
         # different topics in geography
@@ -83,6 +89,9 @@ def set_subject(subject='example', topic='none'):
         chosenTopic = subtopic
 
         for i in range(10):
+            if qdata['geography'][subtopic][i] == endSignal:
+                mcqLength = i
+                return
             multiplechoice[i] = qdata['geography'][subtopic][i]
     elif subject == 'physics':
         # different topics in physics
@@ -92,7 +101,7 @@ def set_subject(subject='example', topic='none'):
             subtopic = 'forces and motion'
         elif topic == 'turning effects' or topic == 'turning effect' or topic == 'turning':
             subtopic = 'turning effects'
-        elif topic == 'forces and matter' or topic == 'forces and matter':
+        elif topic == 'forces and matter' or topic == 'force and matter':
             subtopic = 'forces and matter'
         elif topic == 'energy transfer':
             subtopic = 'energy transfer'
@@ -132,6 +141,9 @@ def set_subject(subject='example', topic='none'):
         chosenTopic = subtopic
         
         for i in range(10):
+            if qdata['physics'][subtopic][i] == endSignal:
+                mcqLength = i
+                return
             multiplechoice[i] = qdata['physics'][subtopic][i]
     elif subject == 'chemistry':
         # different topics in chemistry
@@ -179,6 +191,9 @@ def set_subject(subject='example', topic='none'):
         chosenTopic = subtopic
         
         for i in range(10):
+            if qdata['chemistry'][subtopic][i] == endSignal:
+                mcqLength = i
+                return
             multiplechoice[i] = qdata['chemistry'][subtopic][i]
     elif subject == 'computer science':
         # different topics in computer science
@@ -208,6 +223,9 @@ def set_subject(subject='example', topic='none'):
         chosenTopic = subtopic
         
         for i in range(10):
+            if qdata['computer science'][subtopic][i] == endSignal:
+                mcqLength = i
+                return
             multiplechoice[i] = qdata['computer science'][subtopic][i]
     elif subject == 'history':
         # different topics in computer science
@@ -225,6 +243,9 @@ def set_subject(subject='example', topic='none'):
         chosenTopic = subtopic
         
         for i in range(10):
+            if qdata['history'][subtopic][i] == endSignal:
+                mcqLength = i
+                return
             multiplechoice[i] = qdata['history'][subtopic][i]
     elif subject == 'example': # example for testing
         for i in range(10):
@@ -234,7 +255,7 @@ def mcq():
     """multiple choice questions"""
     mcqTotal = 0 # resets total
 
-    for i in range(10):
+    for i in range(mcqLength):
         question = multiplechoice[i][0]
         answerA = multiplechoice[i][1]
         answerB = multiplechoice[i][2]
@@ -245,27 +266,28 @@ def mcq():
         # displays chosen subject and topic
         print('Subject:\t' + chosenSubject)
         print('Topic:  \t' + chosenTopic)
+        print(mcqLength)
         print('')
 
         # asks with question # and some formatting
-        print('Question ' + str(i + 1) + ': ' + question + '?')
+        print('Question ' + str(i + 1) + ': ' + str(question) + '?')
         print('')
 
         # try to display image 
-        try:
-            imagePath = multiplechoice[i][6]
-            img = Image.open(imagePath)
-            img.show()
-        except:
-            pass
+        # try:
+        #     imagePath = multiplechoice[i][6]
+        #     img = Image.open(imagePath)
+        #     img.show()
+        # except:
+        #     pass
             
 
         # asks user to pick an option
         print('Choose one option:')
-        print('1 : ' + answerA)
-        print('2 : ' + answerB)
-        print('3 : ' + answerC)
-        print('4 : ' + answerD)
+        print('1 : ' + str(answerA))
+        print('2 : ' + str(answerB))
+        print('3 : ' + str(answerC))
+        print('4 : ' + str(answerD))
         print('')
         userAnswer = input('~~> ')
         userAnswerNum = 0
@@ -276,7 +298,7 @@ def mcq():
         except:
             userAnswerNum = 0
         
-        correctAnswerText = multiplechoice[i][correctAnswer]
+        correctAnswerText = str(multiplechoice[i][correctAnswer])
 
         if userAnswerNum == correctAnswer or userAnswer.lower() == correctAnswerText.lower():
             print('You got it right!')
@@ -292,16 +314,25 @@ def mcq():
     print('Topic:  \t' + chosenTopic)
     print('')
 
-    # fills 
-    barFill = '⣿' * mcqTotal
-    barSpaces = ' ' * (10 - mcqTotal)
-    # sets score message
-    scoremsg = mcqMessages[mcqTotal][random.randrange(0, 5)]
-    # sets mark based on score
-    mark = mcqMessages[mcqTotal][5]
+    # sets bar fill, score message, and mark based on score
+    if mcqLength == 5:
+        # scales score by 2
+        # e.g. 2/5 = 4/10, 5/5 = 10/10
+        
+        barFill = '⣿' * (mcqTotal * 2) # amount of ⣿ is score * 2
+        barSpaces = ' ' * (10 - (mcqTotal * 2)) # amount of spaces is 10 - score * 2
+
+        scoremsg = mcqMessages[mcqTotal * 2][random.randrange(0, 5)]
+        mark = mcqMessages[mcqTotal * 2][5]
+    else:
+        barFill = '⣿' * mcqTotal # amount of ⣿ is score
+        barSpaces = ' ' * (10 - mcqTotal) # amount of spaces is 10 - score
+
+        scoremsg = mcqMessages[mcqTotal][random.randrange(0, 5)]
+        mark = mcqMessages[mcqTotal][5]
     
     # prints total score for user
-    print('SCORE ~ ' + str(mcqTotal) + '/10\tMARK ~ ' + mark)
+    print('SCORE ~ ' + str(mcqTotal) + '/' + str(mcqLength) + '\tMARK ~ ' + mark)
     print('[' + barFill + barSpaces + ']')
     print('')
     print(' > ' + scoremsg)

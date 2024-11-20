@@ -1173,85 +1173,51 @@
         ],
         "forces and matter": [
             [
-                "forces and matter",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "An experiment is carried out to measure the extension of a rubber band for different loads. The results are shown below.\nWhich figure is missing from the table",
+                "17.2",
+                "17.3",
+                "17.4",
+                "17.6",
+                2,
+                "./images/physics/forces and matter/q1.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A student adds weights to an elastic cord. He measures the length of the cord for each weight. He then plots a graph from the results, as shown.\nWhat has he plotted on the vertical axis",
+                "measured length",
+                "original length",
+                "(measured length + original length)",
+                "(measured length - original length)",
+                4,
+                "./images/physics/forces and matter/q2.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagrams show a steel spring and a graph of its length against the load applied to it.\nWhat is the extension of the spring when a load of 20N is applied to it",
+                "3.0 cm",
+                "4.5 cm",
+                "5.0 cm",
+                "8.0 cm",
+                1,
+                "./images/physics/forces and matter/q3.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Objects with different masses are hung on a spring. The diagram shows how much the spring stretches.\nThe extension of the spring is directly proportional to the mass hung on it.\nWhat is the mass of object M",
+                "110 g",
+                "150 g",
+                "200 g",
+                "300 g",
+                3,
+                "./images/physics/forces and matter/q4.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A spring obeys Hooke's Law.\nWhich graph is obtained by plotting the extension of the spring against the load applied",
+                "A",
+                "B",
+                "C",
+                "D",
+                1,
+                "./images/physics/forces and matter/q5.png"
             ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
+            ["ENDHERE", "A", "B", "C", "D", -1]
         ],
         "energy transfer": [
             [
