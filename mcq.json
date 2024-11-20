@@ -1483,84 +1483,91 @@
         ],
         "thermal properties": [
             [
-                "thermal properties",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The graph shows how the temperature of the substance changes with time.\nWhat could the portion PQ of the graph represent",
+                "gas condensing",
+                "gas cooling",
+                "liquid cooling",
+                "liquid solidifying",
+                3,
+                "./images/physics/thermal properties/q1.png"
+            ],
+            [
+                "A student wishes to check the upper and the lower fixed points on a Celsius scale thermometer. She has four beakers P, Q, R and S.\nBeaker P contains a mixture of ice and salt.\nBeaker Q contains a mixture of ice and water.\nBeaker R contains boiling salt solution.\nBeaker S contains boiling water.\nWhich two beakers should she use to check the fixed points",
+                "P and R",
+                "P and S",
+                "Q and R",
+                "Q and S",
+                4,
+                "./images/physics/thermal properties/q2.png"
+            ],
+            [
+                "A piece of melting ice at 0°C and a beaker of boiling water are both in a laboratory. The laboratory is at 20°C.\nWhat is happening to the temperature of the melting ice and what is happening to the temperature of the boiling water?",
+                "temperature of melting ice is constant, temperature of boiling water is constant",
+                "temperature of melting ice is constant, temperature of boiling water is increasing",
+                "temperature of melting ice is increasing, temperature of boiling water is constant",
+                "temperature of melting ice is increasing, temperature of boiling water is increasing",
+                1,
+                "./images/physics/thermal properties/q3.png"
+            ],
+            [
+                "Which statement describes what happens as ice at 0°C starts to melt to become water",
+                "Energy is absorbed and the temperature remains constant",
+                "Energy is absorbed and the temperature rises",
+                "Energy is released and the temperature remains constant",
+                "Energy is released and the temperature rises",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is meant by the fixed points of the scale of a liquid-in-glass thermometer",
+                "the distance between one scale division and the next",
+                "the highest and lowest temperatures that the thermometer can record",
+                "the maximum and minimum depth to which the thermometer should be submerged in a liquid",
+                "the two agreed temperatures used for marking the temperature scale",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A liquid at room temperature fills a flask and a glass tube to level X. The flask is now placed in ice, and the liquid level in the tube falls to level Y.\nWhy does the level fall",
+                "the flask contracts",
+                "the flask expands",
+                "the liquid contracts",
+                "the liquid expands",
+                3,
+                "./images/physics/thermal properties/q6.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The melting points of ethanol and mercury are shown.\nWhich of these two liquids is/are suitable to use in a liquid-in-glass thermometer to measure temperatures of —50 °C and —120°C",
+                "ethanol only",
+                "ethanol and mercury",
+                "mercury only",
+                "neither ethanol nor mercury",
+                1,
+                "./images/physics/thermal properties/q7.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows electricity cables being put up on a warm day. The cables are left loose between the poles, as shown in the diagram.\nWhy are the cables left loose",
+                "They will contract on cold days",
+                "They will contract on very warm days",
+                "They will expand on cold days",
+                "They will expand on very warm days",
+                1,
+                "./images/physics/thermal properties/q8.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "To mark a temperature scale on a thermometer, standard temperatures known as fixed points are needed.\nWhich of these is a fixed point on the Celsius scale",
+                "room temperature",
+                "the temperature inside a freezer",
+                "the temperature of pure melting ice",
+                "the temperature of pure warm water",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A thermometer has graduations which start at —10°C and end at 110°C.\nWhat is the lower fixed point and what is the upper fixed point of the Celsius scale",
+                "-10°C, 100°C",
+                "-10°C, 110°C",
+                "0°C, 100°C",
+                "0°C, 110°C",
+                3,
+                "./images/physics/thermal properties/q10.png"
             ]
         ],
         "thermal energy transfer": [
