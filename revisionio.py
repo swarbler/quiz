@@ -273,12 +273,12 @@ def mcq():
         print('')
 
         # try to display image 
-        # try:
-        #     imagePath = multiplechoice[i][6]
-        #     img = Image.open(imagePath)
-        #     img.show()
-        # except:
-        #     pass
+        try:
+            imagePath = multiplechoice[i][6]
+            img = Image.open(imagePath)
+            img.show()
+        except:
+            pass
             
 
         # asks user to pick an option
