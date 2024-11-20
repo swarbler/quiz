@@ -1221,84 +1221,91 @@
         ],
         "energy transfer": [
             [
-                "energy transfer",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A skier walks from the bottom of a ski slope to the top and gains 10 000J of gravitational potential energy. She skis down the slope. At the bottom of the slope, her kinetic energy is 2000 J.\nHow much energy is dissipated in overcoming friction and air resistance as the skier moves down the slope",
+                "2000 J",
+                "8000 J",
+                "10000 J",
+                "12000 J",
+                2,
+                "./images/physics/energy transfer/q1.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A ball is dropped on to a hard surface and bounces. It does not bounce all the way back to where it started, and so has not regained all of its original gravitational potential energy.\nWhich statement accounts for the loss of gravitational potential energy",
+                "Energy was destroyed as the ball hit the ground",
+                "Energy was destroyed as the ball travelled through the air",
+                "The chemical energy and elastic energy of the ball have increased",
+                "The internal (heat) energy of the ball and its surroundings has increased",
+                3,
+                "./images/physics/energy transfer/q2.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A cyclist travels down a hill from rest at point X, without pedalling. The cyclist applies his brakes and the cycle stops at point Y.\nWhich energy changes have taken place between X and Y",
+                "gravitational potential -> kinetic -> thermal (heat)",
+                "gravitational potential -> thermal (heat) -> kinetic",
+                "kinetic -> gravitational potential -> thermal (heat)",
+                "kinetic -> thermal (heat) -> gravitational potential",
+                1,
+                "./images/physics/energy transfer/q3.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which row gives the energy change in a battery and the energy change in a solar cell",
+                "A",
+                "B",
+                "C",
+                "D",
+                2,
+                "./images/physics/energy transfer/q4.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A helicopter takes off from the ground and rises vertically. It then hovers at a constant height above the ground.\nWhich sequence of energy changes takes place during the gain in height",
+                "chemical -> gravitational potential -> kinetic",
+                "chemical -> kinetic -> gravitational potential",
+                "gravitational potential -> chemical -> kinetic",
+                "kinetic -> chemical -> gravitational potential",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows a hydroelectric system.\nWhat are the main energy changes taking place",
+                "chemical energy -> kinetic -> electrical",
+                "electrical -> gravitational potential -> kinetic",
+                "gravitational potential -> kinetic -> electrical",
+                "kinetic -> electrical -> gravitational potential",
+                3,
+                "./images/physics/energy transfer/q6.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A lorry of mass 4000 kg is travelling at a speed of 4.0m/s. A car has a mass of 1000kg. The kinetic energy of the car is equal to the kinetic energy of the lorry.\nWhat is the speed of the car",
+                "2.0 m/s",
+                "4.0 m/s",
+                "8.0 m/s",
+                "16.0 m/s",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Some processes are more efficient than others.\nWhich expression gives the efficiency of a process",
+                "A",
+                "B",
+                "C",
+                "D",
+                2,
+                "./images/physics/energy transfer/q8.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The diagram shows the energy used by a modern lamp.\nWhich expression gives the efficiency of the lamp",
+                "12/60 * 100%",
+                "12/48 * 100%",
+                "48/60 * 100%",
+                "48/12 * 100%",
+                1,
+                "./images/physics/energy transfer/q9.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A car has a mass of 1000 kg and a momentum of 12000 kg m/s.\nWhat is its kinetic energy",
+                "6 kJ",
+                "12 kJ",
+                "72 kJ",
+                "144 kJ",
+                39
             ]
         ],
         "energy resources": [
