@@ -4282,84 +4282,84 @@
         ],
         "data transmission": [
             [
-                "error correction",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What is packet switching",
+                "where data is broken into a number of packets and each packet is sent independently",
+                "where data is broken into a number of packets and all packets are sent in a series",
+                "where data is broken into a number of packets and are separated to go to different destinations ",
+                "where data is kept intact and sent as a continuous stream of data",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "When would simplex data transmission be suitable",
+                "a two-way call between you and a friend",
+                "a broadband internet connection",
+                "sending a document to your printer to print",
+                "cloud storage that you can download files from and upload files to",
+                3
+            ],
+            [
+                "Which is NOT a real benefit of Universal Serial Bus (USB)",
+                "Serial data transmission is much faster than parallel",
+                "Industry standard and is used in many different devices",
+                "Range of different data transmission speeds makes it versatile",
+                "Backwards compatible with older versions",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What is the parity bit of _1101100 using even parity",
+                "0",
+                "1",
+                "no parity bit needed",
+                "parity bit does not matter",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following is true for parity checks",
+                "makes use of timeout and acknowledgement",
+                "requires a lot of extra data to be sent",
+                "a method that can determine which bit in a data stream has changed",
+                "extra bit sent with each byte of data",
+                4
+            ],
+            [
+                "Which of the following is true for checksums",
+                "used in barcodes",
+                "extra bit sent with each byte of data",
+                "if an error is found, a request is made to re-send the data",
+                "makes use of timeout and acknowledgement",
+                3
+            ],
+            [
+                "Which of the following is true for echo checks",
+                "data is sent twice for redundancy",
+                "data is sent again if it does not reach its destination",
+                "unreliable and cannot locate where and when errors occur",
+                "unreliable as it only works on a full moon",
+                3
+            ],
+            [
+                "Which of the following is true for automatic repeat requests (ARQs)",
+                "makes use of timeout and acknowledgement",
+                "extra bit sent with each byte of data",
+                "re-calculation made on any additional data values sent to the recipient",
+                "unreliable as it only works on a bright sunny day",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Why is encryption used",
+                "makes data transfer speeds faster",
+                "makes data unreadable to hackers",
+                "reduces file sizes",
+                "makes files easier to modify",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following is a disadvantage of assymetic encryption",
+                "it is difficult to keep the single encryption key secret",
+                "requires a pair of public and private keys for every person",
+                "takes only a few seconds to crack using modern computers",
+                "only works for text documents, not audio or videos",
+                2
             ]
         ],
         "hardware": [
