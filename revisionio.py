@@ -102,10 +102,8 @@ def set_subject(subject='example', topic='none'):
             subtopic = 'turning effects'
         elif topic == 'forces and matter' or topic == 'force and matter':
             subtopic = 'forces and matter'
-        elif topic == 'energy transfer':
+        elif topic == 'energy transfer' or topic == 'energy':
             subtopic = 'energy transfer'
-        elif topic == 'energy resources':
-            subtopic = 'energy resources'
         elif topic == 'work and power' or topic == 'work':
             subtopic = 'work and power'
         elif topic == 'kinetic particle model of matter' or topic == 'particle model':
@@ -288,7 +286,7 @@ def mcq():
         print('3 : ' + str(answerC))
         print('4 : ' + str(answerD))
         print('')
-        userAnswer = input('~~> ')
+        userAnswer = input('~~> ').strip()
         userAnswerNum = 0
 
         # if users type a word instead of a number, userAnswerNum set to 0
@@ -304,7 +302,7 @@ def mcq():
             mcqTotal += 1
         else:
             # tells user correct answer
-            print('You got it wrong! The actual answer was: ' + str(correctAnswer) + ' (' + correctAnswerText + ')')
+            print('You got it wrong!\nThe actual answer was: ' + str(correctAnswer) + ' (' + correctAnswerText + ')')
         
         dotdotdot()
 

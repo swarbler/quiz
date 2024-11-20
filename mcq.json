@@ -1308,168 +1308,93 @@
                 39
             ]
         ],
-        "energy resources": [
-            [
-                "energy resources",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
-        ],
         "work and power": [
             [
-                "work",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "In a factory, two men X and Y try to move identical heavy boxes P and Q. Man X tries to push box P along the floor. The box does not move because an object is in the way. Man Y lifts box Q from the floor onto a shelf.\nWhich man does the most work on the box, and which box gains the most energy",
+                "man X, box P",
+                "man X, box Q",
+                "man Y, box P",
+                "man Y, box Q",
+                4,
+                "./images/physics/work and power/q1.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Two workers are stacking cans on to a shelf in a shop. The workers lift the same number of identical cans on to the same shelf from the same level.\nWorker P takes 3.0 minutes to lift the cans. Worker Q takes 4.0 minutes to lift the cans.\nWhich statement about the workers is correct",
+                "Worker P develops less useful power than worker Q",
+                "Worker P develops more useful power than worker Q",
+                "Worker P does less useful work than worker Q",
+                "Worker P does more useful work than worker Q",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Aperson in a factory has to lift a box on to a shelf.\nWhich action involves the person doing the least amount of work",
+                "lifting the box quickly to the high shelf",
+                "lifting the box slowly to the high shelf",
+                "lifting the box to the low shelf first then lifting it to the high shelf",
+                "lifting the box to the low shelf instead of to the high shelf",
+                4,
+                "./images/physics/work and power/q3.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Two farmers use an electrically powered elevator to lift bales of hay. All the bales of hay have the same mass.\nAs sunset approaches, they increase the speed of the elevator so that more bales are lifted up in a given time.\nHow does this affect the work done in lifting each bale and the useful output power of the elevator",
+                "Work done increases, useful output power decreases",
+                "Work done increases, useful output power increases",
+                "No change in work done, useful output power decreases",
+                "No change in work done, useful output power increases",
+                4,
+                "./images/physics/work and power/q4.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "To calculate the power produced by a force, the size of the force must be known.\nWhat else needs to be known to calculate the power",
+                "A",
+                "B",
+                "C",
+                "D",
+                1,
+                "./images/physics/work and power/q5.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Four different model steam engines each lift a 1.0 kg object from the same laboratory floor to the same laboratory bench. Each engine takes a different time to lift the object.\nHow does the most powerful engine compare with the other engines",
+                "Speed is faster, more useful work done than other engines",
+                "Speed is faster, same useful work done as other engines",
+                "Speed is slower, less useful work done than other engines",
+                "Speed is slower, same useful work done as other engines",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Four people of equal weight on a beach use different routes to get to the top of a sea wall.\nWhich person produces the greatest average power",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
+                "./images/physics/work and power/q7.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Four cars are driven along a road. The table shows the work done by the engine in each car and the time taken by each car.\nWhich engine produces the most power",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
+                "./images/physics/work and power/q8.png"
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which movement will require the greatest amount of work to be done",
+                "a force of 10 N moving an object a distance of 3.0m",
+                "a force of 10 N moving an object a distance of 5.0m",
+                "a force of 15 N moving an object a distance of 3.0m",
+                "a force of 15 N moving an object a distance of 5.0m",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "A car moves along a level road at constant speed. Work is done by the engine and power developed by the engine.\nWhich pair of graphs shows how the work done and the power developed vary with time",
+                "A",
+                "B",
+                "C",
+                "D",
+                1,
+                "./images/physics/work and power/q10.png"
             ]
         ],
         "kinetic particle model of matter": [
