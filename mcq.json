@@ -4200,84 +4200,84 @@
         ],
         "data representation": [
             [
-                "binary 00110110",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Convert 00110111, an 8 bit binary number, into a denary number",
+                "5",
+                "55",
+                "200",
+                "110111",
+                2
+            ],
+            [
+                "Which is NOT a real use for the hexadecimal system",
+                "MAC addresses",
+                "HTML colour codes",
+                "IPv6 addresses",
+                "CPU naming",
+                4
+            ],
+            [
+                "How do two's complement binary numbers represent negative numbers",
+                "by changing the right-most bit to a negative value",
+                "by changing the left-most bit to a negative value",
+                "by changing both the left-most bit and right-most bit to a negative value",
+                "by changing all bits to a negative value",
+                2
+            ],
+            [
+                "ASCII is used to represent the letters, numbers, and characters on a keyboard. Extended ASCII uses 8-bit codes rather than 7-bit.\nWhat additional characters are included in Extended ASCII",
+                "coloured variants of standard ASCII characters",
+                "non-English alphabets and some graphical symbols",
+                "non-Western languages such as Chinese and Japanese",
+                "emojis",
+                2
+            ],
+            [
+                "Which of the following is a real reason why Unicode is superior over ASCII",
+                "Unicode only supported English, and was simpler than ASCII and takes up less file space",
+                "Unicode can store short-length GIFs instead of only characters",
+                "Unicode was a universal standard with unambiguous encoding; each code always represents the same character in every computer",
+                "Unicode is an older standard than ASCII and supported on older machines",
+                3
+            ],
+            [
+                "Which of the following is NOT a real drawback to using a larger sampling rate",
+                "Lowers audio quality",
+                "More processing power required to process",
+                "Longer to transfer files",
+                "Larger file sizes",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is image resolution",
+                "Amount of bits used to represent each colour",
+                "Amount of bits used to represent brightness",
+                "Amount of noise in an image",
+                "Amount of pixels in an image",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "There are two systems for measuring memory size. Why is IEC units (based on powers of 1024) preferred over SI units (based on powers of 1000) for internal memories, such as RAM and ROM",
+                "'mebibytes' and 'gibibytes' sound better than 'megabytes' and 'gigabytes'",
+                "it reduces file sizes signifigantly",
+                "more accurate as memory size is measured in powers of 2",
+                "more accurate as memory size is measured in powers of 10",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "How do you calculate file size for an image",
+                "image resolution + colour depth",
+                "image resolution - colour depth",
+                "image resolution * colour depth",
+                "image resolution / colour depth",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following is NOT an advantage of lossy file compression",
+                "Heavily reduces file sizes",
+                "No data is removed from the original file during compression",
+                "Reduces storage costs (esp. for cloud storage)",
+                "Faster data transmission speeds",
+                2
             ]
         ],
         "data transmission": [
