@@ -401,19 +401,23 @@ def test():
     userHasTopic = False
     subjectError = False    
 
-    # if user mistypes subject, set userAnswer as 'error'
+    # checks whether subject is included in hasTopics list
     try:
         if hasTopics[userSubject]:
             chosenSubject = userSubject
             userHasTopic = True
+        else:
+            chosenSubject = userSubject
     except:
+        # if not in the hasTopics list, check if it is included in hasTopicsAbbrv list
         try:
             if hasTopicsAbbrv[userSubject]: # ask for topic if subject has them
-                chosenSubject = abbrvDef[userSubject]
+                chosenSubject = abbrvDef[userSubject] # sets chosenSubject to non-abbreviated form
                 userHasTopic = True
             else:
-                chosenSubject = abbrvDef[userSubject]
+                chosenSubject = abbrvDef[userSubject] # sets chosenSubject to non-abbreviated form
         except:
+            # calls error if subject is invalid
             subjectError = True
 
     if userHasTopic:
