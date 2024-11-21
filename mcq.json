@@ -4653,84 +4653,84 @@
         ],
         "algorithm design": [
             [
-                "flowcharts and pseudocode",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What is the correct order of the program development life cycle",
+                "design -> coding -> analysis -> testing",
+                "design -> testing -> coding -> analysis",
+                "analysis -> design -> coding -> testing",
+                "analysis -> design -> testing -> coding",
+                3
+            ],
+            [
+                "Why would you use a CASEOF statement rather than a series of IF and ELIF statements",
+                "allows you to compare multiple variables rather than only one",
+                "makes code easier to read",
+                "it can be nested",
+                "helps you solve murder mysteries",
+                2
+            ],
+            [
+                "Describe the difference between a REPEAT UNTIL loop and a WHILE loop",
+                "REPEAT UNTIL loops are always completed at least once, whereas a WHILE loop does not run if the condition is false",
+                "WHILE loops are always completed at least once, whereas a REPEAT UNTIL loop does not run if the condition is false",
+                "REPEAT UNTIL loops are always completed at least once, whereas a WHILE loop does not run if the condition is true",
+                "WHILE loops are always completed at least once, whereas a REPEAT UNTIL loop does not run if the condition is true",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following is NOT a real comparison operator",
+                "AND",
+                "NOT",
+                "OR",
+                "EITHER",
+                4
+            ],
+            [
+                "Which of the following is a real sorting algorithm",
+                "happy sort",
+                "bubble sort",
+                "door sort",
+                "rock sort",
+                2
+            ],
+            [
+                "Which validation check is MOST suitable for an email address",
+                "range check",
+                "format check",
+                "length check",
+                "none of the above",
+                2
+            ],
+            [
+                "Which validation check is MOST suitable for counting the amount of people in an office",
+                "format check",
+                "length check",
+                "range check",
+                "none of the above",
+                3
+            ],
+            [
+                "What is the difference between validation and verification",
+                "validation checks that the data is a reasonable value, whereas verification checks whether the data was mistyped or misscanned",
+                "verification checks that the data is a reasonable value, whereas validation checks whether the data was mistyped or misscanned",
+                "validation checks whether the data was typed at all, whereas verification checks whether the data is in a correct format",
+                "the two terms are interchangeable",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What is the manual working through of an algorithm called",
+                "dry run",
+                "wet run",
+                "dry walk",
+                "wet walk",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following would be an example of abnormal/erroneous data for the age of a person",
+                "2",
+                "15",
+                "43",
+                "9000",
+                4
             ]
         ],
         "programming": [
