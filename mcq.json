@@ -4735,83 +4735,83 @@
         ],
         "programming": [
             [
-                "code code code",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What is a variable",
+                "it contains a value that may change during the execution of a program",
+                "it contains a value that does not change during the execution of a program",
+                "it contains a value that randomly changes constantly during the execution of a program",
+                "it contains a value that changes between two values during the execution of a program",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following is NOT a real data type",
+                "integer",
+                "real",
+                "string",
+                "image",
+                4
+            ],
+            [
+                "Is sequence, the ordering of steps in an algorithm, important",
+                "yes, as it makes the program easier to read for humans",
+                "yes, as an incorrect order can lead to incorrect results",
+                "no, as it makes the program harder to read for humans",
+                "no, as the order of steps in an algorithm does not matter",
+                2
+            ],
+            [
+                "What does selection, such as if/else or case of statements, allow you to do",
+                "different routes through the steps of a program",
+                "identifying bugs and errors",
+                "allows using code in multiple different parts of the program",
+                "none of the above",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Why is iteration, such as for or while loops, so useful",
+                "allows you to do tasks multiple times",
+                "reduces amount of repetition of code",
+                "allows you to read from and write to files",
+                "none of the above",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of these are NOT a method of string handling",
+                "upper",
+                "lower",
+                "length",
+                "width",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "In Python, how do you find the third term in Array",
+                "Array[0]",
+                "Array[1]",
+                "Array[2]",
+                "Array[3]",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "When would you need to use a 2D array",
+                "to store a large file",
+                "to store a table",
+                "to store file paths",
+                "none of the above",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Why is saving data to files in secondary drives important",
+                "RAM is too slow, it is faster to read and write from secondary drives",
+                "data cannot be stored in RAM",
+                "any data stored in RAM is lost when the computer switches off",
+                "none of the above",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "You have to close a file after you are done accessing it: True or False",
+                "true",
+                "false",
+                "only if the file is text",
+                "only if the file is very large",
                 1
             ]
         ],

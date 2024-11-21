@@ -26,9 +26,7 @@ abbrvDef = tdata['abbrvDef']
 endSignal = ["ENDHERE", "A", "B", "C", "D", -1]
 
 chosenSubject, chosenTopic = 'none'
-mcqLength = 10
-
-mcqTotal = 0
+mcqLength, mcqTotal = 10, 0
 
 with open('messages.json', 'r') as f:
     sdata = json.load(f)
