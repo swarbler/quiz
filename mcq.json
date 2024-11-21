@@ -4446,84 +4446,84 @@
         ],
         "software": [
             [
-                "software",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following describes defragmentation software",
+                "Software that runs in the background and checks for malware; suspect programs are quarantined and deleted if necessary",
+                "Software that rearranges data on a hard disk drive (HDD) to reduce the scattering of the data stored on the HDD",
+                "Software that manages access control and user accounts and also protects network interfaces",
+                "Program that supplies static or moving images on a monitor when the computer has been idle for a period of time",
+                2
+            ],
+            [
+                "What is the function of a printer driver",
+                "area of memory that holds data waiting to be printed out",
+                "software that communicates with the operating system and translates data into a format which can be printed out",
+                "an area in memory that temporarily holds data",
+                "an example of firmware used to interface with the printer",
+                2
+            ],
+            [
+                "Which of these is the correct name for the operating system function that allows many programs to run simultaneously",
+                "utility program",
+                "application package",
+                "embedded system",
+                "multitasking",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Why would you use a Graphical User Interface (GUI) over a Command Line Interface (CLI)",
+                "more user-friendly, you don't need to learn any commands",
+                "uses less memory than a CLI",
+                "does not require an operating system",
+                "direct communication with the computer",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following will produce a signal which is sent to the CPU to suspend its current operation",
+                "bootstrap",
+                "buffer",
+                "interrupt",
+                "quarantine",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "On which one of the following memories are the BIOS settings stored",
+                "ROM",
+                "RAM",
+                "EEPROM",
+                "CMOS",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "When would you use a low-level programming language over a high-level one",
+                "quicker to write programs",
+                "can make use of low-level hardware",
+                "easier to maintain and debug",
+                "easier to read, write, and debug programs",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is the difference between compiled and interpreted programming languages",
+                "compiled languages are unreadable to humans, interpreted languages are",
+                "interpreted languages are unreadable to humans, compiled languages are",
+                "compiled languages require a compiler to run, whereas interpreted languages don't need an interpreter to run",
+                "interpreted languages require an interpreter to run, whereas compiled languages don't need a compiler to run",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following is NOT a feature of an Integrated Development Environment (IDE)",
+                "code editor",
+                "translator (compiler/interpreter)",
+                "ability to convert code from one programming language to another",
+                "auto-correction and auto-completion",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is prettyprinting",
+                "auto-formatting of code to conform to standards",
+                "colour-coding words to make the program easier to read",
+                "string formatting",
+                "auto-correction and auto-completion",
+                2
             ]
         ],
         "internet": [
