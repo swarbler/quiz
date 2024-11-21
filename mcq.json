@@ -920,7 +920,7 @@
                 "Runner 1 is overtaking runner 2",
                 "Runner 2 is slowing down",
                 1,
-                "./images/physics/describing motion/q2.png"
+                1
             ],
             [
                 "The graph shows how the speed of a van changes with time for part of its journey.\nIn which labelled section is the van decelerating",
@@ -929,7 +929,7 @@
                 "C",
                 "D",
                 2,
-                "./images/physics/describing motion/q3.png"
+                1
             ],
             [
                 "A car travels at an average speed of 60km/h for 15 minutes.\nHow far does the car travel in this time",
@@ -946,7 +946,7 @@
                 "Y",
                 "Y - X",
                 1,
-                "./images/physics/describing motion/q5.png"
+                1
             ],
             [
                 "Two distance-time graphs and two speed-time graphs are shown.\nWhich graph shows an object at rest",
@@ -955,7 +955,7 @@
                 "C",
                 "D",
                 2,
-                "./images/physics/describing motion/q6.png"
+                1
             ],
             [
                 "A car moves with constant speed and then constant acceleration.\nWhich graph is the speed-time graph for the car",
@@ -964,7 +964,7 @@
                 "C",
                 "D",
                 3,
-                "./images/physics/describing motion/q7.png"
+                1
             ],
             [
                 "A tennis player hits a ball hard and 0.40s later hears the echo from a wall. The speed of sound in air is 330 m/s.\nHow far away is the player from the wall",
@@ -973,7 +973,7 @@
                 "264 m",
                 "825 m",
                 3,
-                "./images/physics/describing motion/q8.png"
+                1
             ],            
             [
                 "The table shows the reading of a car speedometer at 5 second intervals.\nWhich of the following describes the speed and acceleration of the car",
@@ -982,7 +982,7 @@
                 "speed is increasing, acceleration zero",
                 "speed is increasing, acceleration not zero",
                 4,
-                "./images/physics/describing motion/q9.png"
+                1
             ],
             [
                 "A man stands by a railway track. A train travelling at 40m/s takes 2.0 s to pass the man.\nWhat is the length of the train",
@@ -991,7 +991,7 @@
                 "40 m",
                 "80 m",
                 4,
-                "./images/physics/describing motion/q10.png"
+                1
             ]
         ],
         "forces and motion": [
@@ -1058,7 +1058,7 @@
                 "23 kg",
                 "230 kg",
                 2,
-                "./images/physics/forces and motion/q8.png"
+                1
             ],
             [
                 "A box is is being lifted by a fork-lift truck. The weight of the box is 3000 N. The force by the fork-lift truck on the box is 3500 N upwards.\nWhat is the resultant vertical force on the box",
@@ -1067,7 +1067,7 @@
                 "6500 N downwards",
                 "6500 N upwards",
                 2,
-                "./images/physics/forces and motion/q9.png"
+                1
             ],
             [
                 "The diagrams show four identical objects. Each object is acted on by only the three forces shown.\nWhich object accelerates to the right, with the smallest acceleration",
@@ -1076,7 +1076,7 @@
                 "C",
                 "D",
                 3,
-                "./images/physics/forces and motion/q10.png"
+                1
             ]
         ],
         "turning effects": [
@@ -1087,7 +1087,7 @@
                 "W * a = Z * b",
                 "W * (a + b) = Z",
                 3,
-                "./images/physics/turning effects/q1.png"
+                1
             ],
             [
                 "The diagrams show four objects A, B, C and D. The centre of mass M of each object is marked on the diagrams.\nWhich object is not in equilibrium",
@@ -1096,7 +1096,7 @@
                 "C",
                 "D",
                 3,
-                "./images/physics/turning effects/q2.png"
+                1
             ],
             [
                 "The diagram shows an L-shaped piece of card suspended freely from a pin at B.\nWhen the card is pushed, it swings and then comes to a stop in the position shown.\nAt which labelled point is the centre of mass of the card",
@@ -1105,7 +1105,7 @@
                 "C",
                 "D",
                 3,
-                "./images/physics/turning effects/q3.png"
+                1
             ],
             [
                 "The diagram shows an unbalanced rod. Two loads X and Y can be moved along the rod.\nThe rod turns in a clockwise direction as shown.\nWhich action could make the rod balance",
@@ -1114,7 +1114,7 @@
                 "moving Y to the right",
                 "moving the pivot to the left",
                 1,
-                "./images/physics/turning effects/q4.png"
+                1
             ],
             [
                 "The diagram shows a balance being used to find the weight of a baby. The weight of the basket can be ignored. At equilibrium, the pivot is nearer to the 40 N balancing weight than to the baby.\nWhat is the weight of the baby",
@@ -1123,7 +1123,7 @@
                 "more than 40N",
                 "impossible to tell without a scale on the beam",
                 3,
-                "./images/physics/turning effects/q5.png"
+                1
             ],
             [
                 "The diagram shows four objects on a flat surface. The centre of mass of each object is marked M.\nWhich object is about to fall over",
@@ -1132,7 +1132,7 @@
                 "C",
                 "D",
                 3,
-                "./images/physics/turning effects/q6.png"
+                1
             ],
             [
                 "A heavy truck on wheels has a platform attached to it. A man stands on the platform. The truck does not fall over.\nWhich position could be the centre of mass of the whole system (truck, platform and man)",
@@ -1141,7 +1141,7 @@
                 "C",
                 "D",
                 2,
-                "./images/physics/turning effects/q7.png"
+                1
             ],
             [
                 "A wooden bar is pivoted at its centre so that it can rotate freely. Two equal forces F are applied to the bar.\nIn which diagram is the turning effect greatest",
@@ -1150,7 +1150,7 @@
                 "C",
                 "D",
                 1,
-                "./images/physics/turning effects/q8.png"
+                1
             ],
             [
                 "The diagram shows a force being applied to a lever to lift a heavy weight. Which change would enable the heavy weight to be lifted with a smaller force",
@@ -1159,7 +1159,7 @@
                 "Move the force to the left",
                 "Move the pivot to the left",
                 3,
-                "./images/physics/turning effects/q9.png"
+                1
             ],
             [
                 "Passengers are not allowed to stand on the upper deck of double-decker buses.\nWhy is this",
@@ -1168,7 +1168,7 @@
                 "They would increase the kinetic energy of the bus",
                 "They would lower the centre of mass of the bus",
                 1,
-                "./images/physics/turning effects/q10.png"
+                1
             ]
         ],
         "forces and matter": [
@@ -1179,7 +1179,7 @@
                 "17.4",
                 "17.6",
                 2,
-                "./images/physics/forces and matter/q1.png"
+                1
             ],
             [
                 "A student adds weights to an elastic cord. He measures the length of the cord for each weight. He then plots a graph from the results, as shown.\nWhat has he plotted on the vertical axis",
@@ -1188,7 +1188,7 @@
                 "(measured length + original length)",
                 "(measured length - original length)",
                 4,
-                "./images/physics/forces and matter/q2.png"
+                1
             ],
             [
                 "The diagrams show a steel spring and a graph of its length against the load applied to it.\nWhat is the extension of the spring when a load of 20N is applied to it",
@@ -1197,7 +1197,7 @@
                 "5.0 cm",
                 "8.0 cm",
                 1,
-                "./images/physics/forces and matter/q3.png"
+                1
             ],
             [
                 "Objects with different masses are hung on a spring. The diagram shows how much the spring stretches.\nThe extension of the spring is directly proportional to the mass hung on it.\nWhat is the mass of object M",
@@ -1206,7 +1206,7 @@
                 "200 g",
                 "300 g",
                 3,
-                "./images/physics/forces and matter/q4.png"
+                1
             ],
             [
                 "A spring obeys Hooke's Law.\nWhich graph is obtained by plotting the extension of the spring against the load applied",
@@ -1215,7 +1215,7 @@
                 "C",
                 "D",
                 1,
-                "./images/physics/forces and matter/q5.png"
+                1
             ],
             ["ENDHERE", "A", "B", "C", "D", -1]
         ],
@@ -1227,7 +1227,7 @@
                 "10000 J",
                 "12000 J",
                 2,
-                "./images/physics/energy transfer/q1.png"
+                1
             ],
             [
                 "A ball is dropped on to a hard surface and bounces. It does not bounce all the way back to where it started, and so has not regained all of its original gravitational potential energy.\nWhich statement accounts for the loss of gravitational potential energy",
@@ -1236,7 +1236,7 @@
                 "The chemical energy and elastic energy of the ball have increased",
                 "The internal (heat) energy of the ball and its surroundings has increased",
                 3,
-                "./images/physics/energy transfer/q2.png"
+                1
             ],
             [
                 "A cyclist travels down a hill from rest at point X, without pedalling. The cyclist applies his brakes and the cycle stops at point Y.\nWhich energy changes have taken place between X and Y",
@@ -1245,7 +1245,7 @@
                 "kinetic -> gravitational potential -> thermal (heat)",
                 "kinetic -> thermal (heat) -> gravitational potential",
                 1,
-                "./images/physics/energy transfer/q3.png"
+                1
             ],
             [
                 "Which row gives the energy change in a battery and the energy change in a solar cell",
@@ -1254,7 +1254,7 @@
                 "C",
                 "D",
                 2,
-                "./images/physics/energy transfer/q4.png"
+                1
             ],
             [
                 "A helicopter takes off from the ground and rises vertically. It then hovers at a constant height above the ground.\nWhich sequence of energy changes takes place during the gain in height",
@@ -1271,7 +1271,7 @@
                 "gravitational potential -> kinetic -> electrical",
                 "kinetic -> electrical -> gravitational potential",
                 3,
-                "./images/physics/energy transfer/q6.png"
+                1
             ],
             [
                 "A lorry of mass 4000 kg is travelling at a speed of 4.0m/s. A car has a mass of 1000kg. The kinetic energy of the car is equal to the kinetic energy of the lorry.\nWhat is the speed of the car",
@@ -1288,7 +1288,7 @@
                 "C",
                 "D",
                 2,
-                "./images/physics/energy transfer/q8.png"
+                1
             ],
             [
                 "The diagram shows the energy used by a modern lamp.\nWhich expression gives the efficiency of the lamp",
@@ -1297,7 +1297,7 @@
                 "48/60 * 100%",
                 "48/12 * 100%",
                 1,
-                "./images/physics/energy transfer/q9.png"
+                1
             ],
             [
                 "A car has a mass of 1000 kg and a momentum of 12000 kg m/s.\nWhat is its kinetic energy",
@@ -1316,7 +1316,7 @@
                 "man Y, box P",
                 "man Y, box Q",
                 4,
-                "./images/physics/work and power/q1.png"
+                1
             ],
             [
                 "Two workers are stacking cans on to a shelf in a shop. The workers lift the same number of identical cans on to the same shelf from the same level.\nWorker P takes 3.0 minutes to lift the cans. Worker Q takes 4.0 minutes to lift the cans.\nWhich statement about the workers is correct",
@@ -1333,7 +1333,7 @@
                 "lifting the box to the low shelf first then lifting it to the high shelf",
                 "lifting the box to the low shelf instead of to the high shelf",
                 4,
-                "./images/physics/work and power/q3.png"
+                1
             ],
             [
                 "Two farmers use an electrically powered elevator to lift bales of hay. All the bales of hay have the same mass.\nAs sunset approaches, they increase the speed of the elevator so that more bales are lifted up in a given time.\nHow does this affect the work done in lifting each bale and the useful output power of the elevator",
@@ -1342,7 +1342,7 @@
                 "No change in work done, useful output power decreases",
                 "No change in work done, useful output power increases",
                 4,
-                "./images/physics/work and power/q4.png"
+                1
             ],
             [
                 "To calculate the power produced by a force, the size of the force must be known.\nWhat else needs to be known to calculate the power",
@@ -1351,7 +1351,7 @@
                 "C",
                 "D",
                 1,
-                "./images/physics/work and power/q5.png"
+                1
             ],
             [
                 "Four different model steam engines each lift a 1.0 kg object from the same laboratory floor to the same laboratory bench. Each engine takes a different time to lift the object.\nHow does the most powerful engine compare with the other engines",
@@ -1368,7 +1368,7 @@
                 "C",
                 "D",
                 3,
-                "./images/physics/work and power/q7.png"
+                1
             ],
             [
                 "Four cars are driven along a road. The table shows the work done by the engine in each car and the time taken by each car.\nWhich engine produces the most power",
@@ -1377,7 +1377,7 @@
                 "C",
                 "D",
                 3,
-                "./images/physics/work and power/q8.png"
+                1
             ],
             [
                 "Which movement will require the greatest amount of work to be done",
@@ -1394,7 +1394,7 @@
                 "C",
                 "D",
                 1,
-                "./images/physics/work and power/q10.png"
+                1
             ]
         ],
         "kinetic particle model of matter": [
@@ -1429,7 +1429,7 @@
                 "C",
                 "D",
                 2,
-                "./images/physics/kinetic model of matter/q4.png"
+                1
             ],
             [
                 "Air in a sealed syringe is slowly compressed by moving the piston. The temperature of the air stays the same.\nWhich statement about the air is correct",
@@ -1438,7 +1438,7 @@
                 "The pressure of the air increases because its molecules now hit the syringe walls more frequently",
                 "The pressure of the air increases because its molecules now travel more quickly",
                 3,
-                "./images/physics/kinetic model of matter/q5.png"
+                1
             ],
             [
                 "A pool of water evaporates. As molecules escape, the temperature of the water left in the pool changes.\nFrom where do the molecules escape and what is the effect on the temperature of the water in the pool",
@@ -1489,7 +1489,7 @@
                 "liquid cooling",
                 "liquid solidifying",
                 3,
-                "./images/physics/thermal properties/q1.png"
+                1
             ],
             [
                 "A student wishes to check the upper and the lower fixed points on a Celsius scale thermometer. She has four beakers P, Q, R and S.\nBeaker P contains a mixture of ice and salt.\nBeaker Q contains a mixture of ice and water.\nBeaker R contains boiling salt solution.\nBeaker S contains boiling water.\nWhich two beakers should she use to check the fixed points",
@@ -1498,7 +1498,7 @@
                 "Q and R",
                 "Q and S",
                 4,
-                "./images/physics/thermal properties/q2.png"
+                1
             ],
             [
                 "A piece of melting ice at 0°C and a beaker of boiling water are both in a laboratory. The laboratory is at 20°C.\nWhat is happening to the temperature of the melting ice and what is happening to the temperature of the boiling water?",
@@ -1507,7 +1507,7 @@
                 "temperature of melting ice is increasing, temperature of boiling water is constant",
                 "temperature of melting ice is increasing, temperature of boiling water is increasing",
                 1,
-                "./images/physics/thermal properties/q3.png"
+                1
             ],
             [
                 "Which statement describes what happens as ice at 0°C starts to melt to become water",
@@ -1532,7 +1532,7 @@
                 "the liquid contracts",
                 "the liquid expands",
                 3,
-                "./images/physics/thermal properties/q6.png"
+                1
             ],
             [
                 "The melting points of ethanol and mercury are shown.\nWhich of these two liquids is/are suitable to use in a liquid-in-glass thermometer to measure temperatures of —50 °C and —120°C",
@@ -1541,7 +1541,7 @@
                 "mercury only",
                 "neither ethanol nor mercury",
                 1,
-                "./images/physics/thermal properties/q7.png"
+                1
             ],
             [
                 "The diagram shows electricity cables being put up on a warm day. The cables are left loose between the poles, as shown in the diagram.\nWhy are the cables left loose",
@@ -1550,7 +1550,7 @@
                 "They will expand on cold days",
                 "They will expand on very warm days",
                 1,
-                "./images/physics/thermal properties/q8.png"
+                1
             ],
             [
                 "To mark a temperature scale on a thermometer, standard temperatures known as fixed points are needed.\nWhich of these is a fixed point on the Celsius scale",
@@ -1567,7 +1567,7 @@
                 "0°C, 100°C",
                 "0°C, 110°C",
                 3,
-                "./images/physics/thermal properties/q10.png"
+                1
             ]
         ],
         "thermal energy transfer": [
@@ -4860,11 +4860,12 @@
         ],
         "boolean logic": [
             [
-                "true or false",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Name this logic gate",
+                "AND",
+                "NOT",
+                "OR",
+                "NAND",
+                1,
                 1
             ],
             [

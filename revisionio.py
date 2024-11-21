@@ -278,9 +278,10 @@ def mcq():
 
         # try to display image 
         try:
-            imagePath = multiplechoice[i][6]
-            img = Image.open(imagePath)
-            img.show()
+            if multiplechoice[i][6]:
+                imagePath = './images/' + chosenSubject + '/' + chosenTopic + '/q' + str(i + 1) + '.png' 
+                img = Image.open(imagePath)
+                img.show()
         except:
             pass
             
