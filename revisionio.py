@@ -25,8 +25,7 @@ abbrvDef = tdata['abbrvDef']
 
 endSignal = ["ENDHERE", "A", "B", "C", "D", -1]
 
-chosenSubject = 'none'
-chosenTopic = 'none'
+chosenSubject, chosenTopic = 'none'
 mcqLength = 10
 
 mcqTotal = 0
