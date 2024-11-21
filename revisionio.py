@@ -62,196 +62,197 @@ def set_subject(subject='example', topic='none'):
     
     mcqLength = 10
 
-    if subject == 'geography':
-        # different topics in geography
-        match topic:
-            case 'population and settlements' | 'population' | 'populations' | 'settlements' | 'settlement': # different words for same topic
-                subtopic = 'population'
-            case 'volcanoes' | 'volcano': # plural or singular
-                subtopic = 'volcanoes'
-            case 'earthquakes' | 'earthquake':
-                subtopic = 'earthquakes'
-            case 'rivers' | 'river':
-                subtopic = 'rivers'
-            case 'coasts' | 'coast':
-                subtopic = 'coasts'
-            case 'weather and climate' | 'weather' | 'climate':
-                subtopic = 'weather'
-            case 'rainforests' | 'rainforest':
-                subtopic = 'rainforests'
-            case 'deserts' | 'desert':
-                subtopic = 'deserts'
-            case 'map skills' | 'map':
-                subtopic = 'map skills'
-            case _:
-                subtopic = 'general' # quiz with all topics
+    match subject:
+        case 'geography':
+            # different topics in geography
+            match topic:
+                case 'population and settlements' | 'population' | 'populations' | 'settlements' | 'settlement': # different words for same topic
+                    subtopic = 'population'
+                case 'volcanoes' | 'volcano': # plural or singular
+                    subtopic = 'volcanoes'
+                case 'earthquakes' | 'earthquake':
+                    subtopic = 'earthquakes'
+                case 'rivers' | 'river':
+                    subtopic = 'rivers'
+                case 'coasts' | 'coast':
+                    subtopic = 'coasts'
+                case 'weather and climate' | 'weather' | 'climate':
+                    subtopic = 'weather'
+                case 'rainforests' | 'rainforest':
+                    subtopic = 'rainforests'
+                case 'deserts' | 'desert':
+                    subtopic = 'deserts'
+                case 'map skills' | 'map':
+                    subtopic = 'map skills'
+                case _:
+                    subtopic = 'general' # quiz with all topics
 
-        chosenTopic = subtopic
+            chosenTopic = subtopic
 
-        for i in range(10):
-            if qdata['geography'][subtopic][i] == endSignal:
-                mcqLength = i
-                return
-            multiplechoice[i] = qdata['geography'][subtopic][i]
-    elif subject == 'physics':
-        # different topics in physics
-        match topic:
-            case 'decribing motion' | 'motion':
-                subtopic = 'describing motion'
-            case 'forces and motion' | 'forces' | 'force':
-                subtopic = 'forces and motion'
-            case 'turning effects' | 'turning effect' | 'turning':
-                subtopic = 'turning effects'
-            case 'forces and matter' | 'force and matter':
-                subtopic = 'forces and matter'
-            case 'energy transfer' | 'energy':
-                subtopic = 'energy transfer'
-            case 'work and power' | 'work':
-                subtopic = 'work and power'
-            case 'kinetic particle model of matter' | 'particle model':
-                subtopic = 'kinetic particle model of matter'
-            case 'thermal properties' | 'thermal property':
-                subtopic = 'thermal properties'
-            case 'thermal energy transfer' | 'thermal energy':
-                subtopic = 'thermal energy transfer'
-            case 'sound':
-                subtopic = 'sound'
-            case 'light':
-                subtopic = 'kinetic particle model of matter'
-            case 'general properties of waves' | 'properties of waves' | 'waves':
-                subtopic = 'general properties of waves'
-            case 'electromagnetic spectrum' | 'electromagnetic waves':
-                subtopic = 'electromagnetic spectrum'
-            case 'magnetism' | 'magnet':
-                subtopic = 'magnetism'
-            case 'static electricity' | 'static':
-                subtopic = 'static electricity'
-            case 'electrical quantities':
-                subtopic = 'electrical quantities'
-            case 'electrical circuit' | 'circuit':
-                subtopic = 'electrical circuit'
-            case 'electromotive force' | 'emf':
-                subtopic = 'electromotive force'
-            case 'electromagnetic induction' | 'induction':
-                subtopic = 'electromagnetic induction'
-            case _:
-                subtopic = 'general' # quiz with all topics
+            for i in range(10):
+                if qdata['geography'][subtopic][i] == endSignal:
+                    mcqLength = i
+                    return
+                multiplechoice[i] = qdata['geography'][subtopic][i]
+        case 'physics':
+            # different topics in physics
+            match topic:
+                case 'decribing motion' | 'motion':
+                    subtopic = 'describing motion'
+                case 'forces and motion' | 'forces' | 'force':
+                    subtopic = 'forces and motion'
+                case 'turning effects' | 'turning effect' | 'turning':
+                    subtopic = 'turning effects'
+                case 'forces and matter' | 'force and matter':
+                    subtopic = 'forces and matter'
+                case 'energy transfer' | 'energy':
+                    subtopic = 'energy transfer'
+                case 'work and power' | 'work':
+                    subtopic = 'work and power'
+                case 'kinetic particle model of matter' | 'particle model':
+                    subtopic = 'kinetic particle model of matter'
+                case 'thermal properties' | 'thermal property':
+                    subtopic = 'thermal properties'
+                case 'thermal energy transfer' | 'thermal energy':
+                    subtopic = 'thermal energy transfer'
+                case 'sound':
+                    subtopic = 'sound'
+                case 'light':
+                    subtopic = 'kinetic particle model of matter'
+                case 'general properties of waves' | 'properties of waves' | 'waves':
+                    subtopic = 'general properties of waves'
+                case 'electromagnetic spectrum' | 'electromagnetic waves':
+                    subtopic = 'electromagnetic spectrum'
+                case 'magnetism' | 'magnet':
+                    subtopic = 'magnetism'
+                case 'static electricity' | 'static':
+                    subtopic = 'static electricity'
+                case 'electrical quantities':
+                    subtopic = 'electrical quantities'
+                case 'electrical circuit' | 'circuit':
+                    subtopic = 'electrical circuit'
+                case 'electromotive force' | 'emf':
+                    subtopic = 'electromotive force'
+                case 'electromagnetic induction' | 'induction':
+                    subtopic = 'electromagnetic induction'
+                case _:
+                    subtopic = 'general' # quiz with all topics
 
-        chosenTopic = subtopic
-        
-        for i in range(10):
-            if qdata['physics'][subtopic][i] == endSignal:
-                mcqLength = i
-                return
-            multiplechoice[i] = qdata['physics'][subtopic][i]
-    elif subject == 'chemistry':
-        # different topics in chemistry
-        match topic:
-            case 'states of matter' | 'state of matter':
-                subtopic = 'states of matter'
-            case 'atomic structure' | 'atoms' | 'atom':
-                subtopic = 'atomic structure'
-            case 'chemical bonding' | 'chemical bonds' | 'bonding' | 'bonds':
-                subtopic = 'chemical bonding'
-            case 'chemical formulae and equations' | 'chemical formulae' | 'chemical equations' | 'chemical equation' | 'chemical formula' | 'formula' | 'equation':
-                subtopic = 'chemical formulae and equations'
-            case 'chemical calculations' | 'calculations':
-                subtopic = 'chemical calculations'
-            case 'electrochemistry':
-                subtopic = 'electrochemistry'
-            case 'chemical energetics' | 'energetics':
-                subtopic = 'chemical energetics'
-            case 'rates of reaction' | 'rate of reaction':
-                subtopic = 'rates of reaction'
-            case 'reversible reactions' | 'reverse reactions' | 'reversible' | 'reverse':
-                subtopic = 'thermal properties'
-            case 'redox reactions' | 'reduction' | 'oxidation' | 'redox':
-                subtopic = 'redox reactions'
-            case 'acids and bases' | 'acids' | 'bases' | 'alkalis':
-                subtopic = 'acids and bases'
-            case 'preperation of salts' | 'salts':
-                subtopic = 'preperation of salts'
-            case 'periodic table' | 'elements':
-                subtopic = 'periodic table'
-            case 'metallic elements' | 'metals':
-                subtopic = 'metallic elements'
-            case 'reactivity series' | 'reactivity':
-                subtopic = 'reactivity series'
-            case 'extraction and corrosion' | 'extraction':
-                subtopic = 'extraction and corrosion'
-            case 'environment':
-                subtopic = 'environment'
-            case 'organic chemistry' | 'organic compounds':
-                subtopic = 'organic chemistry'
-            case 'experimental design' | 'experiment design' | 'paper 6':
-                subtopic = 'experimental design'
-            case _:
-                subtopic = 'general' # quiz with all topics
+            chosenTopic = subtopic
+            
+            for i in range(10):
+                if qdata['physics'][subtopic][i] == endSignal:
+                    mcqLength = i
+                    return
+                multiplechoice[i] = qdata['physics'][subtopic][i]
+        case 'chemistry':
+            # different topics in chemistry
+            match topic:
+                case 'states of matter' | 'state of matter':
+                    subtopic = 'states of matter'
+                case 'atomic structure' | 'atoms' | 'atom':
+                    subtopic = 'atomic structure'
+                case 'chemical bonding' | 'chemical bonds' | 'bonding' | 'bonds':
+                    subtopic = 'chemical bonding'
+                case 'chemical formulae and equations' | 'chemical formulae' | 'chemical equations' | 'chemical equation' | 'chemical formula' | 'formula' | 'equation':
+                    subtopic = 'chemical formulae and equations'
+                case 'chemical calculations' | 'calculations':
+                    subtopic = 'chemical calculations'
+                case 'electrochemistry':
+                    subtopic = 'electrochemistry'
+                case 'chemical energetics' | 'energetics':
+                    subtopic = 'chemical energetics'
+                case 'rates of reaction' | 'rate of reaction':
+                    subtopic = 'rates of reaction'
+                case 'reversible reactions' | 'reverse reactions' | 'reversible' | 'reverse':
+                    subtopic = 'thermal properties'
+                case 'redox reactions' | 'reduction' | 'oxidation' | 'redox':
+                    subtopic = 'redox reactions'
+                case 'acids and bases' | 'acids' | 'bases' | 'alkalis':
+                    subtopic = 'acids and bases'
+                case 'preperation of salts' | 'salts':
+                    subtopic = 'preperation of salts'
+                case 'periodic table' | 'elements':
+                    subtopic = 'periodic table'
+                case 'metallic elements' | 'metals':
+                    subtopic = 'metallic elements'
+                case 'reactivity series' | 'reactivity':
+                    subtopic = 'reactivity series'
+                case 'extraction and corrosion' | 'extraction':
+                    subtopic = 'extraction and corrosion'
+                case 'environment':
+                    subtopic = 'environment'
+                case 'organic chemistry' | 'organic compounds':
+                    subtopic = 'organic chemistry'
+                case 'experimental design' | 'experiment design' | 'paper 6':
+                    subtopic = 'experimental design'
+                case _:
+                    subtopic = 'general' # quiz with all topics
 
-        chosenTopic = subtopic
-        
-        for i in range(10):
-            if qdata['chemistry'][subtopic][i] == endSignal:
-                mcqLength = i
-                return
-            multiplechoice[i] = qdata['chemistry'][subtopic][i]
-    elif subject == 'computer science':
-        # different topics in computer science
-        match topic:
-            case 'data representation' | 'data':
-                subtopic = 'data representation'
-            case 'data transmission' | 'error checking' | 'transmission':
-                subtopic = 'data transmission'
-            case 'hardware':
-                subtopic = 'hardware'
-            case 'software':
-                subtopic = 'software'
-            case 'internet':
-                subtopic = 'internet'
-            case 'automation' | 'automated technologies' | 'ai':
-                subtopic = 'automation'
-            case 'algorithm design' | 'algorithm':
-                subtopic = 'algorithm design'
-            case 'programming' | 'coding':
-                subtopic = 'programming'
-            case 'databases' | 'database' | 'sql':
-                subtopic = 'databases'
-            case 'boolean logic' | 'logic':
-                subtopic = 'boolean logic'
-            case _:
-                subtopic = 'general' # quiz with all topics
+            chosenTopic = subtopic
+            
+            for i in range(10):
+                if qdata['chemistry'][subtopic][i] == endSignal:
+                    mcqLength = i
+                    return
+                multiplechoice[i] = qdata['chemistry'][subtopic][i]
+        case 'computer science':
+            # different topics in computer science
+            match topic:
+                case 'data representation' | 'data':
+                    subtopic = 'data representation'
+                case 'data transmission' | 'error checking' | 'transmission':
+                    subtopic = 'data transmission'
+                case 'hardware':
+                    subtopic = 'hardware'
+                case 'software':
+                    subtopic = 'software'
+                case 'internet':
+                    subtopic = 'internet'
+                case 'automation' | 'automated technologies' | 'ai':
+                    subtopic = 'automation'
+                case 'algorithm design' | 'algorithm':
+                    subtopic = 'algorithm design'
+                case 'programming' | 'coding':
+                    subtopic = 'programming'
+                case 'databases' | 'database' | 'sql':
+                    subtopic = 'databases'
+                case 'boolean logic' | 'logic':
+                    subtopic = 'boolean logic'
+                case _:
+                    subtopic = 'general' # quiz with all topics
 
-        chosenTopic = subtopic
-        
-        for i in range(10):
-            if qdata['computer science'][subtopic][i] == endSignal:
-                mcqLength = i
-                return
-            multiplechoice[i] = qdata['computer science'][subtopic][i]
-    elif subject == 'history':
-        # different topics in computer science
-        match topic:
-            case 'early weimar germany' | 'early weimar' | '1918-23':
-                subtopic = 'Early Weimar Germany (1918-23)'
-            case 'golden age weimar germany' | 'golden age weimar' | '1924-29':
-                subtopic = 'Golden Age Weimar Germany (1924-29)'
-            case 'rise of the nazis' | 'early nazis':
-                subtopic = 'Rise of the Nazis'
-            case 'nazi germany' | 'nazi rule' | '1933-45':
-                subtopic = 'Nazi Germany (1933-45)'
-            case _:
-                subtopic = 'general' # quiz with all topics
+            chosenTopic = subtopic
+            
+            for i in range(10):
+                if qdata['computer science'][subtopic][i] == endSignal:
+                    mcqLength = i
+                    return
+                multiplechoice[i] = qdata['computer science'][subtopic][i]
+        case 'history':
+            # different topics in computer science
+            match topic:
+                case 'early weimar germany' | 'early weimar' | '1918-23':
+                    subtopic = 'Early Weimar Germany (1918-23)'
+                case 'golden age weimar germany' | 'golden age weimar' | '1924-29':
+                    subtopic = 'Golden Age Weimar Germany (1924-29)'
+                case 'rise of the nazis' | 'early nazis':
+                    subtopic = 'Rise of the Nazis'
+                case 'nazi germany' | 'nazi rule' | '1933-45':
+                    subtopic = 'Nazi Germany (1933-45)'
+                case _:
+                    subtopic = 'general' # quiz with all topics
 
-        chosenTopic = subtopic
-        
-        for i in range(10):
-            if qdata['history'][subtopic][i] == endSignal:
-                mcqLength = i
-                return
-            multiplechoice[i] = qdata['history'][subtopic][i]
-    elif subject == 'example': # example for testing
-        for i in range(10):
-            multiplechoice[i] = qdata['example'][i]
+            chosenTopic = subtopic
+            
+            for i in range(10):
+                if qdata['history'][subtopic][i] == endSignal:
+                    mcqLength = i
+                    return
+                multiplechoice[i] = qdata['history'][subtopic][i]
+        case 'example': # example for testing
+            for i in range(10):
+                multiplechoice[i] = qdata['example'][i]
     
 def mcq():
     """multiple choice questions"""
