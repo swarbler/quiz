@@ -354,6 +354,8 @@ def structured():
     # type into quiz program and get marks based on keywords? (shorter  questions only)
 
 def call_error(param, errorType='none'):
+    dotdotdot()
+
     # something went wrong (Fire Font-k)
     print('')                                                                                                             
     print('                           )    )                                           )                                   ')
@@ -380,6 +382,8 @@ def call_error(param, errorType='none'):
 def test():
     global chosenSubject
     global chosenTopic
+
+    dotdotdot()
 
     # choose subject to study
     print('Select a subject to study:')
@@ -453,14 +457,13 @@ while True:
     print('')
     userAction = input('~~> ').lower() # sets answer as lowercase to avoid miscasing
 
-    dotdotdot()
-
-    if userAction == 'test' or userAction == 'tests':
-        test()
-    elif userAction == 'settings' or userAction == 'setting':
-        call_error(userAction, 'does_not_exist') # settings page does not exist yet
-    elif userAction == 'quit':
-        sys.exit(0)
-    else: # invalid input
-        call_error(userAction)
+    match userAction:
+        case 'test' | 'tests' | 't':
+            test()
+        case 'settings' | 'setting' | 's':
+            call_error(userAction, 'does_not_exist') # settings page does not exist yet
+        case 'quit' | 't':
+            sys.exit(0)
+        case _: # invalid input
+            call_error(userAction)
 
