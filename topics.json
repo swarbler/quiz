@@ -79,5 +79,21 @@
         "computer science": true, 
         "history": true, 
         "example": false
+    },
+    "hasTopicsAbbrv": {
+        "geo": true, 
+        "phys": true, 
+        "chem": true, 
+        "cs": true, 
+        "hist": true, 
+        "ex": false
+    },
+    "abbrvDef": {
+        "geo": "geography", 
+        "phys": "physics", 
+        "chem": "chemistry", 
+        "cs": "computer science", 
+        "hist": "history", 
+        "ex": "example"
     }
 }

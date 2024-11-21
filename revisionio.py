@@ -27,6 +27,8 @@ with open('topics.json', 'r') as f:
     tdata = json.load(f)
 topics = tdata['topics']
 hasTopics = tdata['hasTopics']
+hasTopicsAbbrv = tdata['hasTopicsAbbrv']
+abbrvDef = tdata['abbrvDef']
 
 endSignal = ["ENDHERE", "A", "B", "C", "D", -1]
 
@@ -256,6 +258,8 @@ def set_subject(subject='example', topic='none'):
     
 def mcq():
     """multiple choice questions"""
+    dotdotdot()
+
     mcqTotal = 0 # resets total
 
     for i in range(mcqLength):
@@ -399,27 +403,32 @@ def test():
 
     # if user mistypes subject, set userAnswer as 'error'
     try:
-        if hasTopics[userSubject]: # ask for topic if subject has them
-            # choose topic to study
-            print('')
-            print('Select a topic to study:')
-            print('')
-            for i in topics[userSubject]: # dynamic amount of subjects
-                print('~ ' + i) # prints subjects as a list
-            print('')
-            userTopic = input('~~> ').lower()  # sets answer as lowercase to avoid miscasing
+        if hasTopics[userSubject]:
+            chosenSubject = userSubject
             userHasTopic = True
     except:
-        subjectError = True
-
-    dotdotdot()
-
-    chosenSubject = userSubject
+        try:
+            if hasTopicsAbbrv[userSubject]: # ask for topic if subject has them
+                chosenSubject = abbrvDef[userSubject]
+                userHasTopic = True
+            else:
+                chosenSubject = abbrvDef[userSubject]
+        except:
+            subjectError = True
 
     if userHasTopic:
-        set_subject(userSubject, userTopic)
+        # choose topic to study
+        print('')
+        print('Select a topic to study:')
+        print('')
+        for i in topics[chosenSubject]: # dynamic amount of subjects
+            print('~ ' + i) # prints subjects as a list
+        print('')
+        userTopic = input('~~> ').lower()  # sets answer as lowercase to avoid miscasing
+
+        set_subject(chosenSubject, userTopic)
     else:
-        set_subject(userSubject)
+        set_subject(chosenSubject)
         chosenTopic = 'N/A'
     
     if subjectError:
