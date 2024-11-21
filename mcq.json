@@ -4610,85 +4610,46 @@
         ],
         "automation": [
             [
-                "automation",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What of the following is NOT needed to define a machine as a robot",
+                "ability to sense their surroundings",
+                "have a degree of movement",
+                "programmable",
+                "ability to learn from past experiences and examples",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following is NOT a use case for automated systems",
+                "industrial processes",
+                "agriculture",
+                "psychologist",
+                "transport",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following is NOT an advantage of using robots to automate industrial tasks",
+                "reduced labour costs",
+                "does not require any maintenance",
+                "more efficient and productive",
+                "does tasks more quickly",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which sensor would be suitable to use in a drone",
+                "temperature sensor",
+                "humidity sensor",
+                "gyro sensor",
+                "smoke detector",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What makes machine learning different to expert systems",
+                "algorithms are trained and learn from past experiences and examples",
+                "designed and programmed to work automatically without the need for any human intervention",
+                "use knowledge and inference to solve problems or answer questions that would normally require a human expert",
+                "mimics decision-making ability of humans using expert knowledge",
                 1
             ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
+            ["ENDHERE", "A", "B", "C", "D", -1]
         ],
         "algorithm design": [
             [

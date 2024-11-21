@@ -263,11 +263,14 @@ def mcq():
         # displays chosen subject and topic
         print('Subject:\t' + chosenSubject)
         print('Topic:  \t' + chosenTopic)
-        print(mcqLength)
         print('')
 
-        # asks with question # and some formatting
-        print('Question ' + str(i + 1) + ': ' + str(question) + '?')
+        # displays question # with length of MCQ shown
+        print('Question ' + str(i + 1) + ' out of ' + str(mcqLength))
+        print('')
+
+        # asks question
+        print(str(question) + '?')
         print('')
 
         # try to display image 
