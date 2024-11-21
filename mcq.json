@@ -4528,83 +4528,83 @@
         ],
         "internet": [
             [
-                "internet",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
+                "Difference between the Internet and the World Wide Web (WWW)",
+                "the WWW is the physical network that connects devices around the world, whereas the Internet is only a part of the WWW that concerns webpages and websites",
+                "the Internet is the physical network that connects devices around the world, whereas the WWW is only a part of the internet that concerns webpages and websites",
+                "the WWW and the Internet are seperate physical networks. the WWW contains webpages and websites, whereas the Internet is for online communication (e.g. emails and online chats)",
+                "the two terms are interchangeable",
+                2
+            ],
+            [
+                "Which of the following is NOT present in a URL",
+                "domain host",
+                "domain name",
+                "domain type",
+                "domain identifier",
+                4
+            ],
+            [
+                "Why is HTTPS safer than HTTP",
+                "it uses a form of encryption such as SSL or TLS",
+                "data is sent in a random order, making it harder to read by hackers",
+                "stricter standard that disallows all malicious websites",
                 "LATER",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following is NOT a feature of web browsers",
+                "stores a user's favourite websites as bookmarks",
+                "keeps a record of the user's browsing history",
+                "makes use of cookies to store user preferences and website settings",
+                "",
+                4
+            ],
+            [
+                "When would you use a session cookie over a persistent cookie",
+                "remembering login details so they don't need to be typed in again next time",
+                "stores user settings and preferences so they don't reset",
+                "a virtual shopping cart that clears its items when you close the browser",
+                "track the user's habits for advertising purposes",
+                3
+            ],
+            [
+                "Which of the following does NOT describe digital currency",
+                "can be exchanged for real money",
+                "money is stored digitally and has no physical form",
+                "cannot be used in important transactions",
+                "can be transferred between accounts to complete transactions",
+                3
+            ],
+            [
+                "Whaich of the following describes cryptocurrency",
+                "regulated by central banks and governments, meaning all transactions and exchange rates are determined by these two bodies",
+                "decentralised and uses blockchain technology to avoid tampering",
+                "relies on a central banking system, meaning prices can change rapidly due to a single central bank",
+                "has a physical form such as standard currencies such as USD",
+                2
+            ],
+            [
+                "Which of the following does NOT describe blockchain technology",
+                "blocks store information about the previous block, so it is resistant to tampering",
+                "blocks store information about every transaction",
+                "decentralised, meaning there is no central server",
+                "a physical copy exists as a backup",
+                4
+            ],
+            [
+                "Which of the following is a type of malware",
+                "ransomware",
+                "social engineering",
+                "DDoS attack",
+                "hacking",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following is an effective defense against phishing",
+                "spam filters",
+                "antimalware software",
+                "stronger passwords",
+                "firewalls",
                 1
             ]
         ],
