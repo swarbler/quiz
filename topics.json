@@ -1,4 +1,12 @@
 {
+    "subjects" : [
+        "geography", 
+        "physics", 
+        "chemistry", 
+        "computer science", 
+        "history", 
+        "example"
+    ],
     "topics": {
         "geography": [
             "population and settlements",

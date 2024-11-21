@@ -14,17 +14,10 @@ multiplechoice = [[0 for x in range(w)] for y in range(h)]
 # [i][5] = correct answer (1-4)
 # [i][6] = image path (may be empty)
 
-subjects = [
-    'geography', 
-    'physics', 
-    'chemistry', 
-    'computer science', 
-    'history', 
-    'example'
-]
-
 with open('topics.json', 'r') as f:
     tdata = json.load(f)
+
+subjects = tdata['subjects']
 topics = tdata['topics']
 hasTopics = tdata['hasTopics']
 hasTopicsAbbrv = tdata['hasTopicsAbbrv']
