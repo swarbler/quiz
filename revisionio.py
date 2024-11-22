@@ -30,17 +30,17 @@ mcqLength, mcqTotal = 10, 0
 
 topicError = False
 
-with open('messages.json', 'r') as f:
+with open('messages.json', 'r', encoding="utf8") as f:
     sdata = json.load(f)
 mcqMessages = sdata['mcq']
 
-def dotdotdot():
+def dotdotdot(length=1):
     """small loading screen"""
     for dot in range(2): # repeats twice
         print('.', end='', flush=True) # no new line after each dot
         time.sleep(.5) # small delay between each dot
     print('.')
-    time.sleep(1) # longer delay after last dot
+    time.sleep(length) # longer delay after last dot
     print('\033c', end='') # clear terminal
 
 
@@ -52,7 +52,7 @@ def set_subject(subject='example', topic='none'):
     global topicError
 
     # loads JSON file data containing all questions
-    with open('mcq.json', 'r') as f:
+    with open('mcq.json', 'r', encoding="utf8") as f:
         qdata = json.load(f)
     
     mcqLength = 10
@@ -323,7 +323,7 @@ def mcq():
             # tells user correct answer
             print('You got it wrong!\nThe actual answer was: ' + str(correctAnswer) + ' (' + correctAnswerText + ')')
         
-        dotdotdot()
+        dotdotdot(3)
 
     # displays chosen subject and topic
     print('Subject:\t' + chosenSubject)
