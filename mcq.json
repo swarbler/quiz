@@ -2601,84 +2601,84 @@
         ],
         "chemical calculations": [
             [
-                "chemical calculations",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "100g of an oxide of carbon was found to contain 27.3g of carbon and 72.7g of oxygen.\nCalculate the empirical formula of the compound",
+                "CO",
+                "C₂O",
+                "CO₂",
+                "CO₃",
+                3
+            ],
+            [
+                "50.0g of a compound contains 22.4g of potassium, 9.2g of sulfur, and 18.4g of oxygen.\nCalculate the empirical formula of this compound",
+                "K₂SO₄",
+                "KSO",
+                "KS₂O₄",
+                "KSO₂",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "100g of a compound was found to contain 53.3 g of carbon, 15.4g of hydrogen and 31.3g of nitrogen.\nCalculate the empirical formula of the compound",
+                "CH₃N",
+                "C₂H₆N",
+                "C₂H₇N",
+                "C₂H₇N₂",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Lead has a relative atomic mass of 207.5. What is the mass of 5 moles of lead",
+                "0.0241g",
+                "41.4g",
+                "207.5g",
+                "1036g",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is the mass of one mole of water",
+                "0.18g",
+                "1g",
+                "1.8g",
+                "18g",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "How many moles of sulfur are there in 64g",
+                "1 mole",
+                "2 moles",
+                "10 moles",
+                "20 moles",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is the volume of one mole of any gas at rtp",
+                "1 dm³",
+                "2.4 dm³",
+                "24 dm³",
+                "2400 dm³",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "How many moles of oxygen are there in 240 dm³ of pure gas at rtp",
+                "1 mole",
+                "2 moles",
+                "10 moles",
+                "20 moles",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Hydrogen reacts with oxygen to make water. How many moles of water is produced from a complete reaction with 10 moles of oxygen",
+                "5 moles",
+                "10 moles",
+                "20 moles",
+                "40 moles",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is the actual yield of a reaction",
+                "the amount of product expected",
+                "the amount of reactant used",
+                "the amount of product lost",
+                "the amount of useful product obtained",
+                4
             ]
         ],
         "electrochemistry": [
