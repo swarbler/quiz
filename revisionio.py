@@ -28,6 +28,8 @@ endSignal = ["ENDHERE", "A", "B", "C", "D", -1]
 chosenSubject, chosenTopic = 'none', 'none'
 mcqLength, mcqTotal = 10, 0
 
+topicError = False
+
 with open('messages.json', 'r') as f:
     sdata = json.load(f)
 mcqMessages = sdata['mcq']
@@ -47,6 +49,7 @@ def set_subject(subject='example', topic='none'):
     """sets questions and answers based on subject and topic"""
     global chosenTopic
     global mcqLength
+    global topicError
 
     # loads JSON file data containing all questions
     with open('mcq.json', 'r') as f:
@@ -77,7 +80,9 @@ def set_subject(subject='example', topic='none'):
                 case 'map skills' | 'map':
                     subtopic = 'map skills'
                 case _:
-                    subtopic = 'general' # quiz with all topics
+                    topicError = True
+                    call_error(topic, 'topic')
+                    return
 
             chosenTopic = subtopic
 
@@ -128,7 +133,9 @@ def set_subject(subject='example', topic='none'):
                 case 'electromagnetic induction' | 'induction':
                     subtopic = 'electromagnetic induction'
                 case _:
-                    subtopic = 'general' # quiz with all topics
+                    topicError = True
+                    call_error(topic, 'topic')
+                    return
 
             chosenTopic = subtopic
             
@@ -179,7 +186,9 @@ def set_subject(subject='example', topic='none'):
                 case 'experimental design' | 'experiment design' | 'paper 6':
                     subtopic = 'experimental design'
                 case _:
-                    subtopic = 'general' # quiz with all topics
+                    topicError = True
+                    call_error(topic, 'topic')
+                    return
 
             chosenTopic = subtopic
             
@@ -212,7 +221,9 @@ def set_subject(subject='example', topic='none'):
                 case 'boolean logic' | 'logic':
                     subtopic = 'boolean logic'
                 case _:
-                    subtopic = 'general' # quiz with all topics
+                    topicError = True
+                    call_error(topic, 'topic')
+                    return
 
             chosenTopic = subtopic
             
@@ -232,8 +243,12 @@ def set_subject(subject='example', topic='none'):
                     subtopic = 'Rise of the Nazis'
                 case 'nazi germany' | 'nazi rule' | '1933-45':
                     subtopic = 'Nazi Germany (1933-45)'
+                case 'life in nazi germany' | 'life in nazi rule' | 'life in nazi':
+                    subtopic = 'Life in Nazi Germany'
                 case _:
-                    subtopic = 'general' # quiz with all topics
+                    topicError = True
+                    call_error(topic, 'topic')
+                    return
 
             chosenTopic = subtopic
             
@@ -365,6 +380,8 @@ def call_error(param, errorType='none'):
 
     if errorType == 'subject':
         print('"' + param + '" is not a valid subject. Please try again.')
+    if errorType == 'topic':
+        print('"' + param + '" is not a valid topic. Please try again.')
     elif errorType == 'does_not_exist':
         print('"' + param + '" does not exist yet. Please try again later.')
     else:
@@ -377,6 +394,7 @@ def call_error(param, errorType='none'):
 def test():
     global chosenSubject
     global chosenTopic
+    global topicError
 
     dotdotdot()
 
@@ -411,6 +429,8 @@ def test():
             # calls error if subject is invalid
             subjectError = True
 
+    topicError = False
+
     if userHasTopic:
         # choose topic to study
         print('')
@@ -428,7 +448,7 @@ def test():
     
     if subjectError:
         call_error(userSubject, 'subject')
-    else:
+    elif not topicError: # does not run test if invalid topic
         mcq()
         structured()
 
