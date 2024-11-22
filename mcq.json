@@ -2312,166 +2312,127 @@
     "chemistry": {
         "states of matter": [
             [
-                "states of matter",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What change of state occurs when a solid turns into a liquid",
+                "freezing",
+                "melting",
+                "condensation",
+                "evaporating",
+                2
+            ],
+            [
+                "What change of state occurs when water turns into steam",
+                "sublimation",
+                "melting",
+                "condensation",
+                "evaporation",
+                4
+            ],
+            [
+                "What change of state occurs when a solid turns straight into a gas",
+                "sublimation",
+                "melting",
+                "condensation",
+                "evaporation",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which statement best describes the particles in a solid",
+                "they do not move",
+                "they are able to diffuse",
+                "they vibrate but do not change place",
+                "they can move rapidly in all directions",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What happens to particles when they are heated",
+                "they move at the same speed",
+                "they move more slowly",
+                "they move more quickly",
+                "they stop moving",
                 1
             ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
+            ["ENDHERE", "A", "B", "C", "D", -1]        
         ],
         "atomic structure": [
             [
-                "atoms",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What atomic particles are found in the nucleus",
+                "electrons, protons, and neutrons",
+                "electrons and protons",
+                "protons and neutrons",
+                "neutrons only",
+                3
+            ],
+            [
+                "An element's atomic number is the number of what particles",
+                "protons and electrons",
+                "protons and neutrons",
+                "neutrons and electrons",
+                "protons, electrons, and neutrons",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The mass number tells you what information about the element",
+                "number of protons + neutrons",
+                "number of protons + electrons",
+                "number of protons + electrons + neutrons",
+                "number of electrons",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Cobalt has a relative atomic mass of 59 and an atomic number of 27.\nThis means that each cobalt atom contains...",
+                "59 neutrons",
+                "27 protons",
+                "27 neutrons",
+                "59 electrons",
+                2
+            ],
+            [
+                "Boron has an atomic number of 5 and a mass number of 11.\nWhich of the following is correct",
+                "5 protons + 5 neutrons + 11 electrons",
+                "5 protons + 6 neutrons + 5 electrons",
+                "11 protons + 5 neutrons + 11 electrons",
+                "6 protons + 6 neutrons + 5 electrons",
+                2
+            ],
+            [
+                "Isotopes have different amounts of what",
+                "protons",
+                "neutrons",
+                "electrons",
+                "protons and neutrons",
+                2
+            ],
+            [
+                "What is the chemical symbol for sodium",
+                "So",
+                "na",
+                "NA",
+                "Na",
+                4
+            ],
+            [
+                "Which of these elements is a liquid at room temperature",
+                "bromine",
+                "oxygen",
+                "aluminium",
+                "iodine",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What property is not typical of metals",
+                "strong",
+                "brittle",
+                "conducts electricity",
+                "dense",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What are the starting substances which combine in a chemical reaction called",
+                "molecules",
+                "compounds",
+                "products",
+                "reactants",
+                4
             ]
         ],
         "chemical bonding": [
