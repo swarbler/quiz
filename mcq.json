@@ -2847,85 +2847,46 @@
         ],
         "rates of reaction": [
             [
-                "rates of reaction",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following does NOT increase rate of reaction",
+                "increased surface area of solid reactants",
+                "increased volume of reactants",
+                "increased temperature",
+                "increased concentration of dissolved reactants",
+                2
+            ],
+            [
+                "Why do reactions slow down as the reacton progresses",
+                "the temperature decreases",
+                "the concentration of the products decreases",
+                "the concentration of the reactants decreases",
+                "the pressure decreases",
+                3
+            ],
+            [
+                "Why does increased concentration increase the rate of reaction",
+                "particles are more likely to collide",
+                "particles are less likely to collide",
+                "increases the speed of particles",
+                "decreases the speed of particles",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Why does increasing the pressure of gaseous reactants increase the rate of reaction",
+                "gas particles become farther apart and collide less often",
+                "gas particles become closer together and collide more often",
+                "gas particles become faster and collide more often",
+                "gas particles become slower and collide less often",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following does NOT describe a catalyst",
+                "increases rate of reaction",
+                "remains chemically unchanged after the reaction",
+                "a small amount can produce a large change in rate of reaction",
+                "they make the reaction produce more product",
+                4
             ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
+            ["ENDHERE", "A", "B", "C", "D", -1]
         ],
         "reversible reactions": [
             [
