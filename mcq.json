@@ -1850,165 +1850,176 @@
         ],
         "electrical quantities": [
             [
-                "electrical quantities",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Four students separately measure the electromotive force (e.m.f.) of the battery, the current in the resistors, and the potential difference (p.d.) across resistor R. Their results are shown in the table.\nWhich row shows values with their correct units",
+                "A",
+                "B",
+                "C",
+                "D",
+                4,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Out of these four wires of the same metal, which has the least resistance",
+                "2.0 m long, 1.0 diameter",
+                "2.0 m long, 1.5 diameter",
+                "3.0 m long, 1.0 diameter",
+                "3.0 m long, 1.5 diameter",
+                2
+            ],
+            [
+                "A student uses a length of wire as a resistor. He makes a second resistor from the same material. To be certain of making a second resistor of higher resistance, he should use a piece of wire that is",
+                "longer and thicker",
+                "longer and thinner",
+                "shorter and thicker",
+                "shorter and thinner",
+                2
+            ],
+            [
+                "What is the unit for electromotive force (e.m.f.)",
+                "ampere",
+                "newton",
+                "ohm",
+                "volt",
+                4
+            ],
+            [
+                "What is the unit for electrical power",
+                "ampere",
+                "joule",
+                "volt",
+                "watt",
+                4
+            ],
+            [
+                "Which quantities is a voltmeter used to measure",
+                "current and e.m.f. only",
+                "current and p.d. only",
+                "e.m.f. and p.d. only",
+                "e.m.f., current and p.d",
+                3
+            ],
+            [
+                "Which equation can be used to calculate the resistance R of a resistor",
+                "V = I / R",
+                "I = V * R",
+                "R = V * I",
+                "V = I * R",
+                4
+            ],
+            [
+                "A student wishes to measure first the electromotive force (e.m.f.) of a battery, and then the potential difference (p.d.) across a resistor.\nShe has the resistor, the battery and some connecting wires. What else does she need",
+                "a force meter (newton meter) and a voltmeter",
+                "an ammeter and a voltmeter",
+                "an ammeter only",
+                "a voltmeter only",
+                4
+            ],
+            [
+                "An ammeter and an 18 Ω resistor are connected in series with a battery. The reading on the ammeter is 0.50 A. The resistance of the battery and the ammeter can be ignored.\nWhat is the electromotive force (e.m.f.) of the battery?",
+                "9.0 V",
+                "9.0 N",
+                "36 V",
+                "36 N",
+                1,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "A small potential difference V is applied across a filament lamp. The current J in the lamp is measured. V is increased in stages and I is measured at each stage.\nWhich graph shows the results obtained",
+                "A",
+                "B",
+                "C",
+                "D",
+                1,
                 1
             ]
         ],
         "electrical circuit": [
             [
-                "circuit",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The circuit shown includes two meters X and Y, connected correctly. What is the unit of the quantity measured by X and the unit of the quantity measured by Y",
+                "meter X measures amperes, meter Y measures amperes",
+                "meter X measures amperes, meter Y measures volts",
+                "meter X measures volts, meter Y measures amperes",
+                "meter X measures volts, meter Y measures volts",
+                4,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The circuit shown contains three ammeters X, Y and Z. Which ammeter has the largest reading",
+                "X",
+                "Y",
+                "Z",
+                "They all have the same reading",
+                3,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Two meters are connected in a circuit to measure the current in a component and the potential difference across the component. Which meters are used and how are they connected to the component",
+                "an ammeter in parallel for current, a voltmeter in series for potential difference",
+                "an ammeter in series for current, a voltmeter in parallel for potential difference",
+                "a voltmeter in parallel for current, an ammeter in series for potential difference",
+                "a voltmeter in series for current, an ammeter in parallel for potential difference",
+                2
+            ],
+            [
+                "P and Q are circuit symbols for two electrical components. What are they",
+                "P is a thermistor, Q is a fuse",
+                "P is a thermistor, Q is a relay",
+                "P is a variable resistor, Q is a fuse",
+                "P is a variable resistor, Q is a relay",
+                1,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The diagram shows two resistors connected in a circuit. What could be the combined resistance of this arrangement of resistors",
+                "4.0 Ω",
+                "6.0 Ω",
+                "9.0 Ω",
+                "18 Ω",
+                1,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Why are lamps in a house lighting circuit connected in parallel rather than in series",
+                "If one lamp stops working, the remaining lamps become brighter",
+                "Less current is taken from the power supply",
+                "The lamps can be turned off independently using switches",
+                "When more lamps are added, their brightness decreases",
+                3
+            ],
+            [
+                "Four lamps are each labelled 240V. In which circuit do all four lamps have normal brightness",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The diagram shows a 40 Ω resistor and a 60 Ω resistor connected in parallel. What is the total resistance between points P and Q",
+                "less than 40 Ω",
+                "50 Ω",
+                "between 60 Ω and 100 Ω",
+                "100 Ω",
+                1,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "A student sets up this circuit. What is the purpose of the circuit",
+                "to allow a lamp to be made dimmer or brighter as required",
+                "to amplify the sound of a voice",
+                "to light a lamp in the dark",
+                "to sound a bell when the temperature rises",
+                4,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "A student connects the circuit shown. Which switches must be closed for both the bell to ring and the lamp to light",
+                "1 and 4 only",
+                "2 and 3 only",
+                "1, 2, and 3 only",
+                "1, 2, 3, and 4",
+                3,
                 1
             ]
         ],
