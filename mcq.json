@@ -3101,167 +3101,136 @@
         ],
         "periodic table": [
             [
-                "periodic table",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Elements in the periodic table are in order of what property",
+                "atomic mass",
+                "atomic number",
+                "size",
+                "boiling point",
+                2
+            ],
+            [
+                "What are the vertical collections of the periodic table called",
+                "groups",
+                "rows",
+                "periods",
+                "gases",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What are the horizontal collections of the periodic table called",
+                "columns",
+                "rows",
+                "periods",
+                "shells",
+                3
+            ],
+            [
+                "Where in the periodic table do metals mainly occur",
+                "on the left",
+                "on the right",
+                "on the left and in the middle",
+                "on the right and in the middle",
+                4
+            ],
+            [
+                "How many electrons do alkali metals have in their outer shells",
+                "1",
+                "2",
+                "4",
+                "7",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What is the correct order of alkali metals from least to most reactive",
+                "Na, Li, K",
+                "K, Na, Li",
+                "Li, Na, K",
+                "Li, K, Na",
+                3
+            ],
+            [
+                "What is produced when an alkali metal reacts with water",
+                "a metal oxide and oxygen",
+                "a metal oxide and hydrogen",
+                "a metal hydroxide and oxygen",
+                "a metal hydroxide and hydrogen",
+                4
+            ],
+            [
+                "Which of the following does NOT describe alkali metals",
+                "shiny",
+                "high density",
+                "good conductor of electricity",
+                "soft",
+                2
+            ],
+            [
+                "What is the correct order of halogens from least to most reactive",
+                "I, Br, Cl, F",
+                "Cl, Br, F, I",
+                "F, Cl, Br, I",
+                "Br, I, F, Cl",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following does NOT describe halogens",
+                "they become darker in colour as you go down the group",
+                "they are poisonous",
+                "they all exist as diatomic molecules",
+                "they are all gases at room temperature",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which statement about noble gases is NOT true",
+                "their outer electron shells are full",
+                "they are monatomic",
+                "they are unreactive",
+                "they are all less dense that air",
+                4
             ]
         ],
         "metallic elements": [
             [
-                "metals",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following is NOT a typical property of metals",
+                "conductor of electricity",
+                "low melting point",
+                "ductile",
+                "strong",
+                2
+            ],
+            [
+                "Why are metals strong",
+                "there is a strong attraction between metal ions and the sea of electrons",
+                "there is a strong attraction between metal ions and the sea of protons",
+                "there are strong covalent bonds between the metal atoms",
+                "they are not strong",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "How do metals conduct heat and electricity",
+                "delocalised protons",
+                "delocalised neutrons",
+                "delocalised electrons",
+                "they are not good conductors of heat and electricity",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following is a useful property of aluminium",
+                "can be easily magnetised",
+                "low density",
+                "very good insulator to heat and electricity",
+                "liquid at room temperature",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following is NOT a useful property of copper",
+                "unreactive",
+                "good conductor of electricity",
+                "ductile",
+                "can form strong permanent magnets",
+                4
             ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
+            ["ENDHERE", "A", "B", "C", "D", -1]
         ],
         "reactivity series": [
             [
