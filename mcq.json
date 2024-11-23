@@ -3234,85 +3234,46 @@
         ],
         "reactivity series": [
             [
-                "reactivity",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of the following is the most reactive",
+                "sodium",
+                "magnesium",
+                "aluminium",
+                "calcium",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is produced when metals react with dilute acids",
+                "metal salt + oxygen",
+                "metal salt + water",
+                "metal salt + hydrogen",
+                "none of the above",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "How do you test for hydrogen gas",
+                "see if it makes limewater cloudy",
+                "light the gas with a splint",
+                "see if it turns damp red litmus blue",
+                "relights a glowing splint",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What occurs in a displacement reaction",
+                "a heavier metal displaces a lighter metal from its salt",
+                "a lighter metal displaces a heavier metal from its salt",
+                "a less reactive metal displaces a more reactive metal from its salt",
+                "a more reactive metal displaces a less reactive metal from its salt",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Why are alkali metals so reactive",
+                "they have one electron in their outer shell and it is easier to lose electrons",
+                "they have one electron in their outer shell and it is easier to gain electrons",
+                "they have seven electron in their outer shell and it is easier to lose electrons",
+                "they have seven electron in their outer shell and it is easier to gain electrons",
                 1
             ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
+            ["ENDHERE", "A", "B", "C", "D", -1]
         ],
         "extraction and corrosion": [
             [
