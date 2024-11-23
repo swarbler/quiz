@@ -2890,167 +2890,89 @@
         ],
         "reversible reactions": [
             [
-                "reverse reactions",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which of these is a reversible process",
+                "burning firewood",
+                "dissolving magnesium in acid",
+                "reacting an acid with an alkali",
+                "heating hydrated copper (II) sulphate",
+                4
+            ],
+            [
+                "Which of the following is NOT required for equilibrium",
+                "all reactants have the same mass",
+                "forward and reverse reactions occur at the same rate",
+                "concentration of reactants and products remain constant ",
+                "a closed system, meaning products cannot escape",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What does it mean when equilibrium shifts to the right",
+                "concentration of the reactants is greater",
+                "temperature of the reactants is greater",
+                "concentration of the products is greater",
+                "temperature of the products is greater",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "How does increasing concentration of a substance affect equilibrium",
+                "equilibrium shifts to increase the amount of substance",
+                "equilibrium shifts to decrease the amount of substance",
+                "equilibrium shifts randomly",
+                "equilibrium does not shift",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which process is used to produce ammonia",
+                "Haber",
+                "Contact",
+                "Hydration",
+                "Neutralisation",
                 1
             ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
+            ["ENDHERE", "A", "B", "C", "D", -1]
         ],
         "redox reactions": [
             [
-                "redox reactions",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "What is a redox reaction",
+                "reduction and oxidation takes place together",
+                "reduction only",
+                "oxidation only",
+                "neither reduction nor oxidation take place",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "In this reaction: 2Mg + O₂ -> 2MgO\nWhich is being oxidised",
+                "Mg",
+                "O",
+                "both Mg and O",
+                "neither Mg nor O",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "In this reaction: 2Na + Cl -> 2NaCl\nWhich is being reduced",
+                "Na",
+                "Cl",
+                "both Na and Cl",
+                "neither Na nor Cl",
+                2
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "What is the oxidation number of aluminium",
+                "+I",
+                "-I",
+                "+II",
+                "+III",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "In this equation: CuO + H₂ -> Cu + H₂O\nWhich is the reducing agent",
+                "Cu",
+                "CuO",
+                "H₂",
+                "H₂O",
+                3
             ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
+            ["ENDHERE", "A", "B", "C", "D", -1]
         ],
         "acids and bases": [
             [
