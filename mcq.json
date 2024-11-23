@@ -1674,83 +1674,88 @@
         ],
         "magnetism": [
             [
-                "magnet",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "A student wishes to make a permanent magnet. She has an iron rod and a steel rod.\nWhich rod should she use to make the permanent magnet, and is this rod a hard magnetic material or a soft magnetic material",
+                "the iron rod, as it is a hard magnetic material",
+                "the iron rod, as it is a soft magnetic material",
+                "the steel rod, as it is a hard magnetic material",
+                "the steel rod, as it is a soft magnetic material",
+                3
+            ],
+            [
+                "Two nickel bars are placed close to the N-pole of a bar magnet. The nickel bars become magnetised.\nWhich row states the pole induced at P, the pole induced at Q, and the type of magnetic force between P and Q",
+                "A",
+                "B",
+                "C",
+                "D",
+                1,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which statement about magnetism is correct",
+                "An unmagnetised iron bar becomes magnetised when it is placed near a magnet",
+                "An unmagnetised steel bar can be magnetised by passing a current through it",
+                "The direction of magnetic field lines is from an S-pole to an N-pole",
+                "The N-poles of two magnets attract each other",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The diagram shows the magnetic field around two bar magnets. What are the poles of the magnets",
+                "N=S \t N=S",
+                "N=S \t S=N",
+                "S=N \t N=S",
+                "S=N \t S=N",
+                3,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which group contains only non-ferrous metals",
+                "aluminium, brass, iron",
+                "brass, copper, lead",
+                "copper, iron, steel",
+                "copper, lead, steel",
+                2
+            ],
+            [
+                "An electromagnet with a soft-iron core is connected to a battery and an open switch. The soft-iron core is just above some small soft-iron nails.\nThe switch is now closed, left closed for a few seconds, and then opened.\nWhat do the soft-iron nails do as the switch is closed, and what do they do when the switch is then opened",
+                "nails jump up as switch is closed, nails fall down as switch is opened",
+                "nails jump up as switch is closed, nails stay up as switch is opened",
+                "nails stay down as switch is closed, nails jump up as switch is opened",
+                "nails stay down as switch is closed, nails stay down as switch is opened",
+                1,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which action will demagnetise a magnetised piece of steel",
+                "Cool it in a freezer for several hours",
+                "Hit it repeatedly with a hammer",
+                "Put it in a coil carrying a direct current (d.c.)",
+                "Put it near an unmagnetised piece of iron",
+                2
+            ],
+            [
+                "Two iron nails hang from a bar magnet. Which diagram shows the magnetic poles induced in the nails",
+                "A",
+                "B",
+                "C",
+                "D",
+                1,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The ends of three metal rods are tested by holding end Q of rod 1 close to the others in turn.\nEnd Q attracts end R, attracts end S, attracts end T, and repels end U.\nWhich of the metal rods is a magnet",
+                "rod 1 only",
+                "rod 1 and rod 2",
+                "rod 1 and rod 3",
+                "rod 3 only",
+                3,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "An electromagnet is used to separate magnetic metals from non-magnetic metals. Why is steel not suitable as the core of the electromagnet",
+                "It forms a permanent magnet",
+                "It has a high density",
+                "It has a high thermal capacity",
+                "It is a good conductor of electricity",
                 1
             ]
         ],
