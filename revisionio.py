@@ -108,10 +108,8 @@ def set_subject(subject='example', topic='none'):
                     subtopic = 'work and power'
                 case 'kinetic particle model of matter' | 'particle model':
                     subtopic = 'kinetic particle model of matter'
-                case 'thermal properties' | 'thermal property':
+                case 'thermal properties' | 'thermal property' | 'thermal' | 'heat':
                     subtopic = 'thermal properties'
-                case 'thermal energy transfer' | 'thermal energy':
-                    subtopic = 'thermal energy transfer'
                 case 'sound':
                     subtopic = 'sound'
                 case 'light':
@@ -255,7 +253,7 @@ def set_subject(subject='example', topic='none'):
                     mcqLength = i
                     return
                 multiplechoice[i] = qdata['history'][subtopic][i]
-        case 'example': # example for testing
+        case 'example': # for testing
             for i in range(10):
                 multiplechoice[i] = qdata['example'][i]
     

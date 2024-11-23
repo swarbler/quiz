@@ -1406,167 +1406,90 @@
                 1
             ]
         ],
-        "thermal energy transfer": [
-            [
-                "thermal energy transfer",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
-        ],
         "sound": [
             [
-                "sound",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Why can't ultrasound be heard by humans",
+                "the amplitude is too great",
+                "the frequency is too great",
+                "the speed is too great",
+                "the wavelength is too great",
+                2
+            ],
+            [
+                "What is the approximate range of hearing of a healthy human ear",
+                "2.0 Hz to 2.0 kHz",
+                "2.0 Hz to 20 kHz",
+                "20 Hz to 2.0 kHz",
+                "20 Hz to 20 kHz",
+                4
+            ],
+            [
+                "A singer sings two notes. The first note is louder and lower in pitch than the second note.\nWhich statement about the two notes is correct",
+                "The first note has a larger amplitude and a larger frequency than the second note",
+                "The first note has a larger amplitude and a smaller frequency than the second note",
+                "The first note has a smaller amplitude and a larger frequency than the second note",
+                "The first note has a smaller amplitude and a smaller frequency than the second note",
+                2
+            ],
+            [
+                "Sound wave P has a greater amplitude and a larger wavelength in air than sound wave Q.\nHow do the loudness and pitch of P compare with the loudness and pitch of Q?",
+                "P is louder and higher in pitch than Q",
+                "P is louder and lower in pitch than Q",
+                "P is quieter and higher in pitch than Q",
+                "P is quieter and lower in pitch than Q",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "An echo-sounder on a ship produces a pulse of sound. The echo is received by the echo-sounder after two seconds. The speed of sound in sea-water is 1500 m/s.\nWhat is the depth of the sea-water below the ship",
+                "750 m",
+                "1500 m",
+                "3000 m",
+                "6000 m",
+                2,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "A quiet sound is produced by a loudspeaker. The loudness of the sound is increased.\nWhich property of the sound wave is increased",
+                "amplitude",
+                "frequency",
+                "speed",
+                "wavelength",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Aman holding a starting pistol stands 640m away from a spectator. The spectator hears the sound of the starting pistol 2.0 s after seeing the flash from the pistol.\nUsing this information, what is the speed of sound in air",
+                "160 m/s",
+                "320 m/s",
+                "640 m/s",
+                "1280 m/s",
+                2,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "In the experiment shown, the bell is heard ringing. The air is gradually pumped out of the jar. No change is made to the ringing bell.\nAfter a few minutes the bell can no longer be heard. Why is this",
+                "The amplitude of vibration of the bell decreases",
+                "The frequency of vibration of the bell increases",
+                "The sound waves from the bell become transverse",
+                "The sound waves need a medium to travel through",
+                4,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "A pulse of sound is produced at the bottom of a boat. The sound travels through the water and is reflected from the sea bed.\nThe sound reaches the boat again after 1.2s. The speed of sound in the water is 1500m/s.\nHow far below the bottom of the boat is the sea bed",
+                "450 m",
+                "900 m",
+                "1800 m",
+                "3600 m",
+                2,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The diagrams represent two sound waves. The scales in the two diagrams are the same.\nWhich statement describes the waves",
+                "The waves have different loudness and different pitch",
+                "The waves have different loudness but the same pitch",
+                "The waves have the same loudness and the same pitch",
+                "The waves have the same loudness but different pitch",
+                4,
                 1
             ]
         ],
