@@ -2527,10 +2527,10 @@
                 3
             ],
             [
-                "What is the name of the compound containing zinc, sulphur, and oxygen",
-                "sulphur zincide",
-                "zinc sulphide",
-                "sulphur zincate",
+                "What is the name of the compound containing zinc, sulfur, and oxygen",
+                "sulfur zincide",
+                "zinc sulfide",
+                "sulfur zincate",
                 "zinc sulfate",
                 4
             ],
@@ -2894,7 +2894,7 @@
                 "burning firewood",
                 "dissolving magnesium in acid",
                 "reacting an acid with an alkali",
-                "heating hydrated copper (II) sulphate",
+                "heating hydrated copper (II) sulfate",
                 4
             ],
             [
@@ -3360,84 +3360,84 @@
         ],
         "environment": [
             [
-                "environment",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which gas makes up the largest proportion of our atmosphere",
+                "oxygen",
+                "sulfur dioxide",
+                "carbon dioxide",
+                "nitrogen",
+                4
+            ],
+            [
+                "What percentage of the atmosphere is oxygen",
+                "12%",
+                "21%",
+                "28%",
+                "32%",
+                2
+            ],
+            [
+                "Which of these is NOT an air pollutant",
+                "nitrogen dioxide",
+                "carbon monoxide",
+                "oxygen",
+                "sulfur dioxide",
+                3
+            ],
+            [
+                "Why could it be dangerous to exercise outside during high levels of air pollution",
+                "excercise is bad for you",
+                "deep breathing allows toxins further into your lungs",
+                "pollutants can attack the fibres of your clothes",
+                "pollutants makes surfaces slippery, causing accidents",
+                2
+            ],
+            [
+                "Which gas is produced by incomplete combustion",
+                "carbon dioxide",
+                "carbon monoxide",
+                "nitrogen",
+                "sulfur dioxide",
+                2
+            ],
+            [
+                "Which molecules combine with water vapour to form acid rain",
+                "nitrogen and carbon monoxide",
+                "helium and sulfur dioxide",
+                "sulfer dioxide and nitric oxides",
+                "oxygen and argon",
+                3
+            ],
+            [
+                "Which of these methods would not reduce air pollution",
+                "reducing the use of fossil fuels",
+                "filtering fossil fuel emissions",
+                "removing sulfur from coal before combustion",
+                "burning wood instead of fossil fuels",
+                4
+            ],
+            [
+                "What is the greenhouse effect",
+                "the trapping of infrared radiation in Earth's atmosphere",
+                "the reflection of infrared radiation into outer space",
+                "the use of gases to block the waves of the Sun",
+                "the use of specific gases to grow larger tomatoes",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following is NOT a greenhouse gas",
+                "water vapour",
+                "methane",
+                "nitrogen",
+                "carbon dioxide",
+                3
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of these statements about climate change are correct",
+                "volcanic eruptions are entirely responsible for climate change",
+                "human activity is entirely responsible for climate change",
+                "greenhouse gases increase because of climate change",
+                "there is data to suggest a relationship between CO₂ levels and temperature",
+                4
             ]
         ],
         "organic chemistry": [
