@@ -3277,84 +3277,85 @@
         ],
         "extraction and corrosion": [
             [
-                "extraction and corrosion",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which metals need to be extracted using electrolysis",
+                "all metals",
+                "metals more reactive than hydrogen",
+                "metals more reactive than carbon",
+                "aluminium only",
+                3
+            ],
+            [
+                "How is iron extracted from its ore",
+                "blast furnace",
+                "electrolysis",
+                "neutralisation reaction",
+                "distillation",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Why is limestone added to the blast furnace",
+                "to lower melting point of iron",
+                "to remove impurities",
+                "to increase the rate of reaction as a catalyst",
+                "to increase the temperature of the furnace",
+                2
+            ],
+            [
+                "Why doesn't the molten slag mix with the molten iron",
+                "it is hotter",
+                "it is colder",
+                "it is more dense",
+                "it is less dense",
+                4,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Why can't aluminium be reduced by carbon",
+                "it is more reactive than carbon",
+                "it is less reactive than carbon",
+                "there are too many impurities",
+                "it does not need to be purified",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Why is cryolite added to aluminium ore during electrolysis",
+                "it decreases the rate of reaction",  
+                "it increases the rate of reaction",
+                "it decreases the melting point",
+                "it increases the melting point",
+                3
+            ],
+            [
+                "How does electrolysis seperate aluminium oxide",
+                "an electric current attracts aluminium to the cathode and oxygen to the anode",
+                "an electric current attracts oxygen to the cathode and aluminium to the anode",
+                "a magnetic force attracts aluminium to the cathode and oxygen to the anode",
+                "a magnetic force attracts oxygen to the cathode and aluminium to the anode",
+                2
+            ],
+            [
+                "What is corrosion",
+                "gradual expansion of non-metals due to reactions with the environment",
+                "gradual destruction of non-metals due to reactions with the environment",
+                "gradual expansion of metals due to reactions with the environment",
+                "gradual destruction of metals due to reactions with the environment",
+                4
+            ],
+            [
+                "Why doesn't aluminium corrode easily",
+                "it has a protective layer of aluminium oxide",
+                "it has a protective layer of aluminium hydroxide",
+                "it is very unreactive",
+                "trick question, it corrodes easily",
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Which of the following methods of mitigating corrosion involves plating a metal with a more reactive sacrificial metal, such as zinc",
+                "painting",
+                "oiling and greasing",
+                "galvanising",
+                "electroplating",
+                3
             ]
         ],
         "environment": [
@@ -3442,88 +3443,6 @@
         "organic chemistry": [
             [
                 "organic compounds",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
-        ],
-        "experimental design": [
-            [
-                "experiments",
                 "PLEASE",
                 "TRY",
                 "AGAIN",

@@ -183,8 +183,6 @@ def set_subject(subject='example', topic='none'):
                     subtopic = 'environment'
                 case 'organic chemistry' | 'organic compounds':
                     subtopic = 'organic chemistry'
-                case 'experimental design' | 'experiment design' | 'paper 6':
-                    subtopic = 'experimental design'
                 case _:
                     topicError = True
                     call_error(topic, 'topic')
