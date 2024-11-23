@@ -1584,168 +1584,92 @@
                 1
             ]
         ],
-        "general properties of waves": [
-            [
-                "waves",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ]
-        ],
         "electromagnetic spectrum": [
             [
-                "em spectrum",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which list contains only transverse waves",
+                "infrared waves, light waves, sound waves",
+                "infrared waves, light waves, ultraviolet waves",
+                "infrared waves, sound waves, ultraviolet waves",
+                "light waves, sound waves, ultraviolet waves",
+                2
+            ],
+            [
+                "The diagram shows a wave. Which labelled distance is the wavelength",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The diagrams show water waves that move more slowly after passing into shallow water. Which diagram shows what happens to the waves",
+                "A",
+                "B",
+                "C",
+                "D",
+                3,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which row correctly defines a type of wave and gives a correct example",
+                "A",
+                "B",
+                "C",
+                "D",
+                4,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The diagram shows a water wave passing through a gap in a harbour wall. The wavefronts curve round the wall and reach a small boat in the harbour.\nWhat is the name of this curving effect, and how can the gap be changed so that the wavefronts do not reach the boat",
+                "diffraction, make the gap slightly bigger",
+                "diffraction, make the gap slightly smaller",
+                "refraction, make the gap slightly bigger",
+                "refraction, make the gap slightly smaller",
+                1,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "The diagram shows four waves drawn to the same scale. Which statement is correct",
+                "The amplitude of wave P is the same as the amplitude of wave R",
+                "The amplitude of wave S is double the amplitude of wave Q",
+                "The wavelength of wave Q is double the wavelength of wave P",
+                "The wavelength of wave S is the same as the wavelength of wave Q",
+                1,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
+                "Which waves are longitudinal",
+                "light waves from a lamp",
+                "microwaves from an oven",
+                "water waves on a pond",
+                "sound waves from a trumpet",
+                4
+            ],
+            [
+                "The diagram represents a wave. How many wavelengths are there between X and Y",
+                "⅔",
+                "1",
+                "1½",
+                "3",
+                3,
                 1
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "The frequency of a wave is doubled. The speed of the wave does not change. What happens to the wavelength of the wave",
+                "it becomes four times as large",
+                "it does not change",
+                "it doubles",
+                "it halves",
+                4
             ],
             [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
-            ],
-            [
-                "SOMETHING WENT WRONG",
-                "PLEASE",
-                "TRY",
-                "AGAIN",
-                "LATER",
-                1
+                "Visible light has a frequency of approximately 5.0 x 10¹⁴ Hz. M and N are two other types of electromagnetic radiation.\nThe frequency of M is 5.0 x 10⁶ Hz. The frequency of N is 5.0 x 10¹⁵ Hz. Which types of radiation are M and N",
+                "M is radio waves, N is infrared",
+                "M is radio waves, N is ultraviolet",
+                "M is ultraviolet, N is X-rays",
+                "M is X-rays, N is infrared",
+                2
             ]
         ],
         "magnetism": [

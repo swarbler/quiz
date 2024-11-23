@@ -114,9 +114,7 @@ def set_subject(subject='example', topic='none'):
                     subtopic = 'sound'
                 case 'light':
                     subtopic = 'kinetic particle model of matter'
-                case 'general properties of waves' | 'properties of waves' | 'waves':
-                    subtopic = 'general properties of waves'
-                case 'electromagnetic spectrum' | 'electromagnetic waves':
+                case 'electromagnetic spectrum' | 'electromagnetic waves' | 'general properties of waves' | 'properties of waves' | 'waves':
                     subtopic = 'electromagnetic spectrum'
                 case 'magnetism' | 'magnet':
                     subtopic = 'magnetism'
