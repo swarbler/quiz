@@ -251,12 +251,53 @@ mcqMessages = sdata['mcq']
 #* SETS SETTINGS FROM JSON FILE *#
 # [n] = nth setting 
 
+def read_setting(param):
+    """reads setting from json file"""
+
+    with open('settings.json', 'r', encoding="utf8") as f:
+        settingsdata = json.load(f)
+    return settingsdata[param]
+
+def set_setting(param, data):
+    """writes new setting to json file"""
+
+    with open('settings.json', 'r', encoding="utf8") as f:
+        settingsdata = json.load(f)
+    
+    settingsdata[param] = data
+
+    with open('settings.json', 'w', encoding='utf-8') as f:
+        json.dump(settingsdata, f, ensure_ascii=False, indent=4)
+
 
 #* SETS PAST SCORES FROM JSON FILE *#
 # [subject][topic][0] = whether topic has been tested before (0 or 1)
 # [subject][topic][1] = past score (0-10)
 
-# code here
+def view_past_score(subject, topic='none'):
+    """reads setting from json file"""
+
+    with open('past_scores.json', 'r', encoding="utf8") as f:
+        scoredata = json.load(f)
+    
+    try:
+        return scoredata[subject][topic]
+    except:
+        return scoredata[subject]
+
+def set_past_score(subject, score=0, topic='none'):
+    """writes new setting to json file"""
+
+    with open('past_scores.json', 'r', encoding="utf8") as f:
+        scoredata = json.load(f)
+    
+    try:
+        scoredata[subject][topic] = score
+    except:
+        scoredata[subject] = score
+
+    with open('past_scores.json', 'w', encoding='utf-8') as f:
+        json.dump(scoredata, f, ensure_ascii=False, indent=4)
 
 
 #* DECLARES GLOBAL VARIABLES *#
@@ -271,6 +312,7 @@ topicError = False
 #* DECLARES FUNCTIONS *#
 def dotdotdot(length=1):
     """small loading screen"""
+
     for dot in range(2): # repeats twice
         print('.', end='', flush=True) # no new line after each dot
         time.sleep(.5) # small delay between each dot
@@ -279,6 +321,8 @@ def dotdotdot(length=1):
     print('\033c', end='') # clear terminal
 
 def call_error(param, errorType='none'):
+    """error message"""
+
     dotdotdot()
 
     # something went wrong (Fire Font-k)
@@ -310,6 +354,7 @@ def call_error(param, errorType='none'):
 #* DECLARES QUIZ COMPONENTS *#
 def mcq():
     """multiple choice questions"""
+
     dotdotdot()
 
     mcqTotal = 0 # resets total
@@ -406,6 +451,7 @@ def mcq():
 
 def structured():
     """structured questions"""
+    
     pass
     # read essay text file and send to teacher for marking? (longer essay-style questions)
     # type into quiz program and get marks based on keywords? (shorter  questions only)
@@ -504,4 +550,3 @@ while True:
             sys.exit(0)
         case _: # invalid input
             call_error(userAction)
-
