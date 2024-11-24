@@ -17,7 +17,7 @@ w, h = 7, 10 # width and height of list
 multiplechoice = [[0 for x in range(w)] for y in range(h)] # sets list full of 0s
 
 #* SETS TOPIC DATA FROM JSON FILE *#
-with open('topics.json', 'r') as f:
+with open('data/topics.json', 'r') as f:
     topicData = json.load(f)
 
 SUBJECTS = topicData['subjects'] # lists of subjects
@@ -34,7 +34,7 @@ def set_subject(subject='example', topic='none'):
     global chosenTopic, mcqLength, topicError
 
     # loads JSON file data containing all questions
-    with open('mcq.json', 'r', encoding="utf8") as f:
+    with open('data/mcq.json', 'r', encoding="utf8") as f:
         qdata = json.load(f)
     
     mcqLength = 10
@@ -241,7 +241,7 @@ def set_subject(subject='example', topic='none'):
 #* SETS SCORE MESSAGES FROM JSON FILE *#
 # mcq[score][0-4] = 5 score messages per possible score
 
-with open('messages.json', 'r', encoding="utf8") as f:
+with open('data/messages.json', 'r', encoding="utf8") as f:
     messageData = json.load(f)
 MCQ_MESSAGES = messageData['mcq']
 
@@ -252,19 +252,19 @@ MCQ_MESSAGES = messageData['mcq']
 def read_setting(param):
     """reads setting from json file"""
 
-    with open('settings.json', 'r', encoding="utf8") as f:
+    with open('data/settings.json', 'r', encoding="utf8") as f:
         settingsdata = json.load(f)
     return settingsdata[param]
 
 def set_setting(param, data):
     """writes new setting to json file"""
 
-    with open('settings.json', 'r', encoding="utf8") as f:
+    with open('data/settings.json', 'r', encoding="utf8") as f:
         settingsdata = json.load(f)
     
     settingsdata[param] = data
 
-    with open('settings.json', 'w', encoding='utf-8') as f:
+    with open('data/settings.json', 'w', encoding='utf-8') as f:
         json.dump(settingsdata, f, ensure_ascii=False, indent=4)
 
 
@@ -277,7 +277,7 @@ def set_setting(param, data):
 # [subject][topic][0] = whether topic has been tested before (0 or 1)
 # [subject][topic][1] = personal best (0-10)
 
-def read_score(subject, filePath='past_scores.json', topic='none'):
+def read_score(subject, filePath='data/past_scores.json', topic='none'):
     """reads score from json file"""
 
     with open(filePath, 'r', encoding="utf8") as f:
@@ -288,7 +288,7 @@ def read_score(subject, filePath='past_scores.json', topic='none'):
     except:
         return scoredata[subject]
 
-def set_past_score(subject, score=0, filePath='past_scores.json', topic='none'):
+def set_past_score(subject, score=0, filePath='data/past_scores.json', topic='none'):
     """writes new score to json file"""
 
     with open(filePath, 'r', encoding="utf8") as f:
@@ -302,10 +302,10 @@ def set_past_score(subject, score=0, filePath='past_scores.json', topic='none'):
     with open(filePath, 'w', encoding='utf-8') as f:
         json.dump(scoredata, f, ensure_ascii=False, indent=4)
 
-def reset_score(filePath='past_scores.json'):
+def reset_score(filePath='data/past_scores.json'):
     """resets score json file"""
 
-    with open('clean_scores.json', 'r', encoding="utf8") as f:
+    with open('data/clean_scores.json', 'r', encoding="utf8") as f:
         cleanscoredata = json.load(f)
 
     with open(filePath, 'w', encoding='utf-8') as f:
@@ -412,7 +412,7 @@ def mcq():
         # try to display image 
         try:
             if multiplechoice[i][6]:
-                imagePath = './images/' + chosenSubject + '/' + chosenTopic + '/q' + str(i + 1) + '.png' 
+                imagePath = 'data/images/' + chosenSubject + '/' + chosenTopic + '/q' + str(i + 1) + '.png' 
                 img = Image.open(imagePath)
                 img.show()
         except:
@@ -476,8 +476,8 @@ def mcq():
     print('')
 
     # prints previous score
-    prevExists = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)[0] # does not show previous score if does not exist
-    prevScore = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)[1]
+    prevExists = read_score(chosenSubject, 'data/past_scores.json', chosenTopic)[0] # does not show previous score if does not exist
+    prevScore = read_score(chosenSubject, 'data/past_scores.json', chosenTopic)[1]
     prevMark = MCQ_MESSAGES[prevScore][5]
 
     if prevExists and save: # checks whether savePreviousScores is true
@@ -499,8 +499,8 @@ def mcq():
         print('')
 
     # prints personal best score
-    pbExists = read_score(chosenSubject, 'top_scores.json', chosenTopic)[0] # does not show personal best if does not exist
-    pbScore = read_score(chosenSubject, 'top_scores.json', chosenTopic)[1]
+    pbExists = read_score(chosenSubject, 'data/top_scores.json', chosenTopic)[0] # does not show personal best if does not exist
+    pbScore = read_score(chosenSubject, 'data/top_scores.json', chosenTopic)[1]
     pbMark = MCQ_MESSAGES[prevScore][5]
 
     # tells user if new personal best is made
@@ -518,11 +518,11 @@ def mcq():
 
     # sets current score as previous score
     if save: # only saves previous score if setting is enabled
-        set_past_score(chosenSubject, [1, mcqTotal], 'past_scores.json', chosenTopic)
+        set_past_score(chosenSubject, [1, mcqTotal], 'data/past_scores.json', chosenTopic)
     
     # sets current score as personal best if higher than previous personal best
     if mcqTotal > pbScore:
-        set_past_score(chosenSubject, [1, mcqTotal], 'top_scores.json', chosenTopic)
+        set_past_score(chosenSubject, [1, mcqTotal], 'data/top_scores.json', chosenTopic)
 
     dotdotdot()
 
