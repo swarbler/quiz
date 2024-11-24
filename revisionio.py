@@ -18,22 +18,20 @@ multiplechoice = [[0 for x in range(w)] for y in range(h)] # sets list full of 0
 
 #* SETS TOPIC DATA FROM JSON FILE *#
 with open('topics.json', 'r') as f:
-    tdata = json.load(f)
+    topicData = json.load(f)
 
-subjects = tdata['subjects'] # lists of subjects
-topics = tdata['topics'] # list of topics per subject
-hasTopics = tdata['hasTopics'] # for checking whether each subject has topics
-hasTopicsAbbrv = tdata['hasTopicsAbbrv'] # for checking whether each abbrv subject has topics
-abbrvDef = tdata['abbrvDef'] # for converting abbrv subjects to full name
+SUBJECTS = topicData['subjects'] # lists of subjects
+TOPICS = topicData['topics'] # list of topics per subject
+HAS_TOPICS = topicData['hasTopics'] # for checking whether each subject has topics
+HAS_TOPICS_ABBRV = topicData['hasTopicsAbbrv'] # for checking whether each abbrv subject has topics
+ABBRV_DEF = topicData['abbrvDef'] # for converting abbrv subjects to full name
 
-endSignal = ["ENDHERE", "A", "B", "C", "D", -1]
+END_SIGNAL = ["ENDHERE", "A", "B", "C", "D", -1]
 
 # sets questions and answers based on subject and topic
 def set_subject(subject='example', topic='none'):
     """sets questions and answers based on subject and topic"""
-    global chosenTopic
-    global mcqLength
-    global topicError
+    global chosenTopic, mcqLength, topicError
 
     # loads JSON file data containing all questions
     with open('mcq.json', 'r', encoding="utf8") as f:
@@ -71,7 +69,7 @@ def set_subject(subject='example', topic='none'):
             chosenTopic = subtopic
 
             for i in range(10):
-                if qdata['geography'][subtopic][i] == endSignal:
+                if qdata['geography'][subtopic][i] == END_SIGNAL:
                     mcqLength = i
                     return
                 multiplechoice[i] = qdata['geography'][subtopic][i]
@@ -120,7 +118,7 @@ def set_subject(subject='example', topic='none'):
             chosenTopic = subtopic
             
             for i in range(10):
-                if qdata['physics'][subtopic][i] == endSignal:
+                if qdata['physics'][subtopic][i] == END_SIGNAL:
                     mcqLength = i
                     return
                 multiplechoice[i] = qdata['physics'][subtopic][i]
@@ -171,7 +169,7 @@ def set_subject(subject='example', topic='none'):
             chosenTopic = subtopic
             
             for i in range(10):
-                if qdata['chemistry'][subtopic][i] == endSignal:
+                if qdata['chemistry'][subtopic][i] == END_SIGNAL:
                     mcqLength = i
                     return
                 multiplechoice[i] = qdata['chemistry'][subtopic][i]
@@ -206,7 +204,7 @@ def set_subject(subject='example', topic='none'):
             chosenTopic = subtopic
             
             for i in range(10):
-                if qdata['computer science'][subtopic][i] == endSignal:
+                if qdata['computer science'][subtopic][i] == END_SIGNAL:
                     mcqLength = i
                     return
                 multiplechoice[i] = qdata['computer science'][subtopic][i]
@@ -231,7 +229,7 @@ def set_subject(subject='example', topic='none'):
             chosenTopic = subtopic
             
             for i in range(10):
-                if qdata['history'][subtopic][i] == endSignal:
+                if qdata['history'][subtopic][i] == END_SIGNAL:
                     mcqLength = i
                     return
                 multiplechoice[i] = qdata['history'][subtopic][i]
@@ -244,12 +242,12 @@ def set_subject(subject='example', topic='none'):
 # mcq[score][0-4] = 5 score messages per possible score
 
 with open('messages.json', 'r', encoding="utf8") as f:
-    sdata = json.load(f)
-mcqMessages = sdata['mcq']
+    messageData = json.load(f)
+MCQ_MESSAGES = messageData['mcq']
 
 
 #* SETS SETTINGS FROM JSON FILE *#
-# [n] = nth setting 
+# [setting] = setting
 
 def read_setting(param):
     """reads setting from json file"""
@@ -276,7 +274,8 @@ def set_setting(param, data):
 # [subject][topic][1] = past score (0-10)
 
 # top_scores.json
-# [subject][topic] = personal best score
+# [subject][topic][0] = whether topic has been tested before (0 or 1)
+# [subject][topic][1] = personal best (0-10)
 
 def read_score(subject, filePath='past_scores.json', topic='none'):
     """reads score from json file"""
@@ -321,6 +320,7 @@ mcqLength, mcqTotal = 10, 0
 #* DECLARES SETTINGS *#
 viewLength = read_setting('questionViewLength')
 selector = read_setting('inputSelector')
+sfxEnabled = read_setting('soundEffects')
 save = read_setting('savePreviousScores')
 
 
@@ -339,7 +339,14 @@ def dotdotdot(length=1):
     time.sleep(length) # longer delay after last dot
     print('\033c', end='') # clear terminal
 
-def call_error(param, errorType='none'):
+def showToggle(param=1):
+    """shows either ON or OFF"""
+    if param:
+        return 'ON'
+    else:
+        return 'OFF'
+
+def call_error(param, errorType='none', minR=0, maxR=0):
     """error message"""
 
     dotdotdot()
@@ -356,14 +363,17 @@ def call_error(param, errorType='none'):
     print('                                            |___/                                                       |___/   ')
     print('')
 
-    if errorType == 'subject':
-        print('"' + param + '" is not a valid subject. Please try again.')
-    if errorType == 'topic':
-        print('"' + param + '" is not a valid topic. Please try again.')
-    elif errorType == 'does_not_exist':
-        print('"' + param + '" does not exist yet. Please try again later.')
-    else:
-        print('"' + param + '" is not a valid input. Please try again.')
+    match errorType:
+        case 'subject':
+            print('"' + param + '" is not a valid subject. Please try again.')
+        case 'topic':
+            print('"' + param + '" is not a valid topic. Please try again.')
+        case 'does_not_exist':
+            print('"' + param + '" does not exist yet. Please try again later.')
+        case 'range':
+            print('"' + param + '" is not a valid input. You must input a number between ' + minR + ' and ' + maxR + '. Please try again')
+        case _:
+            print('"' + param + '" is not a valid input. Please try again.')
     print('')
     input(selector)
 
@@ -449,14 +459,14 @@ def mcq():
         barFill = '⣿' * (mcqTotal * 2) # amount of ⣿ is score * 2
         barSpaces = ' ' * (10 - (mcqTotal * 2)) # amount of spaces is 10 - score * 2
 
-        scoremsg = mcqMessages[mcqTotal * 2][random.randrange(0, 5)]
-        mark = mcqMessages[mcqTotal * 2][5]
+        scoremsg = MCQ_MESSAGES[mcqTotal * 2][random.randrange(0, 5)]
+        mark = MCQ_MESSAGES[mcqTotal * 2][5]
     else:
         barFill = '⣿' * mcqTotal # amount of ⣿ is score
         barSpaces = ' ' * (10 - mcqTotal) # amount of spaces is 10 - score
 
-        scoremsg = mcqMessages[mcqTotal][random.randrange(0, 5)]
-        mark = mcqMessages[mcqTotal][5]
+        scoremsg = MCQ_MESSAGES[mcqTotal][random.randrange(0, 5)]
+        mark = MCQ_MESSAGES[mcqTotal][5]
     
     # prints total score
     print('SCORE ~ ' + str(mcqTotal) + '/' + str(mcqLength) + '\tMARK ~ ' + mark)
@@ -466,11 +476,11 @@ def mcq():
     print('')
 
     # prints previous score
-    prevExists = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)[0]
+    prevExists = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)[0] # does not show previous score if does not exist
     prevScore = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)[1]
-    prevMark = mcqMessages[prevScore][5]
+    prevMark = MCQ_MESSAGES[prevScore][5]
 
-    if prevExists:
+    if prevExists and save: # checks whether savePreviousScores is true
         print('PREVIOUS SCORE ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tPREVIOUS MARK ~ ' + prevMark)
         
         # message based on how current score compares with previous score
@@ -489,9 +499,9 @@ def mcq():
         print('')
 
     # prints personal best score
-    pbExists = read_score(chosenSubject, 'top_scores.json', chosenTopic)[0]
+    pbExists = read_score(chosenSubject, 'top_scores.json', chosenTopic)[0] # does not show personal best if does not exist
     pbScore = read_score(chosenSubject, 'top_scores.json', chosenTopic)[1]
-    pbMark = mcqMessages[prevScore][5]
+    pbMark = MCQ_MESSAGES[prevScore][5]
 
     # tells user if new personal best is made
     if pbExists:
@@ -507,7 +517,8 @@ def mcq():
     input(selector)
 
     # sets current score as previous score
-    set_past_score(chosenSubject, [1, mcqTotal], 'past_scores.json', chosenTopic)
+    if save: # only saves previous score if setting is enabled
+        set_past_score(chosenSubject, [1, mcqTotal], 'past_scores.json', chosenTopic)
     
     # sets current score as personal best if higher than previous personal best
     if mcqTotal > pbScore:
@@ -521,6 +532,80 @@ def structured():
     pass
     # read essay text file and send to teacher for marking? (longer essay-style questions)
     # type into quiz program and get marks based on keywords? (shorter  questions only)
+
+def setting_page():
+    global viewLength, selector, sfxEnabled, save
+
+    while True:
+        # title text (Big Money-nw)
+        print('                     $$\\     $$\\     $$\\                               ')
+        print('                     $$ |    $$ |    \\__|                              ')
+        print(' $$$$$$$\\  $$$$$$\\ $$$$$$\\ $$$$$$\\   $$\\ $$$$$$$\\   $$$$$$\\   $$$$$$$\\ ')
+        print('$$  _____|$$  __$$\\\\_$$  _|\\_$$  _|  $$ |$$  __$$\\ $$  __$$\\ $$  _____|')
+        print('\\$$$$$$\\  $$$$$$$$ | $$ |    $$ |    $$ |$$ |  $$ |$$ /  $$ |\\$$$$$$\\  ')
+        print(' \\____$$\\ $$   ____| $$ |$$\\ $$ |$$\\ $$ |$$ |  $$ |$$ |  $$ | \\____$$\\ ')
+        print('$$$$$$$  |\\$$$$$$$\\  \\$$$$  |\\$$$$  |$$ |$$ |  $$ |\\$$$$$$$ |$$$$$$$  |')
+        print('\\_______/  \\_______|  \\____/  \\____/ \\__|\\__|  \\__| \\____$$ |\\_______/ ')
+        print('                                                   $$\\   $$ |          ')
+        print('                                                   \\$$$$$$  |          ')
+        print('                                                    \\______/           ')
+        print('')
+                                                                                                                                                                                                                                                                                            
+        # choose setting to change (or exit settings page)
+        print('What would you like to do?')
+        print('~ set duration answer is shown (' + str(viewLength) + ')')
+        print('~ set input selector (' + selector.strip() + ')')
+        print('~ toggle sound effects (' + showToggle(sfxEnabled) + ')')
+        print('~ toggle whether previous scores are saved (' + showToggle(save) + ')')
+        print('~ exit')
+        print('')
+        userAction = input(selector).lower().strip()
+
+        match userAction:
+            case 'set duration answer is shown':
+                userInput = input('Enter new duration (in seconds): ').lower().strip()
+
+                try:
+                    if int(userInput) > 30 or int(userInput) <= 0:
+                        call_error(userInput, 'range', minR=1, maxR=30)
+                    else:
+                        set_setting('questionViewLength', int(userInput))
+                        viewLength = read_setting('questionViewLength')
+                except:
+                    call_error(userInput)
+                
+                dotdotdot()
+            case 'set input selector':
+                userInput = input('Enter new input selector: ').strip()
+
+                set_setting('inputSelector', userInput)
+                selector = read_setting('inputSelector')
+                
+                dotdotdot()
+            case 'toggle sound effects':
+                if sfxEnabled:
+                    set_setting('soundEffects', 0)
+                else:
+                    set_setting('soundEffects', 1)
+                
+                sfxEnabled = read_setting('soundEffects')
+                
+                dotdotdot()
+            case 'toggle whether previous scores are saved':
+                if save:
+                    set_setting('savePreviousScores', 0)
+                else:
+                    set_setting('savePreviousScores', 1)
+
+                save = read_setting('savePreviousScores')
+                
+                dotdotdot()
+            case 'exit' | 'e':
+                dotdotdot()
+
+                return
+            case _: # invalid input
+                call_error(userAction)
 
 
 #* PROGRAM *#
@@ -555,7 +640,7 @@ while True:
             # choose subject to study
             print('Select a subject to study:')
             print('')
-            for i in subjects: # dynamic amount of subjects
+            for i in SUBJECTS: # dynamic amount of subjects
                 print('~ ' + i)
             print('')
             userSubject = input(selector).lower() # sets answer as lowercase to avoid miscasing
@@ -566,7 +651,7 @@ while True:
 
             # checks whether subject is included in hasTopics list
             try:
-                if hasTopics[userSubject]:
+                if HAS_TOPICS[userSubject]:
                     chosenSubject = userSubject
                     userHasTopic = True
                 else:
@@ -574,11 +659,11 @@ while True:
             except:
                 # if not in the hasTopics list, check if it is included in hasTopicsAbbrv list
                 try:
-                    if hasTopicsAbbrv[userSubject]: # ask for topic if subject has them
-                        chosenSubject = abbrvDef[userSubject] # sets chosenSubject to non-abbreviated form
+                    if HAS_TOPICS_ABBRV[userSubject]: # ask for topic if subject has them
+                        chosenSubject = ABBRV_DEF[userSubject] # sets chosenSubject to non-abbreviated form
                         userHasTopic = True
                     else:
-                        chosenSubject = abbrvDef[userSubject] # sets chosenSubject to non-abbreviated form
+                        chosenSubject = ABBRV_DEF[userSubject] # sets chosenSubject to non-abbreviated form
                 except:
                     # calls error if subject is invalid
                     subjectError = True
@@ -590,7 +675,7 @@ while True:
                 print('')
                 print('Select a topic to study:')
                 print('')
-                for i in topics[chosenSubject]: # dynamic amount of subjects
+                for i in TOPICS[chosenSubject]: # dynamic amount of subjects
                     print('~ ' + i) # prints subjects as a list
                 print('')
                 userTopic = input(selector).lower()  # sets answer as lowercase to avoid miscasing
@@ -605,10 +690,9 @@ while True:
             elif not topicError: # does not run test if invalid topic
                 mcq()
                 # structured()
-        case 'settings' | 'setting' | 's':
-            
-            call_error(userAction, 'does_not_exist') # settings page does not exist yet
+        case 'settings' | 'setting' | 'set' | 's':
+            setting_page()
         case 'quit' | 't':
             sys.exit(0)
         case _: # invalid input
-            call_error(userAction)
+           call_error(userAction)
