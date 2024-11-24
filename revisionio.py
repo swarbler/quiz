@@ -6,43 +6,27 @@ import sys
 
 from PIL import Image
 
-# sets q/a list
-w, h = 7, 10
-multiplechoice = [[0 for x in range(w)] for y in range(h)] 
-# [i][0] = question
-# [i][1-4] = answers a to d
-# [i][5] = correct answer (1-4)
-# [i][6] = image path (may be empty)
+#* SETS MCQ QUESTIONS ARRAY *#
+w, h = 7, 10 # width and height of list
 
+# [subject][topic][0] = question
+# [subject][topic][1-4] = answers a to d
+# [subject][topic][5] = correct answer (1-4)
+# [subject][topic][6] = whether question contains image (0 or 1, default is 0)
+
+multiplechoice = [[0 for x in range(w)] for y in range(h)] # sets list full of 0s
+
+#* SETS TOPIC DATA FROM JSON FILE *#
 with open('topics.json', 'r') as f:
     tdata = json.load(f)
 
-subjects = tdata['subjects']
-topics = tdata['topics']
-hasTopics = tdata['hasTopics']
-hasTopicsAbbrv = tdata['hasTopicsAbbrv']
-abbrvDef = tdata['abbrvDef']
+subjects = tdata['subjects'] # lists of subjects
+topics = tdata['topics'] # list of topics per subject
+hasTopics = tdata['hasTopics'] # for checking whether each subject has topics
+hasTopicsAbbrv = tdata['hasTopicsAbbrv'] # for checking whether each abbrv subject has topics
+abbrvDef = tdata['abbrvDef'] # for converting abbrv subjects to full name
 
 endSignal = ["ENDHERE", "A", "B", "C", "D", -1]
-
-chosenSubject, chosenTopic = 'none', 'none'
-mcqLength, mcqTotal = 10, 0
-
-topicError = False
-
-with open('messages.json', 'r', encoding="utf8") as f:
-    sdata = json.load(f)
-mcqMessages = sdata['mcq']
-
-def dotdotdot(length=1):
-    """small loading screen"""
-    for dot in range(2): # repeats twice
-        print('.', end='', flush=True) # no new line after each dot
-        time.sleep(.5) # small delay between each dot
-    print('.')
-    time.sleep(length) # longer delay after last dot
-    print('\033c', end='') # clear terminal
-
 
 # sets questions and answers based on subject and topic
 def set_subject(subject='example', topic='none'):
@@ -254,7 +238,76 @@ def set_subject(subject='example', topic='none'):
         case 'example': # for testing
             for i in range(10):
                 multiplechoice[i] = qdata['example'][i]
-    
+
+
+#* SETS SCORE MESSAGES FROM JSON FILE *#
+# mcq[score][0-4] = 5 score messages per possible score
+
+with open('messages.json', 'r', encoding="utf8") as f:
+    sdata = json.load(f)
+mcqMessages = sdata['mcq']
+
+
+#* SETS SETTINGS FROM JSON FILE *#
+# [n] = nth setting 
+
+
+#* SETS PAST SCORES FROM JSON FILE *#
+# [subject][topic][0] = whether topic has been tested before (0 or 1)
+# [subject][topic][1] = past score (0-10)
+
+# code here
+
+
+#* DECLARES GLOBAL VARIABLES *#
+chosenSubject, chosenTopic = 'none', 'none'
+mcqLength, mcqTotal = 10, 0
+
+
+#* DECLARES ERROR FLAGS *#
+topicError = False
+
+
+#* DECLARES FUNCTIONS *#
+def dotdotdot(length=1):
+    """small loading screen"""
+    for dot in range(2): # repeats twice
+        print('.', end='', flush=True) # no new line after each dot
+        time.sleep(.5) # small delay between each dot
+    print('.')
+    time.sleep(length) # longer delay after last dot
+    print('\033c', end='') # clear terminal
+
+def call_error(param, errorType='none'):
+    dotdotdot()
+
+    # something went wrong (Fire Font-k)
+    print('')                                                                                                             
+    print('                           )    )                                           )                                   ')
+    print('             )      (   ( /( ( /( (          (  (    (  (      (         ( /(   (  (    (                (  (   ')
+    print(' (    (     (      ))\\  )\\()))\\()))\\   (     )\\))(   )\\))(    ))\\  (     )\\())  )\\))(   )(    (    (     )\\))(  ')
+    print(' )\\   )\\    )\\  \' /((_)(_))/((_)\\((_)  )\\ ) ((_))\\  ((_)()\\  /((_) )\\ ) (_))/  ((_)()\\ (()\\   )\\   )\\ ) ((_))\\  ')
+    print('((_) ((_) _((_)) (_))  | |_ | |(_)(_) _(_/(  (()(_) _(()((_)(_))  _(_/( | |_   _(()((_) ((_) ((_) _(_/(  (()(_) ')
+    print('(_-</ _ \\| \'  \\()/ -_) |  _|| \' \\ | || \' \\))/ _` |  \\ V  V // -_)| \' \\))|  _|  \\ V  V /| \'_|/ _ \\| \' \\))/ _` |  ')
+    print('/__/\\___/|_|_|_| \\___|  \\__||_||_||_||_||_| \\__, |   \\_/\\_/ \\___||_||_|  \\__|   \\_/\\_/ |_|  \\___/|_||_| \\__, |  ')
+    print('                                            |___/                                                       |___/   ')
+    print('')
+
+    if errorType == 'subject':
+        print('"' + param + '" is not a valid subject. Please try again.')
+    if errorType == 'topic':
+        print('"' + param + '" is not a valid topic. Please try again.')
+    elif errorType == 'does_not_exist':
+        print('"' + param + '" does not exist yet. Please try again later.')
+    else:
+        print('"' + param + '" is not a valid input. Please try again.')
+    print('')
+    input('~~> ')
+
+    dotdotdot()
+
+
+#* DECLARES QUIZ COMPONENTS *#
 def mcq():
     """multiple choice questions"""
     dotdotdot()
@@ -357,95 +410,8 @@ def structured():
     # read essay text file and send to teacher for marking? (longer essay-style questions)
     # type into quiz program and get marks based on keywords? (shorter  questions only)
 
-def call_error(param, errorType='none'):
-    dotdotdot()
 
-    # something went wrong (Fire Font-k)
-    print('')                                                                                                             
-    print('                           )    )                                           )                                   ')
-    print('             )      (   ( /( ( /( (          (  (    (  (      (         ( /(   (  (    (                (  (   ')
-    print(' (    (     (      ))\\  )\\()))\\()))\\   (     )\\))(   )\\))(    ))\\  (     )\\())  )\\))(   )(    (    (     )\\))(  ')
-    print(' )\\   )\\    )\\  \' /((_)(_))/((_)\\((_)  )\\ ) ((_))\\  ((_)()\\  /((_) )\\ ) (_))/  ((_)()\\ (()\\   )\\   )\\ ) ((_))\\  ')
-    print('((_) ((_) _((_)) (_))  | |_ | |(_)(_) _(_/(  (()(_) _(()((_)(_))  _(_/( | |_   _(()((_) ((_) ((_) _(_/(  (()(_) ')
-    print('(_-</ _ \\| \'  \\()/ -_) |  _|| \' \\ | || \' \\))/ _` |  \\ V  V // -_)| \' \\))|  _|  \\ V  V /| \'_|/ _ \\| \' \\))/ _` |  ')
-    print('/__/\\___/|_|_|_| \\___|  \\__||_||_||_||_||_| \\__, |   \\_/\\_/ \\___||_||_|  \\__|   \\_/\\_/ |_|  \\___/|_||_| \\__, |  ')
-    print('                                            |___/                                                       |___/   ')
-    print('')
-
-    if errorType == 'subject':
-        print('"' + param + '" is not a valid subject. Please try again.')
-    if errorType == 'topic':
-        print('"' + param + '" is not a valid topic. Please try again.')
-    elif errorType == 'does_not_exist':
-        print('"' + param + '" does not exist yet. Please try again later.')
-    else:
-        print('"' + param + '" is not a valid input. Please try again.')
-    print('')
-    input('~~> ')
-
-    dotdotdot()
-
-def test():
-    global chosenSubject
-    global chosenTopic
-    global topicError
-
-    dotdotdot()
-
-    # choose subject to study
-    print('Select a subject to study:')
-    print('')
-    for i in subjects: # dynamic amount of subjects
-        print('~ ' + i)
-    print('')
-    userSubject = input('~~> ').lower() # sets answer as lowercase to avoid miscasing
-    userTopic = 'none'
-
-    userHasTopic = False
-    subjectError = False    
-
-    # checks whether subject is included in hasTopics list
-    try:
-        if hasTopics[userSubject]:
-            chosenSubject = userSubject
-            userHasTopic = True
-        else:
-            chosenSubject = userSubject
-    except:
-        # if not in the hasTopics list, check if it is included in hasTopicsAbbrv list
-        try:
-            if hasTopicsAbbrv[userSubject]: # ask for topic if subject has them
-                chosenSubject = abbrvDef[userSubject] # sets chosenSubject to non-abbreviated form
-                userHasTopic = True
-            else:
-                chosenSubject = abbrvDef[userSubject] # sets chosenSubject to non-abbreviated form
-        except:
-            # calls error if subject is invalid
-            subjectError = True
-
-    topicError = False
-
-    if userHasTopic:
-        # choose topic to study
-        print('')
-        print('Select a topic to study:')
-        print('')
-        for i in topics[chosenSubject]: # dynamic amount of subjects
-            print('~ ' + i) # prints subjects as a list
-        print('')
-        userTopic = input('~~> ').lower()  # sets answer as lowercase to avoid miscasing
-
-        set_subject(chosenSubject, userTopic)
-    else:
-        set_subject(chosenSubject)
-        chosenTopic = 'N/A'
-    
-    if subjectError:
-        call_error(userSubject, 'subject')
-    elif not topicError: # does not run test if invalid topic
-        mcq()
-        structured()
-
+#* PROGRAM *#
 while True:
     # Revisionio (Big Money-se)
     print(' _______                       __            __                      __           ')
@@ -477,7 +443,61 @@ while True:
 
     match userAction:
         case 'test' | 'tests' | 't':
-            test()
+            dotdotdot()
+
+            # choose subject to study
+            print('Select a subject to study:')
+            print('')
+            for i in subjects: # dynamic amount of subjects
+                print('~ ' + i)
+            print('')
+            userSubject = input('~~> ').lower() # sets answer as lowercase to avoid miscasing
+            userTopic = 'none'
+
+            userHasTopic = False
+            subjectError = False    
+
+            # checks whether subject is included in hasTopics list
+            try:
+                if hasTopics[userSubject]:
+                    chosenSubject = userSubject
+                    userHasTopic = True
+                else:
+                    chosenSubject = userSubject
+            except:
+                # if not in the hasTopics list, check if it is included in hasTopicsAbbrv list
+                try:
+                    if hasTopicsAbbrv[userSubject]: # ask for topic if subject has them
+                        chosenSubject = abbrvDef[userSubject] # sets chosenSubject to non-abbreviated form
+                        userHasTopic = True
+                    else:
+                        chosenSubject = abbrvDef[userSubject] # sets chosenSubject to non-abbreviated form
+                except:
+                    # calls error if subject is invalid
+                    subjectError = True
+
+            topicError = False
+
+            if userHasTopic:
+                # choose topic to study
+                print('')
+                print('Select a topic to study:')
+                print('')
+                for i in topics[chosenSubject]: # dynamic amount of subjects
+                    print('~ ' + i) # prints subjects as a list
+                print('')
+                userTopic = input('~~> ').lower()  # sets answer as lowercase to avoid miscasing
+
+                set_subject(chosenSubject, userTopic)
+            else:
+                set_subject(chosenSubject)
+                chosenTopic = 'N/A'
+            
+            if subjectError:
+                call_error(userSubject, 'subject')
+            elif not topicError: # does not run test if invalid topic
+                mcq()
+                # structured()
         case 'settings' | 'setting' | 's':
             call_error(userAction, 'does_not_exist') # settings page does not exist yet
         case 'quit' | 't':
