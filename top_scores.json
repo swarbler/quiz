@@ -1,72 +1,249 @@
 {
     "geography": {
-        "population and settlements": 0,
-        "volcanoes": 0,
-        "earthquakes": 0,
-        "rivers": 0,
-        "coasts": 0,
-        "weather and climate": 0,
-        "rainforests": 0,
-        "deserts": 0,
-        "map skills": 0
+        "population and settlements": [
+            0,
+            0
+        ],
+        "volcanoes": [
+            0,
+            0
+        ],
+        "earthquakes": [
+            0,
+            0
+        ],
+        "rivers": [
+            0,
+            0
+        ],
+        "coasts": [
+            0,
+            0
+        ],
+        "weather and climate": [
+            0,
+            0
+        ],
+        "rainforests": [
+            0,
+            0
+        ],
+        "deserts": [
+            0,
+            0
+        ],
+        "map skills": [
+            0,
+            0
+        ]
     },
     "physics": {
-        "describing motion": 0,
-        "forces and motion": 0,
-        "turning effects": 0,
-        "forces and matter": 0,
-        "energy transfer": 0,
-        "work and power": 0, 
-        "kinetic particle model of matter": 0, 
-        "thermal properties": 0, 
-        "sound": 0,
-        "light": 0,
-        "electromagnetic spectrum": 0, 
-        "magnetism": 0, 
-        "static electricity": 0, 
-        "electrical quantities": 0, 
-        "electrical circuit": 0,
-        "electromotive force": 0,
-        "electromagnetic induction": 0
+        "describing motion": [
+            0,
+            0
+        ],
+        "forces and motion": [
+            0,
+            0
+        ],
+        "turning effects": [
+            0,
+            0
+        ],
+        "forces and matter": [
+            0,
+            0
+        ],
+        "energy transfer": [
+            0,
+            0
+        ],
+        "work and power": [
+            0,
+            0
+        ],
+        "kinetic particle model of matter": [
+            0,
+            0
+        ],
+        "thermal properties": [
+            0,
+            0
+        ],
+        "sound": [
+            0,
+            0
+        ],
+        "light": [
+            0,
+            0
+        ],
+        "electromagnetic spectrum": [
+            0,
+            0
+        ],
+        "magnetism": [
+            0,
+            0
+        ],
+        "static electricity": [
+            0,
+            0
+        ],
+        "electrical quantities": [
+            0,
+            0
+        ],
+        "electrical circuit": [
+            0,
+            0
+        ],
+        "electromotive force": [
+            0,
+            0
+        ],
+        "electromagnetic induction": [
+            0,
+            0
+        ]
     },
     "chemistry": {
-        "states of matter": 0,
-        "atomic structure": 0,
-        "chemical bonding": 0,
-        "chemical formulae and equations": 0,
-        "chemical calculations": 0,
-        "electrochemistry": 0,
-        "chemical energetics": 0,
-        "rates of reaction": 0,
-        "reversible reactions": 0,
-        "redox reactions": 0,
-        "acids and bases": 0,
-        "preperation of salts": 0,
-        "periodic table": 0,
-        "metallic elements": 0,
-        "reactivity series": 0,
-        "extraction and corrosion": 0,
-        "environment": 0,
-        "organic chemistry": 0
+        "states of matter": [
+            0,
+            0
+        ],
+        "atomic structure": [
+            0,
+            0
+        ],
+        "chemical bonding": [
+            0,
+            0
+        ],
+        "chemical formulae and equations": [
+            0,
+            0
+        ],
+        "chemical calculations": [
+            0,
+            0
+        ],
+        "electrochemistry": [
+            0,
+            0
+        ],
+        "chemical energetics": [
+            0,
+            0
+        ],
+        "rates of reaction": [
+            0,
+            0
+        ],
+        "reversible reactions": [
+            0,
+            0
+        ],
+        "redox reactions": [
+            0,
+            0
+        ],
+        "acids and bases": [
+            0,
+            0
+        ],
+        "preperation of salts": [
+            0,
+            0
+        ],
+        "periodic table": [
+            0,
+            0
+        ],
+        "metallic elements": [
+            0,
+            0
+        ],
+        "reactivity series": [
+            0,
+            0
+        ],
+        "extraction and corrosion": [
+            0,
+            0
+        ],
+        "environment": [
+            0,
+            0
+        ],
+        "organic chemistry": [
+            0,
+            0
+        ]
     },
     "computer science": {
-        "data representation": 0,
-        "data transmission": 0,
-        "hardware": 0,
-        "software": 0,
-        "internet": 0,
-        "automation": 0,
-        "algorithm design": 0,
-        "programming": 0,
-        "databases": 0,
-        "boolean logic": 0
+        "data representation": [
+            0,
+            0
+        ],
+        "data transmission": [
+            0,
+            0
+        ],
+        "hardware": [
+            0,
+            0
+        ],
+        "software": 2,
+        "internet": [
+            0,
+            0
+        ],
+        "automation": [
+            0,
+            0
+        ],
+        "algorithm design": [
+            0,
+            0
+        ],
+        "programming": [
+            0,
+            0
+        ],
+        "databases": [
+            0,
+            0
+        ],
+        "boolean logic": [
+            0,
+            0
+        ]
     },
     "history": {
-        "Early Weimar Germany (1918-23)": 0,
-        "Golden Age Weimar Germany (1924-29)": 0,
-        "Rise of the Nazis": 0,
-        "Nazi Germany (1933-45)": 0,
-        "Life in Nazi Germany": 0
+        "Early Weimar Germany (1918-23)": [
+            0,
+            0
+        ],
+        "Golden Age Weimar Germany (1924-29)": [
+            0,
+            0
+        ],
+        "Rise of the Nazis": [
+            0,
+            0
+        ],
+        "Nazi Germany (1933-45)": [
+            0,
+            0
+        ],
+        "Life in Nazi Germany": [
+            0,
+            0
+        ]
     },
-    "example": 0
+    "example": [
+        0,
+        0
+    ]
 }

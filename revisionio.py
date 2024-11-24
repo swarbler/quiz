@@ -457,13 +457,16 @@ def mcq():
     print('')
 
     # prints previous score
-    prevScore = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)
+    prevExists = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)[0]
+    prevScore = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)[1]
     prevMark = mcqMessages[prevScore][5]
 
-    print('PREVIOUS SCORE ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tMARK ~ ' + prevMark)
+    print('PREVIOUS SCORE ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tPREVIOUS MARK ~ ' + prevMark)
     
     # message based on how current score compares with previous score
-    if prevScore == mcqTotal:
+    if not prevScore and not mcqTotal:
+        print('> YOU GOT A ZERO AGAIN?')
+    elif prevScore == mcqTotal:
         print('> CONSISTENT EFFORT!')
     elif prevScore * 2 == mcqTotal:
         print('> YOU DOUBLED YOUR PREVIOUS SCORE!')
@@ -476,25 +479,26 @@ def mcq():
     print('')
 
     # prints personal best score
-    pbScore = read_score(chosenSubject, filePath='top_scores.json', topic=chosenTopic)
+    pbExists = read_score(chosenSubject, filePath='top_scores.json', topic=chosenTopic)[0]
+    pbScore = read_score(chosenSubject, filePath='top_scores.json', topic=chosenTopic)[1]
     pbMark = mcqMessages[prevScore][5]
 
     # tells user if new personal best is made
     if pbScore >= mcqTotal:
-        print('PERSONAL BEST ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tMARK ~ ' + prevMark)
+        print('PERSONAL BEST ~ ' + str(pbScore) + '/' + str(mcqLength))
     else:
         print('> NEW PERSONAL BEST!')
-        print('OLD PERSONAL BEST ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tMARK ~ ' + prevMark)
+        print('OLD PERSONAL BEST ~ ' + str(pbScore) + '/' + str(mcqLength) )
     print('')
 
     input(selector)
 
     # sets current score as previous score
-    set_past_score(chosenSubject, mcqTotal, filePath='past_scores.json', topic=chosenTopic)
+    set_past_score(chosenSubject, [1, mcqTotal], filePath='past_scores.json', topic=chosenTopic)
     
     # sets current score as personal best if higher than previous personal best
     if mcqTotal > pbScore:
-        set_past_score(chosenSubject, mcqTotal, filePath='top_scores.json', topic=chosenTopic)
+        set_past_score(chosenSubject, [1, mcqTotal], filePath='top_scores.json', topic=chosenTopic)
 
     dotdotdot()
 
