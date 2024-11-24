@@ -194,7 +194,10 @@
             0,
             0
         ],
-        "software": 2,
+        "software": [
+            0,
+            0
+        ],
         "internet": [
             0,
             0

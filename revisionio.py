@@ -303,6 +303,15 @@ def set_past_score(subject, score=0, filePath='past_scores.json', topic='none'):
     with open(filePath, 'w', encoding='utf-8') as f:
         json.dump(scoredata, f, ensure_ascii=False, indent=4)
 
+def reset_score(filePath='past_scores.json'):
+    """resets score json file"""
+
+    with open('clean_scores.json', 'r', encoding="utf8") as f:
+        cleanscoredata = json.load(f)
+
+    with open(filePath, 'w', encoding='utf-8') as f:
+        json.dump(cleanscoredata, f, ensure_ascii=False, indent=4)
+
 
 #* DECLARES GLOBAL VARIABLES *#
 chosenSubject, chosenTopic = 'none', 'none'
@@ -461,44 +470,48 @@ def mcq():
     prevScore = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)[1]
     prevMark = mcqMessages[prevScore][5]
 
-    print('PREVIOUS SCORE ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tPREVIOUS MARK ~ ' + prevMark)
-    
-    # message based on how current score compares with previous score
-    if not prevScore and not mcqTotal:
-        print('> YOU GOT A ZERO AGAIN?')
-    elif prevScore == mcqTotal:
-        print('> CONSISTENT EFFORT!')
-    elif prevScore * 2 == mcqTotal:
-        print('> YOU DOUBLED YOUR PREVIOUS SCORE!')
-    elif prevScore * 3 == mcqTotal:
-        print('> YOU TRIPLED YOUR PREVIOUS SCORE!')
-    elif prevScore < mcqTotal:
-        print('> YOU GOT A HIGHER SCORE THAN LAST TIME!')
-    elif prevScore > mcqTotal:
-        print('> YOU GOT A LOWER SCORE THAN LAST TIME!')
-    print('')
+    if prevExists:
+        print('PREVIOUS SCORE ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tPREVIOUS MARK ~ ' + prevMark)
+        
+        # message based on how current score compares with previous score
+        if not prevScore and not mcqTotal:
+            print(' > You got a zero again?')
+        elif prevScore == mcqTotal:
+            print(' > Consistent effort')
+        elif prevScore * 2 == mcqTotal:
+            print(' > You doubled your previous score!')
+        elif prevScore * 3 == mcqTotal:
+            print(' > You tripled your previous score!')
+        elif prevScore < mcqTotal:
+            print(' > You got a higher score than last time')
+        elif prevScore > mcqTotal:
+            print(' > You got a lower score than last time')
+        print('')
 
     # prints personal best score
-    pbExists = read_score(chosenSubject, filePath='top_scores.json', topic=chosenTopic)[0]
-    pbScore = read_score(chosenSubject, filePath='top_scores.json', topic=chosenTopic)[1]
+    pbExists = read_score(chosenSubject, 'top_scores.json', chosenTopic)[0]
+    pbScore = read_score(chosenSubject, 'top_scores.json', chosenTopic)[1]
     pbMark = mcqMessages[prevScore][5]
 
     # tells user if new personal best is made
-    if pbScore >= mcqTotal:
-        print('PERSONAL BEST ~ ' + str(pbScore) + '/' + str(mcqLength))
+    if pbExists:
+        if pbScore >= mcqTotal:
+            print('PERSONAL BEST ~ ' + str(pbScore) + '/' + str(mcqLength))
+        else:
+            print('OLD PERSONAL BEST ~ ' + str(pbScore) + '/' + str(mcqLength))
+            print(' > New personal best!')
     else:
-        print('> NEW PERSONAL BEST!')
-        print('OLD PERSONAL BEST ~ ' + str(pbScore) + '/' + str(mcqLength) )
+        print(' > New personal best!')
     print('')
 
     input(selector)
 
     # sets current score as previous score
-    set_past_score(chosenSubject, [1, mcqTotal], filePath='past_scores.json', topic=chosenTopic)
+    set_past_score(chosenSubject, [1, mcqTotal], 'past_scores.json', chosenTopic)
     
     # sets current score as personal best if higher than previous personal best
     if mcqTotal > pbScore:
-        set_past_score(chosenSubject, [1, mcqTotal], filePath='top_scores.json', topic=chosenTopic)
+        set_past_score(chosenSubject, [1, mcqTotal], 'top_scores.json', chosenTopic)
 
     dotdotdot()
 
