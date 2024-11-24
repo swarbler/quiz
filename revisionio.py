@@ -694,7 +694,7 @@ while True:
             dotdotdot(0)
 
             setting_page()
-        case 'quit' | 't':
+        case 'quit' | 'q':
             sys.exit(0)
         case _: # invalid input
            call_error(userAction)
