@@ -1,3 +1,6 @@
 {
-    
+    "questionViewLength": 3,
+    "inputSelector": "~~> ",
+    "soundEffects": 1,
+    "savePreviousScores": 1
 }

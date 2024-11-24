@@ -271,13 +271,17 @@ def set_setting(param, data):
 
 
 #* SETS PAST SCORES FROM JSON FILE *#
+# past_scores.json
 # [subject][topic][0] = whether topic has been tested before (0 or 1)
 # [subject][topic][1] = past score (0-10)
 
-def view_past_score(subject, topic='none'):
-    """reads setting from json file"""
+# top_scores.json
+# [subject][topic] = personal best score
 
-    with open('past_scores.json', 'r', encoding="utf8") as f:
+def read_score(subject, filePath='past_scores.json', topic='none'):
+    """reads score from json file"""
+
+    with open(filePath, 'r', encoding="utf8") as f:
         scoredata = json.load(f)
     
     try:
@@ -285,10 +289,10 @@ def view_past_score(subject, topic='none'):
     except:
         return scoredata[subject]
 
-def set_past_score(subject, score=0, topic='none'):
-    """writes new setting to json file"""
+def set_past_score(subject, score=0, filePath='past_scores.json', topic='none'):
+    """writes new score to json file"""
 
-    with open('past_scores.json', 'r', encoding="utf8") as f:
+    with open(filePath, 'r', encoding="utf8") as f:
         scoredata = json.load(f)
     
     try:
@@ -296,13 +300,19 @@ def set_past_score(subject, score=0, topic='none'):
     except:
         scoredata[subject] = score
 
-    with open('past_scores.json', 'w', encoding='utf-8') as f:
+    with open(filePath, 'w', encoding='utf-8') as f:
         json.dump(scoredata, f, ensure_ascii=False, indent=4)
 
 
 #* DECLARES GLOBAL VARIABLES *#
 chosenSubject, chosenTopic = 'none', 'none'
 mcqLength, mcqTotal = 10, 0
+
+
+#* DECLARES SETTINGS *#
+viewLength = read_setting('questionViewLength')
+selector = read_setting('inputSelector')
+save = read_setting('savePreviousScores')
 
 
 #* DECLARES ERROR FLAGS *#
@@ -346,7 +356,7 @@ def call_error(param, errorType='none'):
     else:
         print('"' + param + '" is not a valid input. Please try again.')
     print('')
-    input('~~> ')
+    input(selector)
 
     dotdotdot()
 
@@ -397,7 +407,7 @@ def mcq():
         print('3 : ' + str(answerC))
         print('4 : ' + str(answerD))
         print('')
-        userAnswer = input('~~> ').strip()
+        userAnswer = input(selector).strip()
         userAnswerNum = 0
 
         # if users type a word instead of a number, userAnswerNum set to 0
@@ -415,7 +425,7 @@ def mcq():
             # tells user correct answer
             print('You got it wrong!\nThe actual answer was: ' + str(correctAnswer) + ' (' + correctAnswerText + ')')
         
-        dotdotdot(3)
+        dotdotdot(viewLength)
 
     # displays chosen subject and topic
     print('Subject:\t' + chosenSubject)
@@ -439,19 +449,58 @@ def mcq():
         scoremsg = mcqMessages[mcqTotal][random.randrange(0, 5)]
         mark = mcqMessages[mcqTotal][5]
     
-    # prints total score for user
+    # prints total score
     print('SCORE ~ ' + str(mcqTotal) + '/' + str(mcqLength) + '\tMARK ~ ' + mark)
     print('[' + barFill + barSpaces + ']')
     print('')
     print(' > ' + scoremsg)
     print('')
-    input('~~> ')
+
+    # prints previous score
+    prevScore = read_score(chosenSubject, filePath='past_scores.json', topic=chosenTopic)
+    prevMark = mcqMessages[prevScore][5]
+
+    print('PREVIOUS SCORE ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tMARK ~ ' + prevMark)
+    
+    # message based on how current score compares with previous score
+    if prevScore == mcqTotal:
+        print('> CONSISTENT EFFORT!')
+    elif prevScore * 2 == mcqTotal:
+        print('> YOU DOUBLED YOUR PREVIOUS SCORE!')
+    elif prevScore * 3 == mcqTotal:
+        print('> YOU TRIPLED YOUR PREVIOUS SCORE!')
+    elif prevScore < mcqTotal:
+        print('> YOU GOT A HIGHER SCORE THAN LAST TIME!')
+    elif prevScore > mcqTotal:
+        print('> YOU GOT A LOWER SCORE THAN LAST TIME!')
+    print('')
+
+    # prints personal best score
+    pbScore = read_score(chosenSubject, filePath='top_scores.json', topic=chosenTopic)
+    pbMark = mcqMessages[prevScore][5]
+
+    # tells user if new personal best is made
+    if pbScore >= mcqTotal:
+        print('PERSONAL BEST ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tMARK ~ ' + prevMark)
+    else:
+        print('> NEW PERSONAL BEST!')
+        print('OLD PERSONAL BEST ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tMARK ~ ' + prevMark)
+    print('')
+
+    input(selector)
+
+    # sets current score as previous score
+    set_past_score(chosenSubject, mcqTotal, filePath='past_scores.json', topic=chosenTopic)
+    
+    # sets current score as personal best if higher than previous personal best
+    if mcqTotal > pbScore:
+        set_past_score(chosenSubject, mcqTotal, filePath='top_scores.json', topic=chosenTopic)
 
     dotdotdot()
 
 def structured():
     """structured questions"""
-    
+
     pass
     # read essay text file and send to teacher for marking? (longer essay-style questions)
     # type into quiz program and get marks based on keywords? (shorter  questions only)
@@ -459,7 +508,7 @@ def structured():
 
 #* PROGRAM *#
 while True:
-    # Revisionio (Big Money-se)
+    # title text (Big Money-se)
     print(' _______                       __            __                      __           ')
     print('|       \\                     |  \\          |  \\                    |  \\          ')
     print('| $$$$$$$\\  ______  __     __  \\$$  _______  \\$$  ______   _______   \\$$  ______  ')
@@ -469,13 +518,8 @@ while True:
     print('| $$  | $$| $$$$$$$$  \\$$ $$  | $$ _\\$$$$$$\\| $$| $$__/ $$| $$  | $$| $$| $$__/ $$')
     print('| $$  | $$ \\$$     \\   \\$$$   | $$|       $$| $$ \\$$    $$| $$  | $$| $$ \\$$    $$')
     print(' \\$$   \\$$  \\$$$$$$$    \\$     \\$$ \\$$$$$$$  \\$$  \\$$$$$$  \\$$   \\$$ \\$$  \\$$$$$$ ')
-    print('')                                                                              
-    # made by sbird (Small Slant)
-    print('                 __      __              __   _        __')
-    print('  __ _  ___ ____/ /__   / /  __ __  ___ / /  (_)______/ /')
-    print(' /  \' \\/ _ `/ _  / -_) / _ \\/ // / (_-</ _ \\/ / __/ _  / ')
-    print('/_/_/_/\\_,_/\\_,_/\\__/ /_.__/\\_, / /___/_.__/_/_/  \\_,_/  ')
-    print('                           /___/                         ')
+    print('')
+    print('|| made by sbird ||')
     print('')
                                                                                                                                                                                                                                                                                          
     # choose subject to study
@@ -485,7 +529,7 @@ while True:
     print('~ settings')
     print('~ quit')
     print('')
-    userAction = input('~~> ').lower() # sets answer as lowercase to avoid miscasing
+    userAction = input(selector).lower() # sets answer as lowercase to avoid miscasing
 
     match userAction:
         case 'test' | 'tests' | 't':
@@ -497,7 +541,7 @@ while True:
             for i in subjects: # dynamic amount of subjects
                 print('~ ' + i)
             print('')
-            userSubject = input('~~> ').lower() # sets answer as lowercase to avoid miscasing
+            userSubject = input(selector).lower() # sets answer as lowercase to avoid miscasing
             userTopic = 'none'
 
             userHasTopic = False
@@ -532,7 +576,7 @@ while True:
                 for i in topics[chosenSubject]: # dynamic amount of subjects
                     print('~ ' + i) # prints subjects as a list
                 print('')
-                userTopic = input('~~> ').lower()  # sets answer as lowercase to avoid miscasing
+                userTopic = input(selector).lower()  # sets answer as lowercase to avoid miscasing
 
                 set_subject(chosenSubject, userTopic)
             else:
@@ -545,6 +589,7 @@ while True:
                 mcq()
                 # structured()
         case 'settings' | 'setting' | 's':
+            
             call_error(userAction, 'does_not_exist') # settings page does not exist yet
         case 'quit' | 't':
             sys.exit(0)
