@@ -267,6 +267,23 @@ def set_setting(param, data):
     with open('data/settings.json', 'w', encoding='utf-8') as f:
         json.dump(settingsdata, f, ensure_ascii=False, indent=4)
 
+def reset_settings():
+    global viewLength, selector, sfxEnabled, save
+
+    """resets settings json file"""
+
+    with open('data/clean_settings.json', 'r', encoding="utf8") as f:
+        cleansettingsdata = json.load(f)
+
+    with open('data/settings.json', 'w', encoding='utf-8') as f:
+        json.dump(cleansettingsdata, f, ensure_ascii=False, indent=4)
+    
+    # sets settings
+    viewLength = read_setting('questionViewLength')
+    selector = read_setting('inputSelector')
+    sfxEnabled = read_setting('soundEffects')
+    save = read_setting('savePreviousScores')
+
 
 #* SETS PAST SCORES FROM JSON FILE *#
 # past_scores.json
@@ -557,6 +574,8 @@ def setting_page():
         print('~ set input selector (' + selector.strip() + ')')
         print('~ toggle sound effects (' + showToggle(sfxEnabled) + ')')
         print('~ toggle whether previous scores are saved (' + showToggle(save) + ')')
+        print('~ reset scores')
+        print('~ reset settings')
         print('~ exit')
         print('')
         userAction = input(selector).lower().strip()
@@ -599,6 +618,29 @@ def setting_page():
 
                 save = read_setting('savePreviousScores')
                 
+                dotdotdot()
+            case 'reset scores' | 'reset score':
+                userInput = input('Are you sure you want to erase score data? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
+
+                print('')
+                if userInput == 'i want to erase':
+                    reset_score('data/past_scores.json')
+                    reset_score('data/top_scores.json')
+                    print('== scores successfully reset ==')
+                else:
+                    print('== cancelled ==')
+
+                dotdotdot()
+            case 'reset settings' | 'reset setting' | 'reset set' | 'default settings' | 'default setting' | 'default set':
+                userInput = input('Are you sure you want to reset settings to default? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
+
+                print('')
+                if userInput == 'i want to erase':
+                    reset_settings()
+                    print('== settings successfully reset ==')
+                else:
+                    print('== cancelled ==')
+
                 dotdotdot()
             case 'exit' | 'e':
                 dotdotdot(0)
