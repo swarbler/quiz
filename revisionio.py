@@ -371,7 +371,7 @@ def call_error(param, errorType='none', minR=0, maxR=0):
         case 'does_not_exist':
             print('"' + param + '" does not exist yet. Please try again later.')
         case 'range':
-            print('"' + param + '" is not a valid input. You must input a number between ' + minR + ' and ' + maxR + '. Please try again')
+            print('"' + param + '" is not a valid input. You must input a number between ' + str(minR) + ' and ' + str(maxR) + '. Please try again')
         case _:
             print('"' + param + '" is not a valid input. Please try again.')
     print('')
@@ -562,27 +562,27 @@ def setting_page():
         userAction = input(selector).lower().strip()
 
         match userAction:
-            case 'set duration answer is shown':
-                userInput = input('Enter new duration (in seconds): ').lower().strip()
+            case 'set duration answer is shown' | 'set answer duration' | 'answer duration' | 'answer' | 'set wait duration' | 'wait duration' | 'set wait' | 'wait':
+                userInput = input('Enter new duration (in seconds): ').strip()
 
                 try:
                     if int(userInput) > 30 or int(userInput) <= 0:
-                        call_error(userInput, 'range', minR=1, maxR=30)
+                        call_error(userInput, 'range', 1, 30)
                     else:
                         set_setting('questionViewLength', int(userInput))
                         viewLength = read_setting('questionViewLength')
+
+                        dotdotdot()
                 except:
                     call_error(userInput)
-                
-                dotdotdot()
-            case 'set input selector':
+            case 'set input selector' | 'set selector' | 'selector' | 'set input' | 'input':
                 userInput = input('Enter new input selector: ').strip()
 
-                set_setting('inputSelector', userInput)
+                set_setting('inputSelector', userInput + ' ')
                 selector = read_setting('inputSelector')
                 
                 dotdotdot()
-            case 'toggle sound effects':
+            case 'toggle sound effects' | 'sound effects' | 'sound effect' | 'togle sound' | 'sound' | 'toggle sfx' | 'sfx':
                 if sfxEnabled:
                     set_setting('soundEffects', 0)
                 else:
@@ -591,7 +591,7 @@ def setting_page():
                 sfxEnabled = read_setting('soundEffects')
                 
                 dotdotdot()
-            case 'toggle whether previous scores are saved':
+            case 'toggle whether previous scores are saved' | 'toggle previous scores' | 'previous scores' | 'toggle previous score' | 'previous score' | 'toggle save' | 'save':
                 if save:
                     set_setting('savePreviousScores', 0)
                 else:
@@ -601,7 +601,7 @@ def setting_page():
                 
                 dotdotdot()
             case 'exit' | 'e':
-                dotdotdot()
+                dotdotdot(0)
 
                 return
             case _: # invalid input
@@ -691,6 +691,8 @@ while True:
                 mcq()
                 # structured()
         case 'settings' | 'setting' | 'set' | 's':
+            dotdotdot(0)
+
             setting_page()
         case 'quit' | 't':
             sys.exit(0)
