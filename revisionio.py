@@ -394,6 +394,8 @@ def call_error(param, errorType='none', minR=0, maxR=0):
     print('')
     input(selector)
 
+    play_audio('select')
+
     dotdotdot()
 
 def play_audio(param='beep'):
