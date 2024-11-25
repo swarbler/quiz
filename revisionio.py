@@ -764,6 +764,8 @@ while True:
             
             if subjectError:
                 call_error(userSubject, 'subject')
+            elif chosenSubject == 'geography':
+                call_error(chosenSubject, 'does_not_exist')
             elif not topicError: # does not run test if invalid topic
                 mcq()
                 # structured()
