@@ -378,6 +378,8 @@ def call_error(param, errorType='none', minR=0, maxR=0):
     print('                                            |___/                                                       |___/   ')
     print('')
 
+    play_audio('explosion')
+
     match errorType:
         case 'subject':
             print('"' + param + '" is not a valid subject. Please try again.')
@@ -394,7 +396,7 @@ def call_error(param, errorType='none', minR=0, maxR=0):
 
     dotdotdot()
 
-def play_audio(param='beep', stopless=1):
+def play_audio(param='beep'):
     if not sfxEnabled: return
 
     filePath = '.\\data\\audio\\' + str(param) + '.wav'
@@ -595,11 +597,13 @@ def setting_page():
         print('')
         userAction = input(selector).lower().strip()
 
+        play_audio('select')
+
         match userAction:
             case 'set duration answer is shown' | 'set answer duration' | 'answer duration' | 'answer' | 'set wait duration' | 'wait duration' | 'set wait' | 'wait':
-                play_audio('select')
-                
                 userInput = input('Enter new duration (in seconds): ').strip()
+
+                play_audio('select')
 
                 try:
                     if int(userInput) > 30 or int(userInput) <= 0:
@@ -612,17 +616,15 @@ def setting_page():
                 except:
                     call_error(userInput)
             case 'set input selector' | 'set selector' | 'selector' | 'set input' | 'input':
-                play_audio('select')
-                
                 userInput = input('Enter new input selector: ').strip()
+
+                play_audio('select')
 
                 set_setting('inputSelector', userInput + ' ')
                 selector = read_setting('inputSelector')
                 
                 dotdotdot()
             case 'toggle sound effects' | 'sound effects' | 'sound effect' | 'togle sound' | 'sound' | 'toggle sfx' | 'sfx':
-                play_audio('select')
-
                 if sfxEnabled:
                     set_setting('soundEffects', 0)
                 else:
@@ -632,8 +634,6 @@ def setting_page():
                 
                 dotdotdot()
             case 'toggle whether previous scores are saved' | 'toggle previous scores' | 'previous scores' | 'toggle previous score' | 'previous score' | 'toggle save' | 'save':
-                play_audio('select')
-
                 if save:
                     set_setting('savePreviousScores', 0)
                 else:
@@ -643,8 +643,6 @@ def setting_page():
                 
                 dotdotdot()
             case 'reset scores' | 'reset score':
-                play_audio('select')
-
                 userInput = input('Are you sure you want to erase score data? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
 
                 print('')
@@ -659,8 +657,6 @@ def setting_page():
 
                 dotdotdot()
             case 'reset settings' | 'reset setting' | 'reset set' | 'default settings' | 'default setting' | 'default set':
-                play_audio('select')
-                
                 userInput = input('Are you sure you want to reset settings to default? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
 
                 print('')
@@ -674,12 +670,12 @@ def setting_page():
 
                 dotdotdot()
             case 'exit' | 'e':
-                play_audio('select')
-
                 dotdotdot(0)
 
                 return
             case _: # invalid input
+                play_audio('select')
+
                 call_error(userAction)
 
 
@@ -778,8 +774,10 @@ while True:
 
             setting_page()
         case 'quit' | 'q':
-            play_audio('fizzing_explosion', 0)
+            play_audio('fizzing_explosion')
 
             sys.exit(0)
         case _: # invalid input
+           play_audio('select')
+
            call_error(userAction)
