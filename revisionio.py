@@ -1,10 +1,7 @@
-import time
-import os
-import json
-import random
-import sys
+import time, os, json, random, sys
 
 from PIL import Image
+from playsound import playsound
 
 #* SETS MCQ QUESTIONS ARRAY *#
 w, h = 7, 10 # width and height of list
@@ -395,6 +392,9 @@ def call_error(param, errorType='none', minR=0, maxR=0):
     input(selector)
 
     dotdotdot()
+
+def play_audio(param='beep'):
+    playsound('data/audio/' + param + '.mp3')
 
 
 #* DECLARES QUIZ COMPONENTS *#
