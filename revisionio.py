@@ -3,6 +3,7 @@ import time, os, json, random, sys
 from PIL import Image
 from playsound import playsound
 
+
 #* SETS MCQ QUESTIONS ARRAY *#
 w, h = 7, 10 # width and height of list
 
@@ -393,8 +394,12 @@ def call_error(param, errorType='none', minR=0, maxR=0):
 
     dotdotdot()
 
-def play_audio(param='beep'):
-    playsound('data/audio/' + param + '.mp3')
+def play_audio(param='beep', stopless=1):
+    if not sfxEnabled: return
+
+    filePath = '.\\data\\audio\\' + str(param) + '.wav'
+
+    playsound(filePath)
 
 
 #* DECLARES QUIZ COMPONENTS *#
@@ -402,6 +407,8 @@ def mcq():
     """multiple choice questions"""
 
     dotdotdot()
+
+    play_audio('teleport')
 
     mcqTotal = 0 # resets total
 
@@ -457,10 +464,14 @@ def mcq():
         if userAnswerNum == correctAnswer or userAnswer.lower() == correctAnswerText.lower():
             print('You got it right!')
             mcqTotal += 1
+
+            play_audio('coin')
         else:
             # tells user correct answer
             print('You got it wrong!\nThe actual answer was: ' + str(correctAnswer) + ' (' + correctAnswerText + ')')
-        
+
+            play_audio('explosion')
+
         dotdotdot(viewLength)
 
     # displays chosen subject and topic
@@ -527,11 +538,15 @@ def mcq():
         else:
             print('OLD PERSONAL BEST ~ ' + str(pbScore) + '/' + str(mcqLength))
             print(' > New personal best!')
+
+            play_audio('powerup')
     else:
         print(' > New personal best!')
     print('')
 
     input(selector)
+
+    play_audio('select')
 
     # sets current score as previous score
     if save: # only saves previous score if setting is enabled
@@ -582,6 +597,8 @@ def setting_page():
 
         match userAction:
             case 'set duration answer is shown' | 'set answer duration' | 'answer duration' | 'answer' | 'set wait duration' | 'wait duration' | 'set wait' | 'wait':
+                play_audio('select')
+                
                 userInput = input('Enter new duration (in seconds): ').strip()
 
                 try:
@@ -595,6 +612,8 @@ def setting_page():
                 except:
                     call_error(userInput)
             case 'set input selector' | 'set selector' | 'selector' | 'set input' | 'input':
+                play_audio('select')
+                
                 userInput = input('Enter new input selector: ').strip()
 
                 set_setting('inputSelector', userInput + ' ')
@@ -602,6 +621,8 @@ def setting_page():
                 
                 dotdotdot()
             case 'toggle sound effects' | 'sound effects' | 'sound effect' | 'togle sound' | 'sound' | 'toggle sfx' | 'sfx':
+                play_audio('select')
+
                 if sfxEnabled:
                     set_setting('soundEffects', 0)
                 else:
@@ -611,6 +632,8 @@ def setting_page():
                 
                 dotdotdot()
             case 'toggle whether previous scores are saved' | 'toggle previous scores' | 'previous scores' | 'toggle previous score' | 'previous score' | 'toggle save' | 'save':
+                play_audio('select')
+
                 if save:
                     set_setting('savePreviousScores', 0)
                 else:
@@ -620,6 +643,8 @@ def setting_page():
                 
                 dotdotdot()
             case 'reset scores' | 'reset score':
+                play_audio('select')
+
                 userInput = input('Are you sure you want to erase score data? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
 
                 print('')
@@ -627,22 +652,30 @@ def setting_page():
                     reset_score('data/past_scores.json')
                     reset_score('data/top_scores.json')
                     print('== scores successfully reset ==')
+
+                    play_audio('deep_explosion')
                 else:
                     print('== cancelled ==')
 
                 dotdotdot()
             case 'reset settings' | 'reset setting' | 'reset set' | 'default settings' | 'default setting' | 'default set':
+                play_audio('select')
+                
                 userInput = input('Are you sure you want to reset settings to default? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
 
                 print('')
                 if userInput == 'i want to erase':
                     reset_settings()
                     print('== settings successfully reset ==')
+
+                    play_audio('deep_explosion')
                 else:
                     print('== cancelled ==')
 
                 dotdotdot()
             case 'exit' | 'e':
+                play_audio('select')
+
                 dotdotdot(0)
 
                 return
@@ -677,6 +710,8 @@ while True:
 
     match userAction:
         case 'test' | 'tests' | 't':
+            play_audio('select')
+
             dotdotdot()
 
             # choose subject to study
@@ -687,6 +722,8 @@ while True:
             print('')
             userSubject = input(selector).lower() # sets answer as lowercase to avoid miscasing
             userTopic = 'none'
+
+            play_audio('select')
 
             userHasTopic = False
             subjectError = False    
@@ -722,6 +759,8 @@ while True:
                 print('')
                 userTopic = input(selector).lower()  # sets answer as lowercase to avoid miscasing
 
+                play_audio('select')
+
                 set_subject(chosenSubject, userTopic)
             else:
                 set_subject(chosenSubject)
@@ -733,10 +772,14 @@ while True:
                 mcq()
                 # structured()
         case 'settings' | 'setting' | 'set' | 's':
+            play_audio('select')
+
             dotdotdot(0)
 
             setting_page()
         case 'quit' | 'q':
+            play_audio('fizzing_explosion', 0)
+
             sys.exit(0)
         case _: # invalid input
            call_error(userAction)
