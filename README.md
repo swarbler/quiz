@@ -22,17 +22,21 @@ You can run revisionio using two methods:
 - shows you correct answer for a few seconds (default: 3) if you get a question wrong
 - pop-up images using your default image viewer
   - useful for physics and chemistry questions that require diagrams
-- sound effects (generated using sfxr)
 - different messages appear depending on your score
 - records your previous score for each topic
 - records your personal best for each topic
 - settings to customise revisionio
   - change how long answer is shown in seconds (default: 3)
   - change input selector (default: '~~>')
-  - toggle sfx (default: on)
+  - toggle sfx (default: off)
   - toggle whether previous score is saved (default: on)
     - you could turn this off if you find being reminded of your previous score a bit annoying
     - note: personal best score is always saved
+
+### Buggy 🐛
+
+- sound effects (generated using sfxr)
+  - for some reason playing sfx crashes the program randomly, so it's disabled by default
 
 ### to be added
 
@@ -40,6 +44,7 @@ You can run revisionio using two methods:
 - structured questions (i.e. essay)
 - more score messages
 - ability to adjust wackiness of score messages (professional -> insane)
+- additional revision tools?
 
 ## Included Subjects
 
