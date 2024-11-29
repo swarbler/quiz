@@ -101,5 +101,13 @@
         "cs": "computer science", 
         "hist": "history", 
         "ex": "example"
+    },
+    "colour": {
+        "geography": "green", 
+        "physics": "red", 
+        "chemistry": "cyan", 
+        "computer science": "blue", 
+        "history": "magenta", 
+        "example": "none"
     }
 }
