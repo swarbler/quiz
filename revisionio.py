@@ -717,11 +717,11 @@ while True:
     print(Fore.YELLOW)              
     print('What would you like to do?')
     print('')
-    print('~ test')
-    print('~ settings')
-    print('~ quit')
-    print('')
-    userAction = input(Fore.YELLOW + selector).lower() # sets answer as lowercase to avoid miscasing
+    print(Fore.CYAN + '~ test')
+    print(Fore.GREEN + '~ settings')
+    print(Fore.RED + '~ quit')
+    print(Fore.YELLOW)
+    userAction = input(selector).lower() # sets answer as lowercase to avoid miscasing
 
     match userAction:
         case 'test' | 'tests' | 't':
