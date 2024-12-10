@@ -383,18 +383,19 @@ def call_error(param, errorType='none', minR=0, maxR=0):
     # print('')
 
     play_audio('explosion')
+    err = Fore.YELLOW + Back.RED + param + Fore.RED + Back.RESET
 
     match errorType:
         case 'subject':
-            print('"' + param + '" is not a valid subject. Please try again.')
+            print(f'{err} is not a valid subject. Please try again.')
         case 'topic':
-            print('"' + param + '" is not a valid topic. Please try again.')
+            print(f'{err} is not a valid topic. Please try again.')
         case 'does_not_exist':
-            print('"' + param + '" does not exist yet. Please try again later.')
+            print(f'{err} does not exist yet. Please try again later.')
         case 'range':
-            print('"' + param + '" is not a valid input. You must input a number between ' + str(minR) + ' and ' + str(maxR) + '. Please try again')
+            print(f'{err} is not a valid input. You must input a number between {minR} and {maxR}. Please try again')
         case _:
-            print('"' + param + '" is not a valid input. Please try again.')
+            print(f'{err} is not a valid input. Please try again.')
     print('')
     input(selector)
 
@@ -405,7 +406,7 @@ def call_error(param, errorType='none', minR=0, maxR=0):
 def play_audio(param='beep'):
     if not sfxEnabled: return
 
-    filePath = '.\\data\\audio\\' + str(param) + '.wav'
+    filePath = f'.\\data\\audio\\{param}.wav'
 
     playsound(filePath)
 
@@ -440,22 +441,22 @@ def mcq():
 
         # displays chosen subject and topic
         print(find_colour(COLOURS[chosenSubject]))
-        print('Subject:\t' + chosenSubject)
-        print('Topic:  \t' + chosenTopic)
+        print(f'Subject:\t{chosenSubject}')
+        print(f'Topic:  \t{chosenTopic}')
 
         # displays question # with length of MCQ shown
         print(Fore.YELLOW)
-        print('Question ' + str(i + 1) + ' out of ' + str(mcqLength))
+        print(f'Question {i + 1} out of {mcqLength}')
         print('')
 
         # asks question
-        print(str(question) + '?')
+        print(f'{question}?')
         print('')
 
         # try to display image 
         try:
             if multiplechoice[i][6]:
-                imagePath = 'data/images/' + chosenSubject + '/' + chosenTopic + '/q' + str(i + 1) + '.png' 
+                imagePath = f'data/images/{chosenSubject}/{chosenTopic}/q{i + 1}.png' 
                 img = Image.open(imagePath)
                 img.show()
         except:
@@ -464,10 +465,10 @@ def mcq():
 
         # asks user to pick an option
         print('Choose one option:')
-        print('1 : ' + str(answerA))
-        print('2 : ' + str(answerB))
-        print('3 : ' + str(answerC))
-        print('4 : ' + str(answerD))
+        print(f'1 : {answerA}')
+        print(f'2 : {answerB}')
+        print(f'3 : {answerC}')
+        print(f'4 : {answerD}')
         print('')
         userAnswer = input(Fore.YELLOW + selector).strip()
         userAnswerNum = 0
@@ -478,7 +479,7 @@ def mcq():
         except:
             userAnswerNum = 0
         
-        correctAnswerText = str(multiplechoice[i][correctAnswer])
+        correctAnswerText = multiplechoice[i][correctAnswer]
 
         if userAnswerNum == correctAnswer or userAnswer.lower() == correctAnswerText.lower():
             print(Fore.GREEN + 'You got it right!' + Fore.YELLOW)
@@ -487,7 +488,9 @@ def mcq():
             play_audio('coin')
         else:
             # tells user correct answer
-            print(Fore.RED + 'You got it wrong!\nThe actual answer was: ' + Fore.MAGENTA + str(correctAnswer) + Fore.BLUE + ' (' + correctAnswerText + ')' + Fore.YELLOW)
+            print(Fore.RED, end='')
+            print('You got it wrong!')
+            print(f'The actual answer was: {Fore.MAGENTA}{correctAnswer} {Fore.BLUE}({correctAnswerText}){Fore.YELLOW}')
 
             play_audio('explosion')
 
@@ -496,8 +499,8 @@ def mcq():
     # displays chosen subject and topic
 
     print(find_colour(COLOURS[chosenSubject]))
-    print('Subject:\t' + chosenSubject)
-    print('Topic:  \t' + chosenTopic)
+    print(f'Subject:\t{chosenSubject}')
+    print(f'Topic:  \t{chosenTopic}')
 
     # sets bar fill, score message, and mark based on score
     if mcqLength == 5:
@@ -517,12 +520,12 @@ def mcq():
         mark = MCQ_MESSAGES[mcqTotal][5]
     
     # prints total score
-    print(Fore.LIGHTGREEN_EX)
-    print('SCORE ~ ' + str(mcqTotal) + '/' + str(mcqLength) + '\tMARK ~ ' + mark)
+    print(Fore.GREEN)
+    print(f'SCORE ~ {mcqTotal}/{mcqLength}\tMARK ~ {mark}')
     print(Fore.CYAN, end='')
-    print('[' + barFill + barSpaces + ']')
+    print(f'[{barFill}{barSpaces}]')
     print(find_colour(COLOURS[chosenSubject]))
-    print(' > ' + scoremsg)
+    print(f' > {scoremsg}')
     print(find_colour(COLOURS[chosenSubject]))
 
     # prints previous score
@@ -531,7 +534,7 @@ def mcq():
     prevMark = MCQ_MESSAGES[prevScore][5]
 
     if prevExists and save: # checks whether savePreviousScores is true
-        print('PREVIOUS SCORE ~ ' + str(prevScore) + '/' + str(mcqLength) + '\tPREVIOUS MARK ~ ' + prevMark)
+        print(f'PREVIOUS SCORE ~ {prevScore}/{mcqLength}\tPREVIOUS MARK ~ {prevMark}')
         
         # message based on how current score compares with previous score
         if not prevScore and not mcqTotal:
@@ -556,9 +559,9 @@ def mcq():
     # tells user if new personal best is made
     if pbExists:
         if pbScore >= mcqTotal:
-            print('PERSONAL BEST ~ ' + str(pbScore) + '/' + str(mcqLength))
+            print(f'PERSONAL BEST ~ {pbScore}/{mcqLength}')
         else:
-            print('OLD PERSONAL BEST ~ ' + str(pbScore) + '/' + str(mcqLength))
+            print(f'OLD PERSONAL BEST ~ {pbScore}/{mcqLength}')
             print(' > New personal best!')
 
             play_audio('powerup')
@@ -592,7 +595,7 @@ def setting_page():
 
     while True:
         # title text (Big Money-nw)
-        print(Fore.LIGHTGREEN_EX, end='')
+        print(Fore.GREEN, end='')
         tprint('settings', 'nancyj')
         # print('                     $$\\     $$\\     $$\\                               ')
         # print('                     $$ |    $$ |    \\__|                              ')
@@ -607,12 +610,12 @@ def setting_page():
         # print('                                                    \\______/           ')
                                                                                                                                                                                                                                                                                             
         # choose setting to change (or exit settings page)
-        print(Fore.LIGHTCYAN_EX)
+        print(Fore.CYAN)
         print('What would you like to do?')
-        print('~ set duration answer is shown (' + str(viewLength) + ')')
-        print('~ set input selector (' + selector.strip() + ')')
-        print('~ toggle sound effects (' + showToggle(sfxEnabled) + ')')
-        print('~ toggle whether previous scores are saved (' + showToggle(save) + ')')
+        print(f'~ set duration answer is shown ({viewLength})')
+        print(f'~ set input selector ({selector.strip()})')
+        print(f'~ toggle sound effects ({showToggle(sfxEnabled)})')
+        print(f'~ toggle whether previous scores are saved ({showToggle(save)})')
         print('~ reset scores')
         print('~ reset settings')
         print(Fore.BLUE + '~ exit')
@@ -738,7 +741,7 @@ while True:
             print('')
             for i in SUBJECTS: # dynamic amount of subjects
                 print(find_colour(COLOURS[i]), end='')
-                print('~ ' + i)
+                print(f'~ {i}')
             print('')
             userSubject = input(Fore.YELLOW + selector).lower() # sets answer as lowercase to avoid miscasing
             userTopic = 'none'
@@ -775,7 +778,7 @@ while True:
                 print('Select a topic to study:')
                 print('')
                 for i in TOPICS[chosenSubject]: # dynamic amount of subjects
-                    print('~ ' + i) # prints subjects as a list
+                    print(f'~ {i}') # prints subjects as a list
                 print('')
                 userTopic = input(Fore.YELLOW + selector).lower()  # sets answer as lowercase to avoid miscasing
 
