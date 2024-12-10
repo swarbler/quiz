@@ -481,13 +481,13 @@ def mcq():
         correctAnswerText = str(multiplechoice[i][correctAnswer])
 
         if userAnswerNum == correctAnswer or userAnswer.lower() == correctAnswerText.lower():
-            print('You got it right!')
+            print(Fore.GREEN + 'You got it right!' + Fore.YELLOW)
             mcqTotal += 1
 
             play_audio('coin')
         else:
             # tells user correct answer
-            print('You got it wrong!\nThe actual answer was: ' + str(correctAnswer) + ' (' + correctAnswerText + ')')
+            print(Fore.RED + 'You got it wrong!\nThe actual answer was: ' + Fore.MAGENTA + str(correctAnswer) + Fore.BLUE + ' (' + correctAnswerText + ')' + Fore.YELLOW)
 
             play_audio('explosion')
 
