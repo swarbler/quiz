@@ -616,8 +616,8 @@ def setting_page():
         print(f'~ set input selector ({selector.strip()})')
         print(f'~ toggle sound effects ({showToggle(sfxEnabled)})')
         print(f'~ toggle whether previous scores are saved ({showToggle(save)})')
-        print('~ reset scores')
-        print('~ reset settings')
+        print(Fore.RED + '~ reset scores')
+        print(Fore.RED + '~ reset settings')
         print(Fore.BLUE + '~ exit')
         print(Fore.YELLOW)
         userAction = input(selector).lower().strip()
@@ -668,7 +668,7 @@ def setting_page():
                 
                 dotdotdot()
             case 'reset scores' | 'reset score':
-                userInput = input('Are you sure you want to erase score data? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
+                userInput = input(Fore.RED + 'Are you sure you want to erase score data? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
 
                 print('')
                 if userInput == 'i want to erase':
@@ -682,7 +682,7 @@ def setting_page():
 
                 dotdotdot()
             case 'reset settings' | 'reset setting' | 'reset set' | 'default settings' | 'default setting' | 'default set':
-                userInput = input('Are you sure you want to reset settings to default? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
+                userInput = input(Fore.RED + 'Are you sure you want to reset settings to default? Type "i want to erase" to confirm, type anything else to cancel: ').strip()
 
                 print('')
                 if userInput == 'i want to erase':
