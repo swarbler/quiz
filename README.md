@@ -21,17 +21,25 @@ You can run revisionio using two methods:
 ## Feature List 
 
 - ability to select different subjects and topics
+
 ![subject and topic selection](/screenshots/screenshot-subject-topic-selection-1.png)
+
 - shows you correct answer for a few seconds (default: 3) if you get a question wrong
+
 ![correct answer](/screenshots/screenshot-correct-answer.png)
 ![incorrect answer](/screenshots/screenshot-incorrect-answer.png)
+
 - pop-up images using your default image viewer
   - useful for physics and chemistry questions that require diagrams
+
 ![question with image](/screenshots/screenshot-question-image.png)
+
 - different messages appear depending on your score
+
 ![very bad score](/screenshots/screenshot-score-fail.png)
 ![bad score](/screenshots/screenshot-score-poor.png)
 ![really good score](/screenshots/screenshot-score-amazing-2.png)
+
 - records your previous score for each topic
 - records your personal best for each topic
 - settings to customise revisionio
@@ -41,6 +49,7 @@ You can run revisionio using two methods:
   - toggle whether previous score is saved (default: on)
     - you could turn this off if you find being reminded of your previous score a bit annoying
     - note: personal best score is always saved
+
 ![settings page](/screenshots/screenshot-settings-page.png)
 
 ### Buggy 🐛
