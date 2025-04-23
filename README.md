@@ -2,6 +2,14 @@
 
 ![main menu](/screenshots/screenshot-main-menu-1.png)
 
+# ⚠️ PROJECT MOVED TO CODEBERG ⚠️
+
+https://codeberg.org/sperchingbird/quiz
+
+This repository has been archived and will not receive further commits. Please go to the Codeberg repo!
+
+--------------------------------------------------------------------------------------------------------
+
 a very simple program I made so you can do some multiple choice questions on various subjects and topics
 
 ## What is it? 
